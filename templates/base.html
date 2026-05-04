@@ -118,6 +118,12 @@
       .record-icon  { font-size: 1.2rem; }
       .record-label { font-size: 0.65rem; }
     }
+
+    /* Heatmap: mobile scrolls with fixed cell size */
+    @media (max-width: 767px) {
+      .heatmap-table { table-layout: auto; width: auto; }
+      .hm-date-col   { min-width: 22px; }
+    }
   </style>
 </head>
 <body>

@@ -89,7 +89,7 @@
 <div class="card p-4 mb-4">
   <h5 class="mb-3">走行カレンダー</h5>
   <div class="row g-4 align-items-start">
-    <div class="col-lg-8">
+    <div class="col-lg-8" style="overflow-x: auto;">
       <div id="contributionGraph"></div>
     </div>
     <div class="col-lg-4">
@@ -191,9 +191,11 @@ function buildContributionGraph(containerId, activityDates, todayStr) {
     cols.push(col);
   }
 
-  // Cell size: fill container width without scrolling
   const GAP = 2;
-  const CELL = Math.max(8, Math.floor((container.offsetWidth - cols.length * GAP) / cols.length));
+  const isMobile = window.innerWidth < 768;
+  const CELL = isMobile
+    ? 12
+    : Math.max(8, Math.floor((container.offsetWidth - cols.length * GAP) / cols.length));
 
   const wrapper = document.createElement('div');
 
