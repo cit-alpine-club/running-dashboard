@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+{% block title %}ダッシュボード{% endblock %}
+
+{% block content %}
+<!-- Member rank cards -->
+<div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-xl-5 g-3 mb-4">
+  {% for member, s in stats.items() %}
+  <div class="col">
+    <a href="/member/{{ member }}" class="card member-card d-block p-3 h-100"
+       style="border-left: 5px solid {{ colors[loop.index0] }};">
+      <div class="d-flex align-items-center mb-2 gap-2">
+        <span class="rank-badge" style="background: {{ colors[loop.index0] }}">{{ loop.index }}</span>
+        <span class="fw-semibold text-dark text-truncate" style="font-size:0.82rem">{{ display_names[member] }}</span>
+      </div>
+      <div class="stat-value text-dark">{{ s.total_distance }}</div>
+      <div class="mt-1" style="font-size:0.78rem; color:#6c757d;">
+        {{ s.runs }}回 &nbsp;|&nbsp; 平均 {{ s.avg_distance }} km
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+</div>
+
+<!-- Bar charts row -->
+<div class="row g-4 mb-4">
+  <div class="col-lg-6">
+    <div class="card p-4">
+      <h5 class="mb-3">合計走行距離 (km)</h5>
+      <canvas id="barDistChart" style="max-height: 260px;"></canvas>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="card p-4">
+      <h5 class="mb-3">走行回数</h5>
+      <canvas id="barCountChart" style="max-height: 260px;"></canvas>
+    </div>
+  </div>
+</div>
+
+<!-- Timeline chart -->
+<div class="card p-4 mb-4">
+  <h5 class="mb-3">走行距離推移（全部員）</h5>
+  <canvas id="lineChart" style="max-height: 380px;"></canvas>
+</div>
+
+<!-- Full data table -->
+<div class="card p-4">
+  <h5 class="mb-3">全走行記録</h5>
+  <div class="table-responsive">
+    <table class="table table-hover table-sm align-middle">
+      <thead class="table-dark">
+        <tr>
+          <th>日付</th>
+          <th>投稿者</th>
+          <th>距離 (km)</th>
+          <th>平均ペース</th>
+          <th>時間</th>
+          <th>高低差</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in all_rows %}
+        <tr>
+          <td>{{ row['日付'] }}</td>
+          <td>
+            <a href="/member/{{ row['投稿者'] }}" class="fw-semibold text-decoration-none">
+              {{ display_names[row['投稿者']] }}
+            </a>
+          </td>
+          <td>{{ row['距離(km)'] }}</td>
+          <td>{{ row['平均ペース'] }}</td>
+          <td>{{ row['時間'] }}</td>
+          <td>{{ row['高低差'] }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const memberNames = {{ display_member_names | tojson }};
+const totalDistances = {{ total_distances | tojson }};
+const runCounts = {{ run_counts | tojson }};
+const colors = {{ colors | tojson }};
+const allDates = {{ all_dates | tojson }};
+const tsDatasets = {{ ts_datasets | tojson }};
+
+const sharedBarOpts = {
+  indexAxis: 'y',
+  plugins: { legend: { display: false } },
+  scales: { x: { beginAtZero: true } },
+  maintainAspectRatio: false,
+};
+
+new Chart(document.getElementById('barDistChart'), {
+  type: 'bar',
+  data: {
+    labels: memberNames,
+    datasets: [{ label: '合計距離 (km)', data: totalDistances, backgroundColor: colors, borderRadius: 4 }]
+  },
+  options: sharedBarOpts,
+});
+
+new Chart(document.getElementById('barCountChart'), {
+  type: 'bar',
+  data: {
+    labels: memberNames,
+    datasets: [{ label: '走行回数', data: runCounts, backgroundColor: colors, borderRadius: 4 }]
+  },
+  options: {
+    ...sharedBarOpts,
+    scales: { x: { beginAtZero: true, ticks: { stepSize: 1 } } },
+  },
+});
+
+new Chart(document.getElementById('lineChart'), {
+  type: 'line',
+  data: { labels: allDates, datasets: tsDatasets },
+  options: {
+    plugins: { legend: { position: 'bottom', labels: { boxWidth: 12, padding: 14 } } },
+    scales: {
+      y: { beginAtZero: true, title: { display: true, text: 'km' } }
+    },
+    interaction: { mode: 'index', intersect: false },
+    maintainAspectRatio: false,
+  },
+});
+</script>
+{% endblock %}

@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% block title %}{{ name }}{% endblock %}
+
+{% block nav_extra %}
+<a href="/" class="btn btn-outline-light btn-sm">&#8592; 一覧に戻る</a>
+{% endblock %}
+
+{% block content %}
+<div class="row align-items-center mb-4">
+  <div class="col">
+    <h2 class="mb-1">{{ display_name }}</h2>
+    <p class="text-muted mb-0">個人走行記録</p>
+  </div>
+</div>
+
+<!-- Stats summary cards -->
+<div class="row g-3 mb-4">
+  <div class="col-6 col-md-3">
+    <div class="card p-3 text-center">
+      <div class="stat-value">{{ stats.total_distance }}</div>
+      <div class="stat-label">合計距離 (km)</div>
+    </div>
+  </div>
+  <div class="col-6 col-md-3">
+    <div class="card p-3 text-center">
+      <div class="stat-value">{{ stats.runs }}</div>
+      <div class="stat-label">走行回数</div>
+    </div>
+  </div>
+  <div class="col-6 col-md-3">
+    <div class="card p-3 text-center">
+      <div class="stat-value">{{ stats.avg_distance }}</div>
+      <div class="stat-label">平均距離 (km)</div>
+    </div>
+  </div>
+  <div class="col-6 col-md-3">
+    <div class="card p-3 text-center">
+      <div class="stat-value">{{ stats.best_pace }}</div>
+      <div class="stat-label">ベストペース (/km)</div>
+    </div>
+  </div>
+</div>
+
+<!-- Distance chart -->
+<div class="card p-4 mb-4">
+  <h5 class="mb-3">走行距離推移</h5>
+  <canvas id="memberChart" style="max-height: 280px;"></canvas>
+</div>
+
+<!-- Run history table -->
+<div class="card p-4">
+  <h5 class="mb-3">走行記録一覧</h5>
+  <div class="table-responsive">
+    <table class="table table-hover table-sm align-middle">
+      <thead class="table-dark">
+        <tr>
+          <th>#</th>
+          <th>日付</th>
+          <th>距離 (km)</th>
+          <th>平均ペース</th>
+          <th>時間</th>
+          <th>高低差</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in member_rows %}
+        <tr>
+          <td class="text-muted">{{ loop.index }}</td>
+          <td>{{ row['日付'] }}</td>
+          <td>
+            {% if row['距離(km)'] != '--' %}
+              <strong>{{ row['距離(km)'] }}</strong>
+            {% else %}
+              <span class="text-muted">--</span>
+            {% endif %}
+          </td>
+          <td>{{ row['平均ペース'] }}</td>
+          <td>{{ row['時間'] }}</td>
+          <td>{{ row['高低差'] }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const dates = {{ dates | tojson }};
+const distances = {{ distances | tojson }};
+
+new Chart(document.getElementById('memberChart'), {
+  type: 'line',
+  data: {
+    labels: dates,
+    datasets: [{
+      label: '距離 (km)',
+      data: distances,
+      borderColor: '#36A2EB',
+      backgroundColor: '#36A2EB22',
+      tension: 0.3,
+      pointRadius: 5,
+      pointHoverRadius: 7,
+      fill: true,
+    }]
+  },
+  options: {
+    plugins: { legend: { display: false } },
+    scales: {
+      y: {
+        beginAtZero: true,
+        title: { display: true, text: 'km' }
+      }
+    },
+    interaction: { mode: 'index', intersect: false },
+    maintainAspectRatio: false,
+  }
+});
+</script>
+{% endblock %}
