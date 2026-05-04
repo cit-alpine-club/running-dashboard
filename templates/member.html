@@ -1,19 +1,25 @@
 {% extends "base.html" %}
-{% block title %}{{ name }}{% endblock %}
+{% block title %}{{ display_name }}{% endblock %}
 
 {% block nav_extra %}
-<a href="/" class="btn btn-outline-light btn-sm">&#8592; 一覧に戻る</a>
+<a href="/" class="btn btn-outline-light btn-sm">一覧に戻る</a>
 {% endblock %}
 
 {% block content %}
+
+<!-- Header -->
 <div class="row align-items-center mb-4">
   <div class="col">
-    <h2 class="mb-1">{{ display_name }}</h2>
-    <p class="text-muted mb-0">個人走行記録</p>
+    <div class="d-flex align-items-center flex-wrap gap-3">
+      <h2 class="mb-0">{{ display_name }}</h2>
+      {% if monthly_achieved %}
+      <span class="achievement-badge">{{ monthly_goal | int }}km 達成！おめでとう！</span>
+      {% endif %}
+    </div>
   </div>
 </div>
 
-<!-- Stats summary cards -->
+<!-- Summary stats -->
 <div class="row g-3 mb-4">
   <div class="col-6 col-md-3">
     <div class="card p-3 text-center">
@@ -29,93 +35,289 @@
   </div>
   <div class="col-6 col-md-3">
     <div class="card p-3 text-center">
+      <div class="stat-value">{% if stats.total_elevation %}{{ stats.total_elevation }}{% else %}--{% endif %}</div>
+      <div class="stat-label">累計獲得標高 (m)</div>
+    </div>
+  </div>
+  <div class="col-6 col-md-3">
+    <div class="card p-3 text-center">
       <div class="stat-value">{{ stats.avg_distance }}</div>
       <div class="stat-label">平均距離 (km)</div>
     </div>
   </div>
   <div class="col-6 col-md-3">
     <div class="card p-3 text-center">
-      <div class="stat-value">{{ stats.best_pace }}</div>
-      <div class="stat-label">ベストペース (/km)</div>
+      <div class="stat-value{% if monthly_achieved %} text-success{% endif %}">{{ monthly_distance }}</div>
+      <div class="stat-label">今月の距離 (km)</div>
+      {% if monthly_achieved %}
+      <div style="font-size:0.7rem;color:#16a34a;margin-top:2px;">目標達成</div>
+      {% endif %}
     </div>
   </div>
 </div>
 
-<!-- Distance chart -->
-<div class="card p-4 mb-4">
-  <h5 class="mb-3">走行距離推移</h5>
-  <canvas id="memberChart" style="max-height: 280px;"></canvas>
-</div>
-
-<!-- Run history table -->
-<div class="card p-4">
-  <h5 class="mb-3">走行記録一覧</h5>
-  <div class="table-responsive">
-    <table class="table table-hover table-sm align-middle">
-      <thead class="table-dark">
-        <tr>
-          <th>#</th>
-          <th>日付</th>
-          <th>距離 (km)</th>
-          <th>平均ペース</th>
-          <th>時間</th>
-          <th>高低差</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for row in member_rows %}
-        <tr>
-          <td class="text-muted">{{ loop.index }}</td>
-          <td>{{ row['日付'] }}</td>
-          <td>
-            {% if row['距離(km)'] != '--' %}
-              <strong>{{ row['距離(km)'] }}</strong>
-            {% else %}
-              <span class="text-muted">--</span>
-            {% endif %}
-          </td>
-          <td>{{ row['平均ペース'] }}</td>
-          <td>{{ row['時間'] }}</td>
-          <td>{{ row['高低差'] }}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+<!-- Best records -->
+<div class="row g-3 mb-4">
+  <div class="col-12">
+    <h5 class="mb-3">自己ベスト</h5>
+  </div>
+  <div class="col-4">
+    <div class="record-card">
+      <div class="record-value">{{ stats.best_pace }}</div>
+      <div class="record-label">最速ペース / km</div>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="record-card">
+      <div class="record-value">{{ stats.max_distance }}<span style="font-size:1rem"> km</span></div>
+      <div class="record-label">最長走行距離</div>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="record-card">
+      {% if stats.max_elevation %}
+      <div class="record-value">{{ stats.max_elevation }}<span style="font-size:1rem"> m</span></div>
+      {% else %}
+      <div class="record-value" style="font-size:1.4rem;">--</div>
+      {% endif %}
+      <div class="record-label">最大獲得標高</div>
+    </div>
   </div>
 </div>
+
+<!-- Calendars -->
+<div class="card p-4 mb-4">
+  <h5 class="mb-3">走行カレンダー</h5>
+  <div class="row g-4 align-items-start">
+    <div class="col-lg-8">
+      <div id="contributionGraph"></div>
+    </div>
+    <div class="col-lg-4">
+      <div id="monthCalendar"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Run history table (collapsible) -->
+<div class="card p-4">
+  <div class="d-flex align-items-center justify-content-between">
+    <h5 class="mb-0">走行記録一覧</h5>
+    <button class="btn btn-sm btn-outline-secondary" type="button"
+            data-bs-toggle="collapse" data-bs-target="#runHistory"
+            aria-expanded="false" id="runHistoryBtn">
+      展開 ▼
+    </button>
+  </div>
+  <div class="collapse mt-3" id="runHistory">
+    <div class="table-responsive">
+      <table class="table table-hover table-sm align-middle">
+        <thead class="table-dark">
+          <tr>
+            <th>#</th>
+            <th>日付</th>
+            <th>距離 (km)</th>
+            <th>平均ペース</th>
+            <th>時間</th>
+            <th>推計標高 (m)</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in member_rows %}
+          <tr>
+            <td class="text-muted">{{ loop.index }}</td>
+            <td>{{ row['日付'] }}</td>
+            <td>
+              {% if row['距離(km)'] != '--' %}
+                <strong>{{ row['距離(km)'] }}</strong>
+              {% else %}
+                <span class="text-muted">--</span>
+              {% endif %}
+            </td>
+            <td>{{ row['平均ペース'] }}</td>
+            <td>{{ row['時間'] }}</td>
+            <td>{{ row['高低差'] }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
 {% endblock %}
 
 {% block scripts %}
 <script>
-const dates = {{ dates | tojson }};
-const distances = {{ distances | tojson }};
+(function() {
+  const activityDates = {{ activity_set | tojson }};
+  const todayStr = {{ today_str | tojson }};
+  buildContributionGraph('contributionGraph', activityDates, todayStr);
+  buildMonthCalendar('monthCalendar', activityDates, todayStr);
+})();
 
-new Chart(document.getElementById('memberChart'), {
-  type: 'line',
-  data: {
-    labels: dates,
-    datasets: [{
-      label: '距離 (km)',
-      data: distances,
-      borderColor: '#36A2EB',
-      backgroundColor: '#36A2EB22',
-      tension: 0.3,
-      pointRadius: 5,
-      pointHoverRadius: 7,
-      fill: true,
-    }]
-  },
-  options: {
-    plugins: { legend: { display: false } },
-    scales: {
-      y: {
-        beginAtZero: true,
-        title: { display: true, text: 'km' }
-      }
-    },
-    interaction: { mode: 'index', intersect: false },
-    maintainAspectRatio: false,
+function buildContributionGraph(containerId, activityDates, todayStr) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  const actSet = new Set(activityDates);
+  const today = new Date(todayStr + 'T00:00:00');
+
+  const acYear = today.getMonth() >= 3 ? today.getFullYear() : today.getFullYear() - 1;
+  const start   = new Date(acYear, 3, 1);       // 4/1
+  const yearEnd = new Date(acYear + 1, 2, 31);  // 翌3/31
+
+  const weekStart = new Date(start);
+  weekStart.setDate(weekStart.getDate() - weekStart.getDay());
+
+  const MONTHS = ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
+
+  // Build week columns
+  const cols = [];
+  const cur = new Date(weekStart);
+  while (cur <= yearEnd) {
+    const col = [];
+    for (let d = 0; d < 7; d++) {
+      const ds = cur.toISOString().slice(0, 10);
+      col.push({
+        dateStr: ds,
+        active:   actSet.has(ds),
+        inRange:  cur >= start && cur <= yearEnd,
+        isFuture: cur > today,
+        month: cur.getMonth(),
+        day:   cur.getDate(),
+      });
+      cur.setDate(cur.getDate() + 1);
+    }
+    cols.push(col);
   }
+
+  // Cell size: fill container width without scrolling
+  const GAP = 2;
+  const CELL = Math.max(8, Math.floor((container.offsetWidth - cols.length * GAP) / cols.length));
+
+  const wrapper = document.createElement('div');
+
+  const outer = document.createElement('div');
+  outer.style.cssText = 'display: inline-flex; flex-direction: column;';
+
+  // Month labels
+  const monthRow = document.createElement('div');
+  monthRow.style.cssText = 'display: flex; margin-bottom: 3px; height: 14px;';
+  let lastMonth = -1;
+  cols.forEach(col => {
+    const lbl = document.createElement('div');
+    lbl.style.cssText = `width: ${CELL}px; margin-right: ${GAP}px; font-size: 9px; color: #6c757d; overflow: visible; white-space: nowrap;`;
+    const first = col.find(d => d.inRange);
+    if (first && first.day <= 7 && first.month !== lastMonth) {
+      lbl.textContent = MONTHS[first.month];
+      lastMonth = first.month;
+    }
+    monthRow.appendChild(lbl);
+  });
+  outer.appendChild(monthRow);
+
+  const mainRow = document.createElement('div');
+  mainRow.style.cssText = 'display: flex;';
+
+  cols.forEach(col => {
+    const weekEl = document.createElement('div');
+    weekEl.style.cssText = `display: flex; flex-direction: column; margin-right: ${GAP}px;`;
+    col.forEach(day => {
+      const cell = document.createElement('div');
+      const bg = !day.inRange  ? 'transparent'
+               : day.isFuture  ? '#f0f0f0'
+               : day.active    ? '#22c55e'
+               :                 '#e0e0e0';
+      cell.style.cssText = `width: ${CELL}px; height: ${CELL}px; border-radius: 2px; background: ${bg}; margin-bottom: ${GAP}px;`;
+      if (day.inRange && !day.isFuture) cell.title = `${day.dateStr}${day.active ? ' ランニング' : ''}`;
+      weekEl.appendChild(cell);
+    });
+    mainRow.appendChild(weekEl);
+  });
+
+  outer.appendChild(mainRow);
+  wrapper.appendChild(outer);
+  container.appendChild(wrapper);
+}
+
+function buildMonthCalendar(containerId, activityDates, todayStr) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  const actSet = new Set(activityDates);
+  const today = new Date(todayStr + 'T00:00:00');
+  const year  = today.getFullYear();
+  const month = today.getMonth();
+
+  const MONTH_NAMES = ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
+  const CELL = 18;
+  const GAP  = 3;
+
+  const firstOfMonth = new Date(year, month, 1);
+  const lastOfMonth  = new Date(year, month + 1, 0);
+
+  const weekStart = new Date(firstOfMonth);
+  weekStart.setDate(weekStart.getDate() - weekStart.getDay());
+
+  const cols = [];
+  const cur = new Date(weekStart);
+  while (cur <= lastOfMonth) {
+    const col = [];
+    for (let d = 0; d < 7; d++) {
+      const mm = String(cur.getMonth() + 1).padStart(2, '0');
+      const dd = String(cur.getDate()).padStart(2, '0');
+      const ds = `${cur.getFullYear()}-${mm}-${dd}`;
+      const inMonth = cur.getMonth() === month && cur.getFullYear() === year;
+      col.push({
+        dateStr: ds,
+        active:   actSet.has(ds),
+        inMonth,
+        isFuture: cur > today,
+      });
+      cur.setDate(cur.getDate() + 1);
+    }
+    cols.push(col);
+  }
+
+  const wrapper = document.createElement('div');
+  const outer   = document.createElement('div');
+  outer.style.cssText = 'display: inline-flex; flex-direction: column;';
+
+  // Month label
+  const titleRow = document.createElement('div');
+  titleRow.style.cssText = 'font-size: 10px; color: #6c757d; margin-bottom: 3px;';
+  titleRow.textContent = `${year}年${MONTH_NAMES[month]}`;
+  outer.appendChild(titleRow);
+
+  const mainRow = document.createElement('div');
+  mainRow.style.cssText = 'display: flex;';
+
+  cols.forEach(col => {
+    const weekEl = document.createElement('div');
+    weekEl.style.cssText = `display: flex; flex-direction: column; margin-right: ${GAP}px;`;
+    col.forEach(day => {
+      const cell = document.createElement('div');
+      const bg = !day.inMonth  ? 'transparent'
+               : day.isFuture  ? '#f0f0f0'
+               : day.active    ? '#22c55e'
+               :                 '#e0e0e0';
+      cell.style.cssText = `width: ${CELL}px; height: ${CELL}px; border-radius: 3px; background: ${bg}; margin-bottom: ${GAP}px;`;
+      if (day.inMonth && day.active) cell.title = day.dateStr + ' ランニング';
+      weekEl.appendChild(cell);
+    });
+    mainRow.appendChild(weekEl);
+  });
+
+  outer.appendChild(mainRow);
+  wrapper.appendChild(outer);
+  container.appendChild(wrapper);
+}
+
+document.getElementById('runHistory').addEventListener('show.bs.collapse', () => {
+  document.getElementById('runHistoryBtn').textContent = '閉じる ▲';
+});
+document.getElementById('runHistory').addEventListener('hide.bs.collapse', () => {
+  document.getElementById('runHistoryBtn').textContent = '展開 ▼';
 });
 </script>
 {% endblock %}

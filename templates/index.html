@@ -2,26 +2,54 @@
 {% block title %}ダッシュボード{% endblock %}
 
 {% block content %}
+
+<!-- Goal banner -->
+<div class="goal-banner mb-4">
+  <div class="d-flex align-items-center flex-wrap gap-3">
+    <div>
+      <span class="goal-month">{{ this_month_label }}</span>
+      <span class="goal-target">{{ monthly_goal | int }}km走ろう！</span>
+    </div>
+    {% if month_achieved %}
+    <div class="goal-names">
+      達成：{% for m in month_achieved %}{{ display_names[m] }}{% if not loop.last %} · {% endif %}{% endfor %}
+    </div>
+    {% else %}
+    <div class="goal-names" style="color:#aaa;">まだ達成者なし</div>
+    {% endif %}
+  </div>
+</div>
+
 <!-- Member rank cards -->
 <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-xl-5 g-3 mb-4">
   {% for member, s in stats.items() %}
+  {% set achieved = member in month_achieved %}
   <div class="col">
-    <a href="/member/{{ member }}" class="card member-card d-block p-3 h-100"
+    <a href="/member/{{ member }}"
+       class="card member-card d-block p-3 h-100{% if achieved %} goal-achieved{% endif %}"
        style="border-left: 5px solid {{ colors[loop.index0] }};">
       <div class="d-flex align-items-center mb-2 gap-2">
         <span class="rank-badge" style="background: {{ colors[loop.index0] }}">{{ loop.index }}</span>
-        <span class="fw-semibold text-dark text-truncate" style="font-size:0.82rem">{{ display_names[member] }}</span>
+        <span class="fw-semibold text-dark text-truncate" style="font-size:0.82rem">
+          {{ display_names[member] }}
+        </span>
       </div>
-      <div class="stat-value text-dark">{{ s.total_distance }}</div>
+      <div class="stat-value text-dark">{{ s.total_distance }}<span style="font-size:0.9rem;font-weight:500"> km</span></div>
       <div class="mt-1" style="font-size:0.78rem; color:#6c757d;">
-        {{ s.runs }}回 &nbsp;|&nbsp; 平均 {{ s.avg_distance }} km
+        {{ s.runs }}回 &nbsp;|&nbsp; 今月 <strong style="color:{% if achieved %}#16a34a{% else %}inherit{% endif %}">{{ s.monthly_distance }}</strong> km
       </div>
+      {% if not achieved %}
+      {% set pct = [((s.monthly_distance / monthly_goal) * 100) | int, 100] | min %}
+      <div class="monthly-bar-bg mt-2">
+        <div class="monthly-bar-fill" style="width:{{ pct }}%"></div>
+      </div>
+      {% endif %}
     </a>
   </div>
   {% endfor %}
 </div>
 
-<!-- Bar charts row -->
+<!-- Bar charts -->
 <div class="row g-4 mb-4">
   <div class="col-lg-6">
     <div class="card p-4">
@@ -37,46 +65,80 @@
   </div>
 </div>
 
-<!-- Timeline chart -->
+<!-- Activity heatmap -->
 <div class="card p-4 mb-4">
-  <h5 class="mb-3">走行距離推移（全部員）</h5>
-  <canvas id="lineChart" style="max-height: 380px;"></canvas>
-</div>
-
-<!-- Full data table -->
-<div class="card p-4">
-  <h5 class="mb-3">全走行記録</h5>
-  <div class="table-responsive">
-    <table class="table table-hover table-sm align-middle">
-      <thead class="table-dark">
+  <h5 class="mb-2">走行カレンダー</h5>
+  <div class="heatmap-scroll">
+    <table class="heatmap-table">
+      <thead>
         <tr>
-          <th>日付</th>
-          <th>投稿者</th>
-          <th>距離 (km)</th>
-          <th>平均ペース</th>
-          <th>時間</th>
-          <th>高低差</th>
+          <th class="hm-name-col"></th>
+          {% for date in all_dates %}
+          <th class="hm-date-col"><span>{{ date[8:] | int }}</span></th>
+          {% endfor %}
         </tr>
       </thead>
       <tbody>
-        {% for row in all_rows %}
+        {% for member in member_names %}
         <tr>
-          <td>{{ row['日付'] }}</td>
-          <td>
-            <a href="/member/{{ row['投稿者'] }}" class="fw-semibold text-decoration-none">
-              {{ display_names[row['投稿者']] }}
-            </a>
-          </td>
-          <td>{{ row['距離(km)'] }}</td>
-          <td>{{ row['平均ペース'] }}</td>
-          <td>{{ row['時間'] }}</td>
-          <td>{{ row['高低差'] }}</td>
+          <td class="hm-name">{{ display_names[member] }}</td>
+          {% for date in all_dates %}
+          {% set km = heatmap_data.get(member, {}).get(date, 0) %}
+          <td class="hm-cell{% if km %} ran{% endif %}"
+              title="{{ display_names[member] }} {{ date }}{% if km %}: {{ '%.1f' % km }}km{% endif %}"></td>
+          {% endfor %}
         </tr>
         {% endfor %}
       </tbody>
     </table>
   </div>
 </div>
+
+<!-- Full data table (collapsible) -->
+<div class="card p-4">
+  <div class="d-flex align-items-center justify-content-between">
+    <h5 class="mb-0">全走行記録</h5>
+    <button class="btn btn-sm btn-outline-secondary" type="button"
+            data-bs-toggle="collapse" data-bs-target="#allRecords"
+            aria-expanded="false" aria-controls="allRecords"
+            id="allRecordsBtn">
+      展開 ▼
+    </button>
+  </div>
+  <div class="collapse mt-3" id="allRecords">
+    <div class="table-responsive">
+      <table class="table table-hover table-sm align-middle">
+        <thead class="table-dark">
+          <tr>
+            <th>日付</th>
+            <th>投稿者</th>
+            <th>距離 (km)</th>
+            <th>平均ペース</th>
+            <th>時間</th>
+            <th>高低差</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in all_rows %}
+          <tr>
+            <td>{{ row['日付'] }}</td>
+            <td>
+              <a href="/member/{{ row['投稿者'] }}" class="fw-semibold text-decoration-none">
+                {{ display_names[row['投稿者']] }}
+              </a>
+            </td>
+            <td>{{ row['距離(km)'] }}</td>
+            <td>{{ row['平均ペース'] }}</td>
+            <td>{{ row['時間'] }}</td>
+            <td>{{ row['高低差'] }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
 {% endblock %}
 
 {% block scripts %}
@@ -85,8 +147,6 @@ const memberNames = {{ display_member_names | tojson }};
 const totalDistances = {{ total_distances | tojson }};
 const runCounts = {{ run_counts | tojson }};
 const colors = {{ colors | tojson }};
-const allDates = {{ all_dates | tojson }};
-const tsDatasets = {{ ts_datasets | tojson }};
 
 const sharedBarOpts = {
   indexAxis: 'y',
@@ -116,17 +176,11 @@ new Chart(document.getElementById('barCountChart'), {
   },
 });
 
-new Chart(document.getElementById('lineChart'), {
-  type: 'line',
-  data: { labels: allDates, datasets: tsDatasets },
-  options: {
-    plugins: { legend: { position: 'bottom', labels: { boxWidth: 12, padding: 14 } } },
-    scales: {
-      y: { beginAtZero: true, title: { display: true, text: 'km' } }
-    },
-    interaction: { mode: 'index', intersect: false },
-    maintainAspectRatio: false,
-  },
+document.getElementById('allRecords').addEventListener('show.bs.collapse', () => {
+  document.getElementById('allRecordsBtn').textContent = '閉じる ▲';
+});
+document.getElementById('allRecords').addEventListener('hide.bs.collapse', () => {
+  document.getElementById('allRecordsBtn').textContent = '展開 ▼';
 });
 </script>
 {% endblock %}

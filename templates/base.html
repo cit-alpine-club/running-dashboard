@@ -8,47 +8,122 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
   <style>
     body { background: #f0f2f5; font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; }
+
+    /* Navbar */
     .navbar-custom { background: #1a1a2e; padding: 0.9rem 0; }
     .navbar-custom .navbar-brand {
-      color: #fff;
-      font-weight: 700;
-      font-size: 1.05rem;
-      text-decoration: none;
+      color: #fff; font-weight: 700; font-size: 1.05rem; text-decoration: none;
     }
+
+    /* Cards */
     .card {
-      border: none;
-      border-radius: 14px;
+      border: none; border-radius: 14px;
       box-shadow: 0 2px 14px rgba(0,0,0,0.07);
     }
     .card-title { font-weight: 700; font-size: 1rem; }
+
+    /* Member cards */
     .rank-badge {
-      width: 26px; height: 26px;
-      border-radius: 50%;
+      width: 26px; height: 26px; border-radius: 50%;
       display: inline-flex; align-items: center; justify-content: center;
-      font-weight: 700; font-size: 0.75rem; color: #fff;
-      flex-shrink: 0;
+      font-weight: 700; font-size: 0.75rem; color: #fff; flex-shrink: 0;
     }
     .member-card {
       transition: transform 0.15s, box-shadow 0.15s;
-      cursor: pointer;
-      text-decoration: none !important;
+      cursor: pointer; text-decoration: none !important;
     }
     .member-card:hover {
       transform: translateY(-3px);
       box-shadow: 0 6px 20px rgba(0,0,0,0.13) !important;
     }
+
+    /* Goal achievement shimmer */
+    @keyframes shimmer {
+      0%, 100% { box-shadow: 0 0 0 2px rgba(255,215,0,0.5), 0 2px 14px rgba(0,0,0,0.07); }
+      50%       { box-shadow: 0 0 0 4px rgba(255,215,0,1),   0 0 24px 8px rgba(255,215,0,0.35); }
+    }
+    .goal-achieved {
+      animation: shimmer 1.8s ease-in-out infinite;
+      border-top: 2px solid #ffd700 !important;
+      border-right: 2px solid #ffd700 !important;
+      border-bottom: 2px solid #ffd700 !important;
+    }
+    .goal-star-row {
+      font-size: 0.65rem; color: #ffd700; letter-spacing: 3px; margin-top: 6px;
+    }
+
+    /* Monthly progress bar */
+    .monthly-bar-bg {
+      height: 4px; border-radius: 2px; background: #e0e0e0; overflow: hidden;
+    }
+    .monthly-bar-fill {
+      height: 100%; border-radius: 2px; background: #36A2EB;
+      transition: width 0.4s ease;
+    }
+
+    /* Goal banner */
+    .goal-banner {
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      color: #fff; border-radius: 14px; padding: 1rem 1.5rem;
+    }
+    .goal-month { font-size: 0.82rem; color: #aaa; }
+    .goal-target { font-size: 1.15rem; font-weight: 800; margin-left: 8px; color: #ffd700; }
+    .goal-names  { font-size: 0.88rem; color: #4ade80; }
+
+    /* Stats */
     .stat-value { font-size: 1.6rem; font-weight: 800; line-height: 1.1; }
     .stat-label { font-size: 0.78rem; color: #6c757d; margin-top: 2px; }
-    .table th { font-size: 0.82rem; font-weight: 600; }
-    .table td { font-size: 0.88rem; vertical-align: middle; }
     h2 { font-weight: 800; }
     h5 { font-weight: 700; }
+
+    /* Heatmap */
+    .heatmap-scroll { overflow-x: auto; padding-bottom: 8px; }
+    .heatmap-table  { border-collapse: separate; border-spacing: 2px; width: 100%; table-layout: fixed; }
+    .hm-name-col    { width: 60px; }
+    .hm-date-col    { text-align: center; vertical-align: bottom; padding: 0 0 3px; }
+    .hm-date-col span { display: block; font-size: 0.68rem; color: #6c757d; }
+    .hm-name { font-size: 0.82rem; font-weight: 600; padding: 2px 8px 2px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .hm-cell { height: 18px; border-radius: 3px; background: #e0e0e0; padding: 0; }
+    .hm-cell.ran { background: #22c55e; }
+    .hm-cell:hover { opacity: 0.75; cursor: default; }
+
+    /* Record cards */
+    .record-card {
+      background: linear-gradient(135deg, #1a1a2e, #0f3460);
+      color: #fff; border-radius: 14px; padding: 1.2rem 0.8rem;
+      text-align: center; height: 100%;
+    }
+    .record-icon  { font-size: 1.6rem; margin-bottom: 6px; }
+    .record-value { font-size: 1.7rem; font-weight: 800; line-height: 1.1; }
+    .record-label { font-size: 0.72rem; color: #94a3b8; margin-top: 4px; }
+
+    /* Achievement badge on member detail */
+    .achievement-badge {
+      background: linear-gradient(135deg, #ffd700, #ffec6e);
+      color: #1a1a2e; border-radius: 20px;
+      padding: 4px 14px; font-size: 0.88rem; font-weight: 700;
+      white-space: nowrap;
+    }
+
+    /* Tables */
+    .table th { font-size: 0.82rem; font-weight: 600; }
+    .table td  { font-size: 0.88rem; vertical-align: middle; }
+
+    /* Mobile tweaks */
+    @media (max-width: 576px) {
+      .stat-value  { font-size: 1.3rem; }
+      .record-value { font-size: 1.3rem; }
+      .goal-target { font-size: 1rem; }
+      .record-card { padding: 0.9rem 0.5rem; }
+      .record-icon  { font-size: 1.2rem; }
+      .record-label { font-size: 0.65rem; }
+    }
   </style>
 </head>
 <body>
   <nav class="navbar-custom mb-4">
     <div class="container d-flex justify-content-between align-items-center">
-      <a class="navbar-brand" href="/">&#127956; 千葉工業大学山岳部 ランニング管理</a>
+      <a class="navbar-brand" href="/">千葉工業大学山岳部 ランニング管理</a>
       {% block nav_extra %}{% endblock %}
     </div>
   </nav>

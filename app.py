@@ -7,6 +7,7 @@ import sys
 import io
 import csv
 import json
+import datetime
 import unicodedata
 from pathlib import Path
 from collections import defaultdict
@@ -19,6 +20,7 @@ app = Flask(__name__)
 
 CSV_PATH = Path(__file__).parent / 'screenshots' / 'results_all_members.csv'
 NAME_MAP_FILE = Path(__file__).parent / 'name_map.json'
+MONTHLY_GOAL_KM = 10.0
 
 COLORS = [
     '#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0',
@@ -92,28 +94,63 @@ def format_pace(secs):
     return f"{secs // 60}'{secs % 60:02d}"
 
 
+def parse_elevation(val):
+    if not val or val == '--':
+        return None
+    cleaned = val.replace('m', '').replace('M', '').replace(',', '').strip()
+    try:
+        return float(cleaned)
+    except (ValueError, TypeError):
+        return None
+
+
 def calc_stats(rows):
     buckets = defaultdict(list)
     for row in rows:
         buckets[row['投稿者']].append(row)
 
+    today = datetime.date.today()
+    this_month_start = today.replace(day=1)
+
     stats = {}
     for member, member_rows in buckets.items():
-        dists = [parse_distance(r['距離(km)']) for r in member_rows]
-        dists = [d for d in dists if d is not None]
-        paces = [parse_pace_seconds(r['平均ペース']) for r in member_rows]
-        paces = [p for p in paces if p is not None]
+        dists_valid = [d for d in (parse_distance(r['距離(km)']) for r in member_rows) if d is not None]
+        paces_valid = [p for p in (parse_pace_seconds(r['平均ペース']) for r in member_rows) if p is not None]
+        elevs_valid = [e for e in (parse_elevation(r.get('高低差', '')) for r in member_rows) if e is not None]
+
+        monthly_dist = 0.0
+        for r in member_rows:
+            try:
+                if datetime.date.fromisoformat(r['日付']) >= this_month_start:
+                    d = parse_distance(r['距離(km)'])
+                    if d:
+                        monthly_dist += d
+            except Exception:
+                pass
 
         stats[member] = {
-            'runs': len(dists),
-            'total_distance': round(sum(dists), 2),
-            'avg_distance': round(sum(dists) / len(dists), 2) if dists else 0,
-            'max_distance': max(dists) if dists else 0,
-            'best_pace': format_pace(min(paces)) if paces else '--',
+            'runs': len(dists_valid),
+            'total_distance': round(sum(dists_valid), 2),
+            'avg_distance': round(sum(dists_valid) / len(dists_valid), 2) if dists_valid else 0,
+            'max_distance': max(dists_valid) if dists_valid else 0,
+            'best_pace': format_pace(min(paces_valid)) if paces_valid else '--',
+            'max_elevation': int(max(elevs_valid)) if elevs_valid else None,
+            'total_elevation': int(sum(elevs_valid)) if elevs_valid else None,
+            'monthly_distance': round(monthly_dist, 2),
             'rows': sorted(member_rows, key=lambda r: r['日付']),
         }
 
     return dict(sorted(stats.items(), key=lambda x: x[1]['total_distance'], reverse=True))
+
+
+def calc_heatmap(rows):
+    """Returns {member: {date: distance_km}} for days with at least one run."""
+    data = defaultdict(lambda: defaultdict(float))
+    for row in rows:
+        d = parse_distance(row['距離(km)'])
+        if d:
+            data[row['投稿者']][row['日付']] += d
+    return {m: dict(dates) for m, dates in data.items()}
 
 
 @app.route('/')
@@ -127,25 +164,21 @@ def index():
     display_names = {m: get_display_name(m, name_map) for m in member_names}
     display_member_names = [display_names[m] for m in member_names]
 
-    all_dates = sorted(set(r['日付'] for r in rows))
-    ts_totals = {m: defaultdict(float) for m in member_names}
-    for row in rows:
-        d = parse_distance(row['距離(km)'])
-        if d:
-            ts_totals[row['投稿者']][row['日付']] += d
+    today = datetime.date.today()
+    month_start = today.replace(day=1)
+    if today.month == 12:
+        month_end = datetime.date(today.year + 1, 1, 1) - datetime.timedelta(days=1)
+    else:
+        month_end = datetime.date(today.year, today.month + 1, 1) - datetime.timedelta(days=1)
+    all_dates = []
+    _d = month_start
+    while _d <= month_end:
+        all_dates.append(_d.isoformat())
+        _d += datetime.timedelta(days=1)
+    heatmap_data = calc_heatmap(rows)
+    month_achieved = [m for m, s in stats.items() if s['monthly_distance'] >= MONTHLY_GOAL_KM]
 
-    ts_datasets = []
-    for i, member in enumerate(member_names):
-        color = COLORS[i % len(COLORS)]
-        ts_datasets.append({
-            'label': display_names[member],
-            'data': [round(ts_totals[member].get(date, 0), 2) or None for date in all_dates],
-            'borderColor': color,
-            'backgroundColor': color + '33',
-            'tension': 0.3,
-            'spanGaps': True,
-            'pointRadius': 4,
-        })
+    this_month_label = f"{today.year}年{today.month}月"
 
     return render_template('index.html',
         stats=stats,
@@ -155,9 +188,12 @@ def index():
         total_distances=[stats[m]['total_distance'] for m in member_names],
         run_counts=[stats[m]['runs'] for m in member_names],
         all_dates=all_dates,
-        ts_datasets=ts_datasets,
         colors=colors,
         all_rows=sorted(rows, key=lambda r: r['日付'], reverse=True),
+        heatmap_data=heatmap_data,
+        month_achieved=month_achieved,
+        monthly_goal=MONTHLY_GOAL_KM,
+        this_month_label=this_month_label,
     )
 
 
@@ -169,6 +205,11 @@ def member_detail(name):
         abort(404)
     s = stats[name]
     name_map = load_name_map()
+
+    activity_set = [r['日付'] for r in s['rows'] if parse_distance(r['距離(km)'])]
+    today = datetime.date.today()
+    monthly_achieved = s['monthly_distance'] >= MONTHLY_GOAL_KM
+
     return render_template('member.html',
         name=name,
         display_name=get_display_name(name, name_map),
@@ -176,6 +217,11 @@ def member_detail(name):
         member_rows=s['rows'],
         dates=[r['日付'] for r in s['rows']],
         distances=[parse_distance(r['距離(km)']) for r in s['rows']],
+        activity_set=activity_set,
+        monthly_achieved=monthly_achieved,
+        monthly_distance=s['monthly_distance'],
+        monthly_goal=MONTHLY_GOAL_KM,
+        today_str=today.isoformat(),
     )
 
 
