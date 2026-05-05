@@ -34,9 +34,9 @@
           {{ display_names[member] }}
         </span>
       </div>
-      <div class="stat-value text-dark">{{ s.total_distance }}<span style="font-size:0.9rem;font-weight:500"> km</span></div>
+      <div class="stat-value text-dark{% if achieved %} text-success{% endif %}">{{ s.monthly_distance }}<span style="font-size:0.9rem;font-weight:500"> km</span></div>
       <div class="mt-1" style="font-size:0.78rem; color:#6c757d;">
-        {{ s.runs }}回 &nbsp;|&nbsp; 今月 <strong style="color:{% if achieved %}#16a34a{% else %}inherit{% endif %}">{{ s.monthly_distance }}</strong> km
+        今月 &nbsp;|&nbsp; 合計 {{ s.total_distance }} km
       </div>
       {% if not achieved %}
       {% set pct = [((s.monthly_distance / monthly_goal) * 100) | int, 100] | min %}
@@ -59,7 +59,7 @@
   </div>
   <div class="col-lg-6">
     <div class="card p-4">
-      <h5 class="mb-3">走行回数</h5>
+      <h5 class="mb-3">今月の走行距離 (km)</h5>
       <canvas id="barCountChart" style="max-height: 260px;"></canvas>
     </div>
   </div>
@@ -145,7 +145,7 @@
 <script>
 const memberNames = {{ display_member_names | tojson }};
 const totalDistances = {{ total_distances | tojson }};
-const runCounts = {{ run_counts | tojson }};
+const monthlyDistances = {{ monthly_distances | tojson }};
 const colors = {{ colors | tojson }};
 
 const sharedBarOpts = {
@@ -168,12 +168,9 @@ new Chart(document.getElementById('barCountChart'), {
   type: 'bar',
   data: {
     labels: memberNames,
-    datasets: [{ label: '走行回数', data: runCounts, backgroundColor: colors, borderRadius: 4 }]
+    datasets: [{ label: '今月の走行距離 (km)', data: monthlyDistances, backgroundColor: colors, borderRadius: 4 }]
   },
-  options: {
-    ...sharedBarOpts,
-    scales: { x: { beginAtZero: true, ticks: { stepSize: 1 } } },
-  },
+  options: sharedBarOpts,
 });
 
 document.getElementById('allRecords').addEventListener('show.bs.collapse', () => {

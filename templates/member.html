@@ -23,8 +23,11 @@
 <div class="row g-3 mb-4">
   <div class="col-6 col-md-3">
     <div class="card p-3 text-center">
-      <div class="stat-value">{{ stats.total_distance }}</div>
-      <div class="stat-label">合計距離 (km)</div>
+      <div class="stat-value{% if monthly_achieved %} text-success{% endif %}">{{ monthly_distance }}</div>
+      <div class="stat-label">今月の距離 (km)</div>
+      {% if monthly_achieved %}
+      <div style="font-size:0.7rem;color:#16a34a;margin-top:2px;">目標達成</div>
+      {% endif %}
     </div>
   </div>
   <div class="col-6 col-md-3">
@@ -47,11 +50,8 @@
   </div>
   <div class="col-6 col-md-3">
     <div class="card p-3 text-center">
-      <div class="stat-value{% if monthly_achieved %} text-success{% endif %}">{{ monthly_distance }}</div>
-      <div class="stat-label">今月の距離 (km)</div>
-      {% if monthly_achieved %}
-      <div style="font-size:0.7rem;color:#16a34a;margin-top:2px;">目標達成</div>
-      {% endif %}
+      <div class="stat-value">{{ stats.total_distance }}</div>
+      <div class="stat-label">合計距離 (km)</div>
     </div>
   </div>
 </div>

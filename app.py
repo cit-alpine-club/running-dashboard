@@ -186,6 +186,7 @@ def index():
         display_names=display_names,
         display_member_names=display_member_names,
         total_distances=[stats[m]['total_distance'] for m in member_names],
+        monthly_distances=[stats[m]['monthly_distance'] for m in member_names],
         run_counts=[stats[m]['runs'] for m in member_names],
         all_dates=all_dates,
         colors=colors,
