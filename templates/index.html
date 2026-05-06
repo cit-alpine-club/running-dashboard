@@ -155,11 +155,12 @@ const sharedBarOpts = {
   maintainAspectRatio: false,
 };
 
+const distOrder = totalDistances.map((_, i) => i).sort((a, b) => totalDistances[b] - totalDistances[a]);
 new Chart(document.getElementById('barDistChart'), {
   type: 'bar',
   data: {
-    labels: memberNames,
-    datasets: [{ label: '合計距離 (km)', data: totalDistances, backgroundColor: colors, borderRadius: 4 }]
+    labels: distOrder.map(i => memberNames[i]),
+    datasets: [{ label: '合計距離 (km)', data: distOrder.map(i => totalDistances[i]), backgroundColor: distOrder.map(i => colors[i]), borderRadius: 4 }]
   },
   options: sharedBarOpts,
 });
