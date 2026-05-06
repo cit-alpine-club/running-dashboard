@@ -140,7 +140,7 @@ def calc_stats(rows):
             'rows': sorted(member_rows, key=lambda r: r['日付']),
         }
 
-    return dict(sorted(stats.items(), key=lambda x: x[1]['total_distance'], reverse=True))
+    return dict(sorted(stats.items(), key=lambda x: (x[1]['monthly_distance'], x[1]['total_distance']), reverse=True))
 
 
 def calc_heatmap(rows):
