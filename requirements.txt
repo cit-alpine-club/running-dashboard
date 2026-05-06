@@ -2,3 +2,5 @@ flask
 gunicorn
 line-bot-sdk
 python-dotenv
+pytesseract
+Pillow

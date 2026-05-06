@@ -245,11 +245,9 @@ SCREENSHOTS_DIR = BASE_DIR / 'screenshots'
 
 
 def _trigger_pipeline():
-    import subprocess
+    import subprocess, sys
     subprocess.run(
-        [str(BASE_DIR / '.venv' / 'Scripts' / 'python.exe'),
-         str(BASE_DIR / 'run_pipeline.py'),
-         '--skip-dce'],
+        [sys.executable, str(BASE_DIR / 'run_pipeline.py'), '--skip-dce'],
         cwd=str(BASE_DIR),
     )
 

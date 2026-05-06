@@ -15,6 +15,7 @@ r"""
 
 import sys
 import io
+import os
 import json
 import argparse
 import logging
@@ -26,7 +27,7 @@ if sys.stdout.encoding != 'utf-8':
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
 BASE_DIR = Path(__file__).parent
-PYTHON = str(BASE_DIR / '.venv' / 'Scripts' / 'python.exe')
+PYTHON = sys.executable
 SCREENSHOTS_DIR = str(BASE_DIR / 'screenshots')
 LOG_FILE = BASE_DIR / 'pipeline.log'
 CONFIG_FILE = BASE_DIR / 'pipeline_config.json'
@@ -123,6 +124,36 @@ def step_dce_export(config: dict) -> Path | None:
     return EXPORT_JSON if ok and EXPORT_JSON.exists() else None
 
 
+def step_git_push() -> None:
+    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M')
+    csv_rel = 'screenshots/results_all_members.csv'
+
+    github_token = os.environ.get('GITHUB_TOKEN', '')
+    if github_token:
+        subprocess.run(['git', 'config', 'user.email', 'bot@running-dashboard.com'], cwd=str(BASE_DIR))
+        subprocess.run(['git', 'config', 'user.name', 'Running Bot'], cwd=str(BASE_DIR))
+        remote = subprocess.run(
+            ['git', 'remote', 'get-url', 'origin'],
+            capture_output=True, text=True, cwd=str(BASE_DIR),
+        ).stdout.strip()
+        if 'github.com' in remote and f'{github_token}@' not in remote:
+            authed = remote.replace('https://github.com/', f'https://{github_token}@github.com/')
+            subprocess.run(['git', 'remote', 'set-url', 'origin', authed], cwd=str(BASE_DIR))
+
+    subprocess.run(['git', 'add', csv_rel], cwd=str(BASE_DIR))
+    result = subprocess.run(
+        ['git', 'commit', '-m', f'データ自動更新 {timestamp}'],
+        capture_output=True, text=True, encoding='utf-8', cwd=str(BASE_DIR),
+    )
+    if 'nothing to commit' in result.stdout + result.stderr:
+        log.info('CSV に変更なし → push スキップ')
+        return
+
+    ok = run_step('git push', ['git', 'push'])
+    if ok:
+        log.info('Render への反映完了（自動再デプロイ開始）')
+
+
 def run_pipeline(json_path: str | None = None, skip_dce: bool = False) -> None:
     log.info(f'======= パイプライン開始  {datetime.now().strftime("%Y-%m-%d %H:%M:%S")} =======')
 
@@ -156,6 +187,9 @@ def run_pipeline(json_path: str | None = None, skip_dce: bool = False) -> None:
     ])
 
     log.info(f'======= パイプライン完了  {datetime.now().strftime("%Y-%m-%d %H:%M:%S")} =======\n')
+
+    # CSV を GitHub に push → Render が自動再デプロイ
+    step_git_push()
 
 
 if __name__ == '__main__':
