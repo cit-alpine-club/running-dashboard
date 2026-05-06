@@ -5,18 +5,32 @@ Flask web application — 千葉工業大学山岳部 ランニング結果ダ�
 
 import sys
 import io
+import os
 import csv
 import json
 import datetime
+import threading
 import unicodedata
 from pathlib import Path
 from collections import defaultdict
-from flask import Flask, render_template, abort
+from dotenv import load_dotenv
+from flask import Flask, render_template, request, abort
+from linebot.v3 import WebhookHandler
+from linebot.v3.messaging import Configuration, ApiClient, MessagingApi, MessagingApiBlob
+from linebot.v3.webhooks import MessageEvent, ImageMessageContent
+from linebot.v3.exceptions import InvalidSignatureError
+
+load_dotenv()
 
 if sys.stdout.encoding != 'utf-8':
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
 app = Flask(__name__)
+
+LINE_CHANNEL_SECRET = os.environ.get('LINE_CHANNEL_SECRET', '')
+LINE_CHANNEL_ACCESS_TOKEN = os.environ.get('LINE_CHANNEL_ACCESS_TOKEN', '')
+line_handler = WebhookHandler(LINE_CHANNEL_SECRET)
+line_api_config = Configuration(access_token=LINE_CHANNEL_ACCESS_TOKEN)
 
 CSV_PATH = Path(__file__).parent / 'screenshots' / 'results_all_members.csv'
 NAME_MAP_FILE = Path(__file__).parent / 'name_map.json'
@@ -224,6 +238,50 @@ def member_detail(name):
         monthly_goal=MONTHLY_GOAL_KM,
         today_str=today.isoformat(),
     )
+
+
+BASE_DIR = Path(__file__).parent
+SCREENSHOTS_DIR = BASE_DIR / 'screenshots'
+
+
+def _trigger_pipeline():
+    import subprocess
+    subprocess.run(
+        [str(BASE_DIR / '.venv' / 'Scripts' / 'python.exe'),
+         str(BASE_DIR / 'run_pipeline.py'),
+         '--skip-dce'],
+        cwd=str(BASE_DIR),
+    )
+
+
+@app.route('/webhook/line', methods=['POST'])
+def line_webhook():
+    signature = request.headers.get('X-Line-Signature', '')
+    body = request.get_data(as_text=True)
+    try:
+        line_handler.handle(body, signature)
+    except InvalidSignatureError:
+        abort(400)
+    return 'OK', 200
+
+
+@line_handler.add(MessageEvent, message=ImageMessageContent)
+def handle_line_image(event):
+    user_id = event.source.user_id
+
+    with ApiClient(line_api_config) as api_client:
+        profile = MessagingApi(api_client).get_profile(user_id)
+        display_name = profile.display_name
+
+    with ApiClient(line_api_config) as api_client:
+        content = MessagingApiBlob(api_client).get_message_content(event.message.id)
+
+    member_dir = SCREENSHOTS_DIR / display_name
+    member_dir.mkdir(parents=True, exist_ok=True)
+    timestamp = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
+    (member_dir / f'{timestamp}.png').write_bytes(content)
+
+    threading.Thread(target=_trigger_pipeline, daemon=True).start()
 
 
 if __name__ == '__main__':
