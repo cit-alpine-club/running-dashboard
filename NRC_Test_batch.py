@@ -23,66 +23,92 @@ if platform.system() == 'Windows':
     pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 
-def extract_data_from_image(image_path: str) -> dict:
-    """
-    スクショから日付、距離、平均ペース、時間、高低差を抽出
-    
-    Args:
-        image_path: 画像ファイルのパス
-    
-    Returns:
-        辞書形式のデータ
-    """
-    try:
-        # 画像を開く
-        img = Image.open(image_path)
+def _preprocess(img, contrast: float, scale: int):
+    img2 = ImageEnhance.Contrast(img).enhance(contrast)
+    img2 = img2.convert('L')
+    img2 = img2.resize((img2.width * scale, img2.height * scale), Image.LANCZOS)
+    return img2
 
-        # 週フォルダ名（例: 2026-04-08_week）から日付を取得
+
+def _ocr_texts(img) -> list[str]:
+    """複数の前処理バリアントでOCRを実行し、全テキストのリストを返す。"""
+    texts = [pytesseract.image_to_string(img, lang='eng+jpn', config='--psm 6')]
+    for contrast, scale in [(2.0, 2), (3.0, 2), (2.0, 3)]:
+        texts.append(pytesseract.image_to_string(
+            _preprocess(img, contrast, scale), lang='eng+jpn', config='--psm 6'))
+    return texts
+
+
+def _extract_distance(img) -> float | None:
+    """上部クロップ＋複数バリアントで距離を抽出する。"""
+    w, h = img.size
+    top = img.crop((0, 0, w, int(h * 0.28)))
+
+    for candidate_img in [top, img]:
+        for text in _ocr_texts(candidate_img):
+            # 通常: 5.07  コンマ誤読: 5,07
+            m = re.search(r'\b(\d{1,3}[.,]\d{1,2})\b', text)
+            if m:
+                return float(m.group(1).replace(',', '.'))
+            # OCRがスペースを挟む: "5 07" → 5.07
+            m = re.search(r'\b(\d{1,2})\s+(\d{2})\b', text)
+            if m and 1 <= int(m.group(1)) <= 99:
+                return float(f"{m.group(1)}.{m.group(2)}")
+    return None
+
+
+def _extract_pace(texts: list[str]) -> str | None:
+    """ペース (M'SS) を複数テキストから抽出する。"""
+    # シングルクォート・ダブルクォート・バッククォート等の誤読を吸収
+    pattern = re.compile(r"(\d{1,2})\s*[''\"'`'']\s*(\d{2})")
+    for text in texts:
+        m = pattern.search(text)
+        if m:
+            return f"{m.group(1)}'{m.group(2)}"
+    return None
+
+
+def _extract_time(texts: list[str]) -> str | None:
+    for text in texts:
+        matches = re.findall(r'(\d{1,2}:\d{2}(?::\d{2})?)', text)
+        if matches:
+            return matches[-1]
+    return None
+
+
+def _extract_elevation(texts: list[str]) -> str | None:
+    for text in texts:
+        m = re.search(r'(\d+)\s*m', text, re.IGNORECASE)
+        if m:
+            return m.group(1) + ' m'
+    return None
+
+
+def extract_data_from_image(image_path: str) -> dict:
+    try:
+        img = Image.open(image_path)
         file_path = Path(image_path)
+
         week_folder_name = file_path.parent.name
         date_match = re.match(r'(\d{4}-\d{2}-\d{2})', week_folder_name)
-        if date_match:
-            date_str = date_match.group(1)
-        else:
-            date_str = datetime.fromtimestamp(file_path.stat().st_mtime).strftime('%Y-%m-%d')
-        
-        # まず前処理なしでOCR
-        text = pytesseract.image_to_string(img, lang='eng+jpn')
-        match_distance = re.search(r'(\d+\.\d+)', text)
-        
-        if not match_distance:
-            # 前処理ありで再試行
-            enhancer = ImageEnhance.Contrast(img)
-            img_processed = enhancer.enhance(2.0)
-            img_processed = img_processed.convert('L')
-            img_processed = img_processed.resize((img_processed.width * 2, img_processed.height * 2), Image.LANCZOS)
-            text = pytesseract.image_to_string(img_processed, lang='eng+jpn')
-            match_distance = re.search(r'(\d+\.\d+)', text)
-        
-        distance = float(match_distance.group(1)) if match_distance else None
-        
-        # ペース: M'SS 形式で抽出（末尾の " は除去して正規化）
-        # OCRは '（アポストロフィ）を "（ダブルクォート）や '（右シングルクォート）と誤読することがある
-        match_pace = re.search(r"(\d+)['’\"](\d{2})[\"']*", text)
-        pace = f"{match_pace.group(1)}'{match_pace.group(2)}" if match_pace else None
-        
-        # 時間: : を含むパターン (最後のものを時間とする)
-        matches_time = re.findall(r'(\d+:\d+(?::\d+)?)', text)
-        time_str = matches_time[-1] if matches_time else None
-        
-        # 高低差: 'm' のパターン
-        match_elevation = re.search(r'(\d+)\s*m', text, re.IGNORECASE)
-        elevation = match_elevation.group(1) + ' m' if match_elevation else None
-        
+        date_str = date_match.group(1) if date_match else \
+            datetime.fromtimestamp(file_path.stat().st_mtime).strftime('%Y-%m-%d')
+
+        texts = _ocr_texts(img)
+        distance = _extract_distance(img)
+        pace = _extract_pace(texts)
+        time_str = _extract_time(texts)
+        elevation = _extract_elevation(texts)
+
         return {
             'date': date_str,
             'filename': file_path.name,
             'distance': distance,
             'pace': pace,
             'time': time_str,
-            'elevation': elevation
+            'elevation': elevation,
         }
-    
+
     except Exception as e:
         print(f"  エラー ({Path(image_path).name}): {e}")
         return {
@@ -91,7 +117,7 @@ def extract_data_from_image(image_path: str) -> dict:
             'distance': None,
             'pace': None,
             'time': None,
-            'elevation': None
+            'elevation': None,
         }
 
 
