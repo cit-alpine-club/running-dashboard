@@ -54,13 +54,13 @@
   <div class="col-lg-6">
     <div class="card p-4">
       <h5 class="mb-3">合計走行距離 (km)</h5>
-      <canvas id="barDistChart" style="max-height: 260px;"></canvas>
+      <canvas id="barDistChart"></canvas>
     </div>
   </div>
   <div class="col-lg-6">
     <div class="card p-4">
       <h5 class="mb-3">今月の走行距離 (km)</h5>
-      <canvas id="barCountChart" style="max-height: 260px;"></canvas>
+      <canvas id="barCountChart"></canvas>
     </div>
   </div>
 </div>
@@ -154,6 +154,10 @@ const sharedBarOpts = {
   scales: { x: { beginAtZero: true } },
   maintainAspectRatio: false,
 };
+
+const barHeight = Math.max(260, memberNames.length * 36);
+document.getElementById('barDistChart').style.height = barHeight + 'px';
+document.getElementById('barCountChart').style.height = barHeight + 'px';
 
 const distOrder = totalDistances.map((_, i) => i).sort((a, b) => totalDistances[b] - totalDistances[a]);
 new Chart(document.getElementById('barDistChart'), {

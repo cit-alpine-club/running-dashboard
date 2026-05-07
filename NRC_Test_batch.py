@@ -229,6 +229,8 @@ def process_all_screenshots(screenshots_dir: str) -> None:
     for member_folder in member_folders:
         process_member_folder(member_folder)
         summary_path = member_folder / 'results_summary.csv'
+        if not summary_path.exists():
+            summary_path = member_folder / 'results.csv'
         if summary_path.exists():
             with open(summary_path, 'r', newline='', encoding='utf-8-sig') as f:
                 reader = csv.DictReader(f)
