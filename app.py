@@ -6,6 +6,7 @@ Flask web application — 千葉工業大学山岳部 ランニング結果ダ�
 import sys
 import io
 import os
+import re
 import csv
 import json
 import datetime
@@ -244,6 +245,17 @@ BASE_DIR = Path(__file__).parent
 SCREENSHOTS_DIR = BASE_DIR / 'screenshots'
 
 
+def _safe_member_dir(display_name: str) -> Path:
+    safe = re.sub(r'[\\/:*?"<>|]', '_', display_name)
+    safe = re.sub(r'\.\.+', '_', safe).strip('. ')
+    if not safe:
+        safe = 'unknown'
+    resolved = (SCREENSHOTS_DIR / safe).resolve()
+    if not str(resolved).startswith(str(SCREENSHOTS_DIR.resolve())):
+        raise ValueError(f'Invalid display_name: {display_name}')
+    return resolved
+
+
 def _trigger_pipeline():
     import subprocess, sys
     subprocess.run(
@@ -274,7 +286,7 @@ def handle_line_image(event):
     with ApiClient(line_api_config) as api_client:
         content = MessagingApiBlob(api_client).get_message_content(event.message.id)
 
-    member_dir = SCREENSHOTS_DIR / display_name
+    member_dir = _safe_member_dir(display_name)
     member_dir.mkdir(parents=True, exist_ok=True)
     timestamp = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
     (member_dir / f'{timestamp}.png').write_bytes(content)
@@ -283,4 +295,4 @@ def handle_line_image(event):
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=False, host='127.0.0.1', port=5000)
