@@ -42,7 +42,7 @@ def _ocr_texts(img) -> list[str]:
 def _extract_distance(img) -> float | None:
     """上部クロップ＋複数バリアントで距離を抽出する。"""
     w, h = img.size
-    top = img.crop((0, 0, w, int(h * 0.28)))
+    top = img.crop((0, 0, w, int(h * 0.50)))
 
     for candidate_img in [top, img]:
         for text in _ocr_texts(candidate_img):
