@@ -140,6 +140,9 @@ def process_week_folder(week_folder: Path) -> list:
     results = []
     for image_path in image_files:
         data = extract_data_from_image(str(image_path))
+        if data['distance'] is None and data['pace'] is None and data['time'] is None:
+            print(f"  スキップ (NRC画像でない): {image_path.name}")
+            continue
         results.append(data)
     
     return results
