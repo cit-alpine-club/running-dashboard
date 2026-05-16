@@ -20,6 +20,7 @@ import json
 import argparse
 import logging
 import subprocess
+import time
 from pathlib import Path
 from datetime import datetime, timedelta
 
@@ -63,27 +64,31 @@ def find_latest_json() -> Path | None:
     return jsons[0] if jsons else None
 
 
-def run_step(label: str, cmd: list[str]) -> bool:
+def run_step(label: str, cmd: list[str], retries: int = 0) -> bool:
     log.info(f'--- {label} 開始 ---')
-    result = subprocess.run(
-        cmd,
-        capture_output=True,
-        text=True,
-        encoding='utf-8',
-        errors='replace',
-        cwd=str(BASE_DIR),
-    )
-    for line in result.stdout.splitlines():
-        if line.strip():
-            log.info(f'  {line}')
-    for line in result.stderr.splitlines():
-        if line.strip():
-            log.warning(f'  {line}')
-    if result.returncode != 0:
+    for attempt in range(retries + 1):
+        if attempt > 0:
+            log.warning(f'{label} リトライ {attempt}/{retries}')
+            time.sleep(5)
+        result = subprocess.run(
+            cmd,
+            capture_output=True,
+            text=True,
+            encoding='utf-8',
+            errors='replace',
+            cwd=str(BASE_DIR),
+        )
+        for line in result.stdout.splitlines():
+            if line.strip():
+                log.info(f'  {line}')
+        for line in result.stderr.splitlines():
+            if line.strip():
+                log.warning(f'  {line}')
+        if result.returncode == 0:
+            log.info(f'{label} 完了')
+            return True
         log.error(f'{label} 失敗 (code {result.returncode})')
-        return False
-    log.info(f'{label} 完了')
-    return True
+    return False
 
 
 def step_dce_export(config: dict) -> Path | None:
@@ -184,7 +189,7 @@ def run_pipeline(json_path: str | None = None, skip_dce: bool = False) -> None:
         PYTHON,
         str(BASE_DIR / 'NRC_Test_batch.py'),
         SCREENSHOTS_DIR,
-    ])
+    ], retries=2)
 
     log.info(f'======= パイプライン完了  {datetime.now().strftime("%Y-%m-%d %H:%M:%S")} =======\n')
 
