@@ -1,0 +1,69 @@
+name: ランニングダッシュボード 自動更新
+
+on:
+  schedule:
+    - cron: '0 17 * * *'  # 毎日 02:00 JST (UTC 17:00)
+  workflow_dispatch:        # 手動実行ボタン
+
+permissions:
+  contents: write
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Tesseract
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y tesseract-ocr tesseract-ocr-jpn
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Restore screenshots cache
+        uses: actions/cache@v4
+        with:
+          path: screenshots_backup
+          key: screenshots-backup-${{ github.run_id }}
+          restore-keys: |
+            screenshots-backup-
+
+      - name: Download DCE CLI
+        run: |
+          mkdir -p tools
+          wget -q https://github.com/Tyrrrz/DiscordChatExporter/releases/latest/download/DiscordChatExporter.Cli.linux-x64.zip
+          unzip -q DiscordChatExporter.Cli.linux-x64.zip -d tools/
+          chmod +x tools/DiscordChatExporter.Cli
+
+      - name: Create pipeline config
+        env:
+          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+          DISCORD_CHANNEL_ID: ${{ secrets.DISCORD_CHANNEL_ID }}
+        run: |
+          python - <<'EOF'
+          import json, os
+          config = {
+              "dce_cli_path": "tools/DiscordChatExporter.Cli",
+              "discord_token": os.environ["DISCORD_TOKEN"],
+              "channel_id": os.environ["DISCORD_CHANNEL_ID"],
+          }
+          with open("pipeline_config.json", "w") as f:
+              json.dump(config, f)
+          print("pipeline_config.json を生成しました")
+          EOF
+
+      - name: Run pipeline
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python run_pipeline.py
