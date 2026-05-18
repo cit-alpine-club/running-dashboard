@@ -146,7 +146,7 @@ def step_git_push() -> None:
             authed = remote.replace('https://github.com/', f'https://{github_token}@github.com/')
             subprocess.run(['git', 'remote', 'set-url', 'origin', authed], cwd=str(BASE_DIR))
 
-    subprocess.run(['git', 'add', csv_rel], cwd=str(BASE_DIR))
+    subprocess.run(['git', 'add', csv_rel, 'screenshots/'], cwd=str(BASE_DIR))
     result = subprocess.run(
         ['git', 'commit', '-m', f'データ自動更新 {timestamp}'],
         capture_output=True, text=True, encoding='utf-8', cwd=str(BASE_DIR),
