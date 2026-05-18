@@ -117,6 +117,7 @@ def step_dce_export(config: dict) -> Path | None:
     ok = run_step('Discord Chat Exporter CLI', [
         str(dce_path), 'export',
         '--token', token,
+        '--bot',
         '--channel', channel,
         '--format', 'Json',
         '--output', str(EXPORT_JSON),
