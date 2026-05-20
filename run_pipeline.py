@@ -117,7 +117,6 @@ def step_dce_export(config: dict) -> Path | None:
     ok = run_step('Discord Chat Exporter CLI', [
         str(dce_path), 'export',
         '--token', token,
-        '--bot',
         '--channel', channel,
         '--format', 'Json',
         '--output', str(EXPORT_JSON),
@@ -155,6 +154,7 @@ def step_git_push() -> None:
         log.info('CSV に変更なし → push スキップ')
         return
 
+    run_step('git pull --rebase', ['git', 'pull', '--rebase'])
     ok = run_step('git push', ['git', 'push'])
     if ok:
         log.info('Render への反映完了（自動再デプロイ開始）')
