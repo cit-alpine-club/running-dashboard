@@ -124,27 +124,48 @@ def extract_data_from_image(image_path: str) -> dict:
 def process_week_folder(week_folder: Path) -> list:
     """
     週ごとのフォルダ内の画像を処理
-    
+
     Args:
         week_folder: 週フォルダのパス
-    
+
     Returns:
         処理結果のリスト
     """
     # PNG と JPG ファイルを全て取得
     image_files = sorted(list(week_folder.glob('*.png')) + list(week_folder.glob('*.jpg')))
-    
+
     if not image_files:
         return []
-    
-    results = []
+
+    # 既存の results.csv から処理済みファイル名を読み込み（再OCRをスキップ）
+    output_csv = week_folder / 'results.csv'
+    processed_names = set()
+    existing_rows = []
+    if output_csv.exists():
+        with open(output_csv, 'r', newline='', encoding='utf-8-sig') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                fname = row.get('ファイル名', '')
+                processed_names.add(fname)
+                existing_rows.append({
+                    'date': row.get('日付', ''),
+                    'filename': fname,
+                    'distance': None if row.get('距離(km)') == '--' else row.get('距離(km)'),
+                    'pace': None if row.get('平均ペース') == '--' else row.get('平均ペース'),
+                    'time': None if row.get('時間') == '--' else row.get('時間'),
+                    'elevation': None if row.get('高低差') == '--' else row.get('高低差'),
+                })
+
+    results = list(existing_rows)
     for image_path in image_files:
+        if image_path.name in processed_names:
+            continue  # 既処理済み → OCRスキップ
         data = extract_data_from_image(str(image_path))
         if data['distance'] is None and data['pace'] is None and data['time'] is None:
             print(f"  スキップ (NRC画像でない): {image_path.name}")
             continue
         results.append(data)
-    
+
     return results
 
 
