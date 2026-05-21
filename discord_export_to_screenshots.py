@@ -14,7 +14,9 @@ import json
 import shutil
 import sys
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
+
+_JST = timezone(timedelta(hours=9))
 
 if sys.stdout.encoding != 'utf-8':
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
@@ -37,7 +39,7 @@ def parse_timestamp(timestamp: str) -> str:
     """ISO形式のタイムスタンプから日付文字列を生成する。"""
     try:
         dt = datetime.fromisoformat(timestamp.replace('Z', '+00:00'))
-        return dt.strftime('%Y-%m-%d')
+        return dt.astimezone(_JST).strftime('%Y-%m-%d')
     except Exception:
         try:
             dt = datetime.strptime(timestamp, '%Y-%m-%d %H:%M:%S')
@@ -89,6 +91,8 @@ def process_export(export_json: Path, output_root: Path) -> None:
 
     copied = 0
     missing = 0
+    # メンバーごとに既存ファイル名を追跡（同一ファイルの重複コピーを防ぐ）
+    seen_per_author: dict[str, set[str]] = {}
 
     # Discord Chat Exporter JSONがメッセージの配列を含む想定
     messages = data.get('messages') or data.get('items') or data
@@ -110,6 +114,14 @@ def process_export(export_json: Path, output_root: Path) -> None:
             author_name = 'unknown'
 
         author_folder = sanitize_folder_name(str(author_name))
+
+        # このメンバーの既存ファイル名セットを初期化（ディスク上のファイルも含む）
+        if author_folder not in seen_per_author:
+            author_root = output_root / author_folder
+            seen_per_author[author_folder] = {
+                p.name for p in author_root.rglob('*') if p.is_file()
+            } if author_root.exists() else set()
+
         timestamp = message.get('timestamp') or message.get('createdAt') or message.get('created_at') or ''
         date_str = parse_timestamp(timestamp) if timestamp else datetime.now().strftime('%Y-%m-%d')
         week_folder_name = f'{date_str}_week'
@@ -132,6 +144,10 @@ def process_export(export_json: Path, output_root: Path) -> None:
             if not filename:
                 continue
 
+            # 同じメンバーの別フォルダに既に存在する場合はスキップ（重複防止）
+            if filename in seen_per_author[author_folder]:
+                continue
+
             source_file = find_attachment_file(base_dir, filename)
             if not source_file:
                 print(f'⚠️  添付ファイルが見つかりません: {filename}')
@@ -140,6 +156,7 @@ def process_export(export_json: Path, output_root: Path) -> None:
 
             dest_file = dest_folder / filename
             shutil.copy2(source_file, dest_file)
+            seen_per_author[author_folder].add(filename)
             copied += 1
             print(f'コピー: {source_file} -> {dest_file}')
 

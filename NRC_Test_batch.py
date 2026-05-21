@@ -237,13 +237,19 @@ def aggregate_member_csv(member_folder: Path) -> None:
     各メンバーの週別CSVをまとめて、メンバー別集計CSVを生成する。
     """
     summary_rows = []
+    seen_filenames: set[str] = set()
     for week_folder in sorted([f for f in member_folder.iterdir() if f.is_dir()]):
         csv_path = week_folder / 'results.csv'
         if not csv_path.exists():
             continue
         with open(csv_path, 'r', newline='', encoding='utf-8-sig') as f:
             reader = csv.DictReader(f)
-            summary_rows.extend(list(reader))
+            for row in reader:
+                fname = row.get('ファイル名', '')
+                if fname and fname in seen_filenames:
+                    continue
+                seen_filenames.add(fname)
+                summary_rows.append(row)
 
     if not summary_rows:
         return
