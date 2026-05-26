@@ -161,6 +161,10 @@ def process_export(export_json: Path, output_root: Path) -> None:
             print(f'コピー: {source_file} -> {dest_file}')
 
     print(f'\n完了: {copied} 件コピー、{missing} 件見つからず')
+    if missing > 0:
+        print(f'⚠️  WARNING: {missing} 件の添付ファイルが見つかりませんでした。')
+        print('   考えられる原因: Discord CDN の URL 期限切れ、または DCE の --media オプションが未指定。')
+        print('   対処: pipeline_config.json に export_after を指定して再実行するか、手動で screenshots/ に配置してください。')
 
 
 if __name__ == '__main__':

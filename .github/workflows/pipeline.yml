@@ -67,3 +67,61 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python run_pipeline.py
+
+      - name: Export summary
+        if: always()
+        run: |
+          python - <<'EOF'
+          import json, os
+          from pathlib import Path
+
+          summary_lines = []
+
+          # discord_export.json の状態を確認
+          export_json = Path("discord_export.json")
+          if export_json.exists():
+              try:
+                  data = json.loads(export_json.read_text(encoding="utf-8"))
+                  msgs = data.get("messages") or data.get("items") or []
+                  timestamps = sorted(
+                      [m["timestamp"][:10] for m in msgs if "timestamp" in m]
+                  )
+                  oldest = timestamps[0] if timestamps else "N/A"
+                  newest = timestamps[-1] if timestamps else "N/A"
+                  with_attachments = sum(1 for m in msgs if m.get("attachments"))
+                  summary_lines += [
+                      f"### Discord エクスポート結果",
+                      f"- メッセージ総数: **{len(msgs)}** 件",
+                      f"- 添付ファイル付き: **{with_attachments}** 件",
+                      f"- 期間: {oldest} ～ {newest}",
+                  ]
+              except Exception as e:
+                  summary_lines.append(f"- discord_export.json 読み込みエラー: {e}")
+          else:
+              summary_lines.append("- ⚠️ discord_export.json が存在しません（DCE失敗の可能性）")
+
+          # results_all_members.csv の状態を確認
+          csv_path = Path("screenshots/results_all_members.csv")
+          if csv_path.exists():
+              import csv as csv_mod
+              with open(csv_path, encoding="utf-8-sig") as f:
+                  rows = list(csv_mod.DictReader(f))
+              dates = sorted(set(r["日付"] for r in rows if r.get("日付")))
+              members = sorted(set(r["投稿者"] for r in rows if r.get("投稿者")))
+              summary_lines += [
+                  f"",
+                  f"### CSV 集計結果",
+                  f"- 総レコード数: **{len(rows)}** 件",
+                  f"- メンバー数: **{len(members)}** 人",
+                  f"- 最新日付: **{dates[-1] if dates else 'N/A'}**",
+              ]
+
+          output = "\n".join(summary_lines)
+          print(output)
+
+          # GitHub Actions Job Summary に書き出し
+          summary_file = os.environ.get("GITHUB_STEP_SUMMARY", "")
+          if summary_file:
+              with open(summary_file, "a", encoding="utf-8") as f:
+                  f.write(output + "\n")
+          EOF

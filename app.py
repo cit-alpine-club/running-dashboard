@@ -152,7 +152,7 @@ def calc_stats(rows):
             'max_elevation': int(max(elevs_valid)) if elevs_valid else None,
             'total_elevation': int(sum(elevs_valid)) if elevs_valid else None,
             'monthly_distance': round(monthly_dist, 2),
-            'rows': sorted(member_rows, key=lambda r: r['日付']),
+            'rows': sorted(member_rows, key=lambda r: r['日付'], reverse=True),
         }
 
     return dict(sorted(stats.items(), key=lambda x: (x[1]['monthly_distance'], x[1]['total_distance']), reverse=True))
