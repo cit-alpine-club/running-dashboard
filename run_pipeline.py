@@ -155,7 +155,7 @@ def step_git_push() -> None:
         log.info('CSV に変更なし → push スキップ')
         return
 
-    run_step('git pull --rebase', ['git', 'pull', '--rebase'])
+    run_step('git pull --rebase', ['git', 'pull', '--rebase', '--autostash'])
     ok = run_step('git push', ['git', 'push'])
     if ok:
         log.info('Render への反映完了（自動再デプロイ開始）')
