@@ -13,10 +13,10 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-02-25T00:00:00+00:00",
+    "after": "2026-02-26T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-05-26T19:13:30.2015738+00:00",
+  "exportedAt": "2026-05-27T19:14:14.7388353+00:00",
   "messages": [
     {
       "id": "1476917892309323838",
@@ -10806,7 +10806,39 @@
       ],
       "mentions": [],
       "inlineEmojis": []
+    },
+    {
+      "id": "1509135358271422584",
+      "type": "Default",
+      "timestamp": "2026-05-27T10:05:07.791+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "歩荷 27kg 5往復",
+      "author": {
+        "id": "1395336421362892882",
+        "name": "torippy103_08468",
+        "discriminator": "0000",
+        "nickname": "工藤扇梨",
+        "color": "#CACACA",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351763592675983431",
+            "name": "2年生",
+            "color": "#CACACA",
+            "position": 6
+          }
+        ],
+        "avatarUrl": "screenshots_backup/6c04680268fed3d6be3ce024d1e4280b-e383e4ac5d9d4ef2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
     }
   ],
-  "messageCount": 203
+  "messageCount": 204
 }
