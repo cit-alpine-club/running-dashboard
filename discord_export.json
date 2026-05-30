@@ -13,715 +13,11 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-02-28T00:00:00+00:00",
+    "after": "2026-03-01T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-05-29T19:26:51.2988307+00:00",
+  "exportedAt": "2026-05-30T17:56:50.7797468+00:00",
   "messages": [
-    {
-      "id": "1477132363032170516",
-      "type": "Default",
-      "timestamp": "2026-02-28T02:36:39.139+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "・トレーニングは実際に体力レベルが部の山行に追いついているのであればやらなくても問題はないと思う。\n・セメスターの終わりにポイント分の部費徴収とかにすれば、ただ徴収する金額を人ごとに分けてるように見えて罰金感は無くなると思う。運営の規約があってそれを違反するなら降格処分になると思うけど、徴収の仕方は今のところ部に委ねられてるんじゃないかな。あとポイント制のペナルティが金以外のものでも全然問題は無い。",
-      "author": {
-        "id": "633179440754720798",
-        "name": "hayato_0417",
-        "discriminator": "0000",
-        "nickname": "都賀勇人",
-        "color": "#3498DB",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004369071275515974",
-            "name": "会計",
-            "color": "#3498DB",
-            "position": 13
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
-    {
-      "id": "1477132565574975579",
-      "type": "Reply",
-      "timestamp": "2026-02-28T02:37:27.429+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "・山行参加の可否を決めるのは部員自身のやる気と体力や技術であって、ポイント制のペナルティは、金なり、追加でトレーニングさせるなり、仕事押し付けるなり、色々やり方はあると思う。\n・ポイントは制度によってつけられるものであって、制度は2,3年生が考えるものかな。",
-      "author": {
-        "id": "633179440754720798",
-        "name": "hayato_0417",
-        "discriminator": "0000",
-        "nickname": "都賀勇人",
-        "color": "#3498DB",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004369071275515974",
-            "name": "会計",
-            "color": "#3498DB",
-            "position": 13
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [
-        {
-          "id": "842664150584131635",
-          "name": "nasuo_eggplant",
-          "discriminator": "0000",
-          "nickname": "柴﨑直",
-          "color": "#F1C40F",
-          "isBot": false,
-          "roles": [
-            {
-              "id": "1004362548562382920",
-              "name": "主将",
-              "color": "#F1C40F",
-              "position": 16
-            },
-            {
-              "id": "1351764272119549962",
-              "name": "3年生",
-              "color": "#FF00B5",
-              "position": 7
-            }
-          ],
-          "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
-        }
-      ],
-      "reference": {
-        "type": "Default",
-        "messageId": "1476989665461665988",
-        "channelId": "1351771478999306251",
-        "guildId": "1004340473122529371"
-      },
-      "inlineEmojis": []
-    },
-    {
-      "id": "1477133471653826663",
-      "type": "Default",
-      "timestamp": "2026-02-28T02:41:03.455+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "正直ポイント制を導入したいわけではそこまで無いけど、今の部会遅刻率とかには確実に問題があるから、その辺をなんとかしたいよね",
-      "author": {
-        "id": "633179440754720798",
-        "name": "hayato_0417",
-        "discriminator": "0000",
-        "nickname": "都賀勇人",
-        "color": "#3498DB",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004369071275515974",
-            "name": "会計",
-            "color": "#3498DB",
-            "position": 13
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
-    {
-      "id": "1477133633235058699",
-      "type": "Default",
-      "timestamp": "2026-02-28T02:41:41.979+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "時間を守る意識をもっと持ってもらいたい",
-      "author": {
-        "id": "633179440754720798",
-        "name": "hayato_0417",
-        "discriminator": "0000",
-        "nickname": "都賀勇人",
-        "color": "#3498DB",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004369071275515974",
-            "name": "会計",
-            "color": "#3498DB",
-            "position": 13
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
-    {
-      "id": "1477135294171189401",
-      "type": "Default",
-      "timestamp": "2026-02-28T02:48:17.977+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "トレーニング毎週って言って記録も取ることにしたけど徹底されてないからまずはそこからなんじゃないか?\n週1のトレーニングへの参加率出して、80パーセント出席をひとつ山行参加の指標にするとかならやりやすいか",
-      "author": {
-        "id": "842664150584131635",
-        "name": "nasuo_eggplant",
-        "discriminator": "0000",
-        "nickname": "柴﨑直",
-        "color": "#F1C40F",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004362548562382920",
-            "name": "主将",
-            "color": "#F1C40F",
-            "position": 16
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
-    {
-      "id": "1477135798418800651",
-      "type": "Default",
-      "timestamp": "2026-02-28T02:50:18.199+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "部会は1年に関してはやる事がないのは来る気を削いでそうだよね。\n来ても聞くだけで、後で議事録も出るから。\n毎度なんかしら出来ること(やらなきゃいけないこと)があるのはいいかもしれない。",
-      "author": {
-        "id": "842664150584131635",
-        "name": "nasuo_eggplant",
-        "discriminator": "0000",
-        "nickname": "柴﨑直",
-        "color": "#F1C40F",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004362548562382920",
-            "name": "主将",
-            "color": "#F1C40F",
-            "position": 16
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
-    {
-      "id": "1477136597089783898",
-      "type": "Default",
-      "timestamp": "2026-02-28T02:53:28.617+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "思いつかないけど",
-      "author": {
-        "id": "842664150584131635",
-        "name": "nasuo_eggplant",
-        "discriminator": "0000",
-        "nickname": "柴﨑直",
-        "color": "#F1C40F",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004362548562382920",
-            "name": "主将",
-            "color": "#F1C40F",
-            "position": 16
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
-    {
-      "id": "1477140862327722025",
-      "type": "Default",
-      "timestamp": "2026-02-28T03:10:25.529+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "https://discord.com/channels/1004340473122529371/1477140679434960919/1477140679434960919",
-      "author": {
-        "id": "633179440754720798",
-        "name": "hayato_0417",
-        "discriminator": "0000",
-        "nickname": "都賀勇人",
-        "color": "#3498DB",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004369071275515974",
-            "name": "会計",
-            "color": "#3498DB",
-            "position": 13
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
-    {
-      "id": "1477140895596937457",
-      "type": "Default",
-      "timestamp": "2026-02-28T03:10:33.461+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "こっちで話すか",
-      "author": {
-        "id": "633179440754720798",
-        "name": "hayato_0417",
-        "discriminator": "0000",
-        "nickname": "都賀勇人",
-        "color": "#3498DB",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004369071275515974",
-            "name": "会計",
-            "color": "#3498DB",
-            "position": 13
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [
-        {
-          "emoji": {
-            "id": "1110075967730372649",
-            "name": "emoji_16",
-            "code": "emoji_16",
-            "isAnimated": false,
-            "imageUrl": "screenshots_backup/1110075967730372649-2178363a71c7845c.png"
-          },
-          "count": 1,
-          "users": [
-            {
-              "id": "842664150584131635",
-              "name": "nasuo_eggplant",
-              "discriminator": "0000",
-              "nickname": "柴﨑直",
-              "color": "#F1C40F",
-              "isBot": false,
-              "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
-            }
-          ]
-        }
-      ],
-      "mentions": [],
-      "inlineEmojis": []
-    },
-    {
-      "id": "1477161207298392185",
-      "type": "Reply",
-      "timestamp": "2026-02-28T04:31:16.148+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "正直今決めてある来年の年間計画だったら毎週トレーニングする必要があるのか疑問",
-      "author": {
-        "id": "633179440754720798",
-        "name": "hayato_0417",
-        "discriminator": "0000",
-        "nickname": "都賀勇人",
-        "color": "#3498DB",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004369071275515974",
-            "name": "会計",
-            "color": "#3498DB",
-            "position": 13
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [
-        {
-          "id": "842664150584131635",
-          "name": "nasuo_eggplant",
-          "discriminator": "0000",
-          "nickname": "柴﨑直",
-          "color": "#F1C40F",
-          "isBot": false,
-          "roles": [
-            {
-              "id": "1004362548562382920",
-              "name": "主将",
-              "color": "#F1C40F",
-              "position": 16
-            },
-            {
-              "id": "1351764272119549962",
-              "name": "3年生",
-              "color": "#FF00B5",
-              "position": 7
-            }
-          ],
-          "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
-        }
-      ],
-      "reference": {
-        "type": "Default",
-        "messageId": "1477135294171189401",
-        "channelId": "1351771478999306251",
-        "guildId": "1004340473122529371"
-      },
-      "inlineEmojis": []
-    },
-    {
-      "id": "1477161463939465321",
-      "type": "Default",
-      "timestamp": "2026-02-28T04:32:17.336+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "山行計画のレベルをもうちょっと上げてトレーニング毎週するくらいがいい気はする",
-      "author": {
-        "id": "633179440754720798",
-        "name": "hayato_0417",
-        "discriminator": "0000",
-        "nickname": "都賀勇人",
-        "color": "#3498DB",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004369071275515974",
-            "name": "会計",
-            "color": "#3498DB",
-            "position": 13
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
-    {
-      "id": "1477169160193572884",
-      "type": "Reply",
-      "timestamp": "2026-02-28T05:02:52.266+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "それは山行計画の訂正案を作って出してくれ\n登山研を経たなら",
-      "author": {
-        "id": "842664150584131635",
-        "name": "nasuo_eggplant",
-        "discriminator": "0000",
-        "nickname": "柴﨑直",
-        "color": "#F1C40F",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004362548562382920",
-            "name": "主将",
-            "color": "#F1C40F",
-            "position": 16
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [
-        {
-          "id": "633179440754720798",
-          "name": "hayato_0417",
-          "discriminator": "0000",
-          "nickname": "都賀勇人",
-          "color": "#3498DB",
-          "isBot": false,
-          "roles": [
-            {
-              "id": "1004369071275515974",
-              "name": "会計",
-              "color": "#3498DB",
-              "position": 13
-            },
-            {
-              "id": "1351764272119549962",
-              "name": "3年生",
-              "color": "#FF00B5",
-              "position": 7
-            }
-          ],
-          "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
-        }
-      ],
-      "reference": {
-        "type": "Default",
-        "messageId": "1477161463939465321",
-        "channelId": "1351771478999306251",
-        "guildId": "1004340473122529371"
-      },
-      "inlineEmojis": []
-    },
-    {
-      "id": "1477169275268628640",
-      "type": "Default",
-      "timestamp": "2026-02-28T05:03:19.702+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "元々今のやつはもっと都賀から反発出ると思って作ったしな",
-      "author": {
-        "id": "842664150584131635",
-        "name": "nasuo_eggplant",
-        "discriminator": "0000",
-        "nickname": "柴﨑直",
-        "color": "#F1C40F",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004362548562382920",
-            "name": "主将",
-            "color": "#F1C40F",
-            "position": 16
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [
-        {
-          "emoji": {
-            "id": "",
-            "name": "⁉️",
-            "code": "interrobang",
-            "isAnimated": false,
-            "imageUrl": "screenshots_backup/2049-c69c51e4e66275eb.svg"
-          },
-          "count": 1,
-          "users": [
-            {
-              "id": "633179440754720798",
-              "name": "hayato_0417",
-              "discriminator": "0000",
-              "nickname": "都賀勇人",
-              "color": "#3498DB",
-              "isBot": false,
-              "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
-            }
-          ]
-        }
-      ],
-      "mentions": [],
-      "inlineEmojis": []
-    },
-    {
-      "id": "1477172341438943303",
-      "type": "Default",
-      "timestamp": "2026-02-28T05:15:30.734+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "一旦剱は上高地まで縦走したいか",
-      "author": {
-        "id": "633179440754720798",
-        "name": "hayato_0417",
-        "discriminator": "0000",
-        "nickname": "都賀勇人",
-        "color": "#3498DB",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004369071275515974",
-            "name": "会計",
-            "color": "#3498DB",
-            "position": 13
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
-    {
-      "id": "1477172581982404769",
-      "type": "Default",
-      "timestamp": "2026-02-28T05:16:28.084+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "それやるんなら日数も伸びるし歩荷トレやんなきゃね",
-      "author": {
-        "id": "842664150584131635",
-        "name": "nasuo_eggplant",
-        "discriminator": "0000",
-        "nickname": "柴﨑直",
-        "color": "#F1C40F",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004362548562382920",
-            "name": "主将",
-            "color": "#F1C40F",
-            "position": 16
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
     {
       "id": "1478194900733394955",
       "type": "Default",
@@ -781,8 +77,8 @@
               "id": "842664150584131635",
               "name": "nasuo_eggplant",
               "discriminator": "0000",
-              "nickname": "柴﨑直",
-              "color": "#F1C40F",
+              "nickname": "なすお",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
             },
@@ -1036,8 +332,8 @@
               "id": "842664150584131635",
               "name": "nasuo_eggplant",
               "discriminator": "0000",
-              "nickname": "柴﨑直",
-              "color": "#F1C40F",
+              "nickname": "なすお",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
             },
@@ -1066,8 +362,8 @@
               "id": "842664150584131635",
               "name": "nasuo_eggplant",
               "discriminator": "0000",
-              "nickname": "柴﨑直",
-              "color": "#F1C40F",
+              "nickname": "なすお",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
             }
@@ -1325,8 +621,8 @@
               "id": "842664150584131635",
               "name": "nasuo_eggplant",
               "discriminator": "0000",
-              "nickname": "柴﨑直",
-              "color": "#F1C40F",
+              "nickname": "なすお",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
             },
@@ -9417,7 +8713,85 @@
         "guildId": "1004340473122529371"
       },
       "inlineEmojis": []
+    },
+    {
+      "id": "1510261415955665078",
+      "type": "Default",
+      "timestamp": "2026-05-30T12:39:40.864+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "1221468925305290947",
+        "name": "pandaman924122",
+        "discriminator": "0000",
+        "nickname": "飯田\u3000悠斗",
+        "color": "#CACACA",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351763592675983431",
+            "name": "2年生",
+            "color": "#CACACA",
+            "position": 6
+          }
+        ],
+        "avatarUrl": "screenshots_backup/8569adcbd36c70a7578c017bf5604ea5-1708c43b2557cb43.png"
+      },
+      "attachments": [
+        {
+          "id": "1510261415716323489",
+          "url": "screenshots_backup/IMG_8498-ba4d6a585cc58667.png",
+          "fileName": "IMG_8498.png",
+          "fileSizeBytes": 657682
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1510290216173437132",
+      "type": "Default",
+      "timestamp": "2026-05-30T14:34:07.371+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "1323665303321706646",
+        "name": "gakuto_opape_94355",
+        "discriminator": "0000",
+        "nickname": "村越 岳人",
+        "color": "#CACACA",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351763592675983431",
+            "name": "2年生",
+            "color": "#CACACA",
+            "position": 6
+          }
+        ],
+        "avatarUrl": "screenshots_backup/7108009e7d9fa2f094a3160f0061ffd9-9085ee57dfc6579f.png"
+      },
+      "attachments": [
+        {
+          "id": "1510290215829245952",
+          "url": "screenshots_backup/IMG_1861-49f3d5d23da8be94.png",
+          "fileName": "IMG_1861.png",
+          "fileSizeBytes": 666910
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
     }
   ],
-  "messageCount": 170
+  "messageCount": 157
 }
