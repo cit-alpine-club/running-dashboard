@@ -13,10 +13,10 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-03-02T00:00:00+00:00",
+    "after": "2026-03-03T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-05-31T17:54:36.8251978+00:00",
+  "exportedAt": "2026-06-01T20:50:31.6413606+00:00",
   "messages": [
     {
       "id": "1478194900733394955",
@@ -8791,7 +8791,61 @@
       "reactions": [],
       "mentions": [],
       "inlineEmojis": []
+    },
+    {
+      "id": "1510993131871535345",
+      "type": "Default",
+      "timestamp": "2026-06-01T13:07:15.533+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "試験やばいので今週は木曜にやります",
+      "author": {
+        "id": "829702151768244254",
+        "name": "kk2011",
+        "discriminator": "0000",
+        "nickname": "髙田凌我",
+        "color": "#CACACA",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351763592675983431",
+            "name": "2年生",
+            "color": "#CACACA",
+            "position": 6
+          }
+        ],
+        "avatarUrl": "screenshots_backup/7f3737c3ed5e07952b8a88c94cac4fa9-886b33b498dffc81.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83E\uDEE1",
+            "code": "\uD83E\uDEE1",
+            "isAnimated": false,
+            "imageUrl": "screenshots_backup/1fae1-b19de625d6f4fb3e.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "842664150584131635",
+              "name": "nasuo_eggplant",
+              "discriminator": "0000",
+              "nickname": "柴﨑直",
+              "color": "#F1C40F",
+              "isBot": false,
+              "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
     }
   ],
-  "messageCount": 157
+  "messageCount": 158
 }
