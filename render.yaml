@@ -1,7 +1,5 @@
 services:
   - type: web
     name: running-dashboard
-    runtime: python
-    buildCommand: apt-get install -y tesseract-ocr tesseract-ocr-jpn && pip install -r requirements.txt
-    startCommand: gunicorn app:app
+    runtime: docker
     plan: free
