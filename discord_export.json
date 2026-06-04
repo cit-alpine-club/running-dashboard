@@ -13,123 +13,11 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-03-05T00:00:00+00:00",
+    "after": "2026-03-06T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-06-03T20:13:00.1300658+00:00",
+  "exportedAt": "2026-06-04T19:13:19.1522337+00:00",
   "messages": [
-    {
-      "id": "1479034626671644703",
-      "type": "Default",
-      "timestamp": "2026-03-05T08:35:34.133+00:00",
-      "timestampEdited": "2026-03-05T08:36:02.657+00:00",
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "13キロ未達",
-      "author": {
-        "id": "1262958915180826636",
-        "name": "riyou041824",
-        "discriminator": "0000",
-        "nickname": "長谷川\u3000稜",
-        "color": "#2ECC71",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1011546002274136114",
-            "name": "主務",
-            "color": "#2ECC71",
-            "position": 11
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/f957f01b1544554b28cacc9e8262dfaa-cb2f14181c9a3fe8.png"
-      },
-      "attachments": [
-        {
-          "id": "1479034626130313360",
-          "url": "screenshots_backup/Screenshot_20260305_173326_Nike_Run_Club-bb2302c3f666aceb.jpg",
-          "fileName": "Screenshot_20260305_173326_Nike_Run_Club.jpg",
-          "fileSizeBytes": 138251
-        },
-        {
-          "id": "1479034626453278863",
-          "url": "screenshots_backup/Screenshot_20260305_173332_Nike_Run_Club-e2089ab62f588f79.jpg",
-          "fileName": "Screenshot_20260305_173332_Nike_Run_Club.jpg",
-          "fileSizeBytes": 72351
-        }
-      ],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [
-        {
-          "emoji": {
-            "id": "",
-            "name": "\uD83D\uDC4D",
-            "code": "thumbsup",
-            "isAnimated": false,
-            "imageUrl": "screenshots_backup/1f44d-27259a90ef10d877.svg"
-          },
-          "count": 3,
-          "users": [
-            {
-              "id": "842664150584131635",
-              "name": "nasuo_eggplant",
-              "discriminator": "0000",
-              "nickname": "なすお",
-              "color": null,
-              "isBot": false,
-              "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
-            },
-            {
-              "id": "937626636680052747",
-              "name": "yoshida_keijo",
-              "discriminator": "0000",
-              "nickname": "吉田遥翔",
-              "color": null,
-              "isBot": false,
-              "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
-            },
-            {
-              "id": "1221468925305290947",
-              "name": "pandaman924122",
-              "discriminator": "0000",
-              "nickname": "パンダマン",
-              "color": null,
-              "isBot": false,
-              "avatarUrl": "screenshots_backup/8569adcbd36c70a7578c017bf5604ea5-1708c43b2557cb43.png"
-            }
-          ]
-        },
-        {
-          "emoji": {
-            "id": "",
-            "name": "\uD83C\uDD91",
-            "code": "cl",
-            "isAnimated": false,
-            "imageUrl": "screenshots_backup/1f191-eb8abb131833d855.svg"
-          },
-          "count": 1,
-          "users": [
-            {
-              "id": "1459872563411947707",
-              "name": "saka_cit",
-              "discriminator": "0000",
-              "nickname": "saka_cit",
-              "color": null,
-              "isBot": false,
-              "avatarUrl": "screenshots_backup/2ebe60a56563c52873f4386da28c58e2-67dc985a6168394e.png"
-            }
-          ]
-        }
-      ],
-      "mentions": [],
-      "inlineEmojis": []
-    },
     {
       "id": "1480189303333326880",
       "type": "Default",
@@ -330,7 +218,7 @@
               "name": "riyou041824",
               "discriminator": "0000",
               "nickname": "長谷川\u3000稜",
-              "color": "#2ECC71",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/f957f01b1544554b28cacc9e8262dfaa-cb2f14181c9a3fe8.png"
             }
@@ -8657,7 +8545,78 @@
       "reactions": [],
       "mentions": [],
       "inlineEmojis": []
+    },
+    {
+      "id": "1511907562885484664",
+      "type": "Default",
+      "timestamp": "2026-06-04T01:40:52.876+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "歩荷\u300036kg 4往復",
+      "author": {
+        "id": "1265520776384086099",
+        "name": "ajiujin0675_20962",
+        "discriminator": "0000",
+        "nickname": "阿久津輝将",
+        "color": "#FF00B5",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351764272119549962",
+            "name": "3年生",
+            "color": "#FF00B5",
+            "position": 7
+          }
+        ],
+        "avatarUrl": "screenshots_backup/cdd78d4746cdc6bcbe8ad316f351405a-e858f5a5c986f03a.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1512027639462887434",
+      "type": "Default",
+      "timestamp": "2026-06-04T09:38:01.363+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "1221468925305290947",
+        "name": "pandaman924122",
+        "discriminator": "0000",
+        "nickname": "飯田\u3000悠斗",
+        "color": "#CACACA",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351763592675983431",
+            "name": "2年生",
+            "color": "#CACACA",
+            "position": 6
+          }
+        ],
+        "avatarUrl": "screenshots_backup/8569adcbd36c70a7578c017bf5604ea5-1708c43b2557cb43.png"
+      },
+      "attachments": [
+        {
+          "id": "1512027638980673707",
+          "url": "screenshots_backup/IMG_8544-6fda44e07288b20d.png",
+          "fileName": "IMG_8544.png",
+          "fileSizeBytes": 639487
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
     }
   ],
-  "messageCount": 160
+  "messageCount": 161
 }
