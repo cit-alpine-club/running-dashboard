@@ -13,731 +13,11 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-03-08T00:00:00+00:00",
+    "after": "2026-03-09T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-06-06T17:59:54.6491914+00:00",
+  "exportedAt": "2026-06-07T17:58:27.2517239+00:00",
   "messages": [
-    {
-      "id": "1480189303333326880",
-      "type": "Default",
-      "timestamp": "2026-03-08T13:03:50.502+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "",
-      "author": {
-        "id": "633179440754720798",
-        "name": "hayato_0417",
-        "discriminator": "0000",
-        "nickname": "都賀勇人",
-        "color": "#3498DB",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004369071275515974",
-            "name": "会計",
-            "color": "#3498DB",
-            "position": 13
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
-      },
-      "attachments": [
-        {
-          "id": "1480189300317360128",
-          "url": "screenshots_backup/IMG_3374-8eebe5c06028ba5f.jpg",
-          "fileName": "IMG_3374.jpg",
-          "fileSizeBytes": 182823
-        },
-        {
-          "id": "1480189300699303967",
-          "url": "screenshots_backup/IMG_3375-e3a83fa59f545efb.jpg",
-          "fileName": "IMG_3375.jpg",
-          "fileSizeBytes": 180637
-        },
-        {
-          "id": "1480189300954890294",
-          "url": "screenshots_backup/IMG_3376-fa82bc81289d4947.jpg",
-          "fileName": "IMG_3376.jpg",
-          "fileSizeBytes": 165433
-        },
-        {
-          "id": "1480189301332381808",
-          "url": "screenshots_backup/IMG_3377-900cf60925ec3eb3.jpg",
-          "fileName": "IMG_3377.jpg",
-          "fileSizeBytes": 176206
-        },
-        {
-          "id": "1480189301705937069",
-          "url": "screenshots_backup/IMG_3378-ef05aa6c934f653a.jpg",
-          "fileName": "IMG_3378.jpg",
-          "fileSizeBytes": 164702
-        },
-        {
-          "id": "1480189302032826459",
-          "url": "screenshots_backup/IMG_3379-7a2c4549c60e5475.jpg",
-          "fileName": "IMG_3379.jpg",
-          "fileSizeBytes": 149214
-        },
-        {
-          "id": "1480189302301266072",
-          "url": "screenshots_backup/IMG_3380-e488ddacd6c75890.jpg",
-          "fileName": "IMG_3380.jpg",
-          "fileSizeBytes": 161021
-        },
-        {
-          "id": "1480189302586740766",
-          "url": "screenshots_backup/IMG_3381-8ae174672671d657.jpg",
-          "fileName": "IMG_3381.jpg",
-          "fileSizeBytes": 174636
-        },
-        {
-          "id": "1480189302854909973",
-          "url": "screenshots_backup/IMG_3382-3315157310ebe6b0.jpg",
-          "fileName": "IMG_3382.jpg",
-          "fileSizeBytes": 164589
-        },
-        {
-          "id": "1480189303123349667",
-          "url": "screenshots_backup/IMG_3383-662f6fb08a1da458.jpg",
-          "fileName": "IMG_3383.jpg",
-          "fileSizeBytes": 148855
-        }
-      ],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
-    {
-      "id": "1480189307678621777",
-      "type": "Default",
-      "timestamp": "2026-03-08T13:03:51.538+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "",
-      "author": {
-        "id": "633179440754720798",
-        "name": "hayato_0417",
-        "discriminator": "0000",
-        "nickname": "都賀勇人",
-        "color": "#3498DB",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004369071275515974",
-            "name": "会計",
-            "color": "#3498DB",
-            "position": 13
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
-      },
-      "attachments": [
-        {
-          "id": "1480189307083034849",
-          "url": "screenshots_backup/IMG_3384-b1e1af1951f32603.jpg",
-          "fileName": "IMG_3384.jpg",
-          "fileSizeBytes": 159166
-        },
-        {
-          "id": "1480189307405729893",
-          "url": "screenshots_backup/IMG_3385-f492fa9d63667ffa.jpg",
-          "fileName": "IMG_3385.jpg",
-          "fileSizeBytes": 179292
-        }
-      ],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
-    {
-      "id": "1480189342805659833",
-      "type": "Default",
-      "timestamp": "2026-03-08T13:03:59.913+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "↑膝系",
-      "author": {
-        "id": "633179440754720798",
-        "name": "hayato_0417",
-        "discriminator": "0000",
-        "nickname": "都賀勇人",
-        "color": "#3498DB",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004369071275515974",
-            "name": "会計",
-            "color": "#3498DB",
-            "position": 13
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [
-        {
-          "emoji": {
-            "id": "1028275729051435090",
-            "name": "emoji_8",
-            "code": "emoji_8",
-            "isAnimated": false,
-            "imageUrl": "screenshots_backup/1028275729051435090-a54f4e08e41e3d0d.png"
-          },
-          "count": 1,
-          "users": [
-            {
-              "id": "1262958915180826636",
-              "name": "riyou041824",
-              "discriminator": "0000",
-              "nickname": "長谷川\u3000稜",
-              "color": null,
-              "isBot": false,
-              "avatarUrl": "screenshots_backup/f957f01b1544554b28cacc9e8262dfaa-cb2f14181c9a3fe8.png"
-            }
-          ]
-        }
-      ],
-      "mentions": [],
-      "inlineEmojis": []
-    },
-    {
-      "id": "1480189369041162310",
-      "type": "Default",
-      "timestamp": "2026-03-08T13:04:06.168+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "一部腰",
-      "author": {
-        "id": "633179440754720798",
-        "name": "hayato_0417",
-        "discriminator": "0000",
-        "nickname": "都賀勇人",
-        "color": "#3498DB",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004369071275515974",
-            "name": "会計",
-            "color": "#3498DB",
-            "position": 13
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
-    {
-      "id": "1480189635496902736",
-      "type": "Reply",
-      "timestamp": "2026-03-08T13:05:09.696+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "geminiに送って要約してもらって",
-      "author": {
-        "id": "842664150584131635",
-        "name": "nasuo_eggplant",
-        "discriminator": "0000",
-        "nickname": "柴﨑直",
-        "color": "#F1C40F",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004362548562382920",
-            "name": "主将",
-            "color": "#F1C40F",
-            "position": 16
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [
-        {
-          "emoji": {
-            "id": "",
-            "name": "\uD83D\uDE29",
-            "code": "weary",
-            "isAnimated": false,
-            "imageUrl": "screenshots_backup/1f629-b734a9fca3fbfbb4.svg"
-          },
-          "count": 1,
-          "users": [
-            {
-              "id": "633179440754720798",
-              "name": "hayato_0417",
-              "discriminator": "0000",
-              "nickname": "都賀勇人",
-              "color": "#3498DB",
-              "isBot": false,
-              "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
-            }
-          ]
-        },
-        {
-          "emoji": {
-            "id": "",
-            "name": "\uD83D\uDC4A",
-            "code": "punch",
-            "isAnimated": false,
-            "imageUrl": "screenshots_backup/1f44a-68c68c4a22a2f792.svg"
-          },
-          "count": 1,
-          "users": [
-            {
-              "id": "633179440754720798",
-              "name": "hayato_0417",
-              "discriminator": "0000",
-              "nickname": "都賀勇人",
-              "color": "#3498DB",
-              "isBot": false,
-              "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
-            }
-          ]
-        }
-      ],
-      "mentions": [
-        {
-          "id": "633179440754720798",
-          "name": "hayato_0417",
-          "discriminator": "0000",
-          "nickname": "都賀勇人",
-          "color": "#3498DB",
-          "isBot": false,
-          "roles": [
-            {
-              "id": "1004369071275515974",
-              "name": "会計",
-              "color": "#3498DB",
-              "position": 13
-            },
-            {
-              "id": "1351764272119549962",
-              "name": "3年生",
-              "color": "#FF00B5",
-              "position": 7
-            }
-          ],
-          "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
-        }
-      ],
-      "reference": {
-        "type": "Default",
-        "messageId": "1480189307678621777",
-        "channelId": "1351771478999306251",
-        "guildId": "1004340473122529371"
-      },
-      "inlineEmojis": []
-    },
-    {
-      "id": "1480189948731719680",
-      "type": "Default",
-      "timestamp": "2026-03-08T13:06:24.377+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "長い文章よめないめう\uD83D\uDE22",
-      "author": {
-        "id": "842664150584131635",
-        "name": "nasuo_eggplant",
-        "discriminator": "0000",
-        "nickname": "柴﨑直",
-        "color": "#F1C40F",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004362548562382920",
-            "name": "主将",
-            "color": "#F1C40F",
-            "position": 16
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": [
-        {
-          "id": "",
-          "name": "\uD83D\uDE22",
-          "code": "cry",
-          "isAnimated": false,
-          "imageUrl": "screenshots_backup/1f622-bdd22d1321bedbf6.svg"
-        }
-      ]
-    },
-    {
-      "id": "1480190837559136447",
-      "type": "Default",
-      "timestamp": "2026-03-08T13:09:56.29+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "",
-      "author": {
-        "id": "633179440754720798",
-        "name": "hayato_0417",
-        "discriminator": "0000",
-        "nickname": "都賀勇人",
-        "color": "#3498DB",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004369071275515974",
-            "name": "会計",
-            "color": "#3498DB",
-            "position": 13
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
-      },
-      "attachments": [
-        {
-          "id": "1480190835810369677",
-          "url": "screenshots_backup/IMG_3386-98bd4b4384dd6d51.jpg",
-          "fileName": "IMG_3386.jpg",
-          "fileSizeBytes": 156509
-        },
-        {
-          "id": "1480190836133335283",
-          "url": "screenshots_backup/IMG_3387-6e4b0001d9f9358b.jpg",
-          "fileName": "IMG_3387.jpg",
-          "fileSizeBytes": 164005
-        },
-        {
-          "id": "1480190836435189912",
-          "url": "screenshots_backup/IMG_3388-468fe8d4a1edebff.jpg",
-          "fileName": "IMG_3388.jpg",
-          "fileSizeBytes": 137368
-        },
-        {
-          "id": "1480190837336965212",
-          "url": "screenshots_backup/IMG_3389-21a27e044a8e3bbf.jpg",
-          "fileName": "IMG_3389.jpg",
-          "fileSizeBytes": 150996
-        }
-      ],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
-    {
-      "id": "1480190841686331563",
-      "type": "Default",
-      "timestamp": "2026-03-08T13:09:57.274+00:00",
-      "timestampEdited": "2026-03-08T13:10:35.667+00:00",
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "↓腰痛系",
-      "author": {
-        "id": "633179440754720798",
-        "name": "hayato_0417",
-        "discriminator": "0000",
-        "nickname": "都賀勇人",
-        "color": "#3498DB",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004369071275515974",
-            "name": "会計",
-            "color": "#3498DB",
-            "position": 13
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
-    {
-      "id": "1480190930740052008",
-      "type": "Reply",
-      "timestamp": "2026-03-08T13:10:18.506+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "風ビバ",
-      "author": {
-        "id": "633179440754720798",
-        "name": "hayato_0417",
-        "discriminator": "0000",
-        "nickname": "都賀勇人",
-        "color": "#3498DB",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004369071275515974",
-            "name": "会計",
-            "color": "#3498DB",
-            "position": 13
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [
-        {
-          "id": "842664150584131635",
-          "name": "nasuo_eggplant",
-          "discriminator": "0000",
-          "nickname": "柴﨑直",
-          "color": "#F1C40F",
-          "isBot": false,
-          "roles": [
-            {
-              "id": "1004362548562382920",
-              "name": "主将",
-              "color": "#F1C40F",
-              "position": 16
-            },
-            {
-              "id": "1351764272119549962",
-              "name": "3年生",
-              "color": "#FF00B5",
-              "position": 7
-            }
-          ],
-          "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
-        }
-      ],
-      "reference": {
-        "type": "Default",
-        "messageId": "1480189948731719680",
-        "channelId": "1351771478999306251",
-        "guildId": "1004340473122529371"
-      },
-      "inlineEmojis": []
-    },
-    {
-      "id": "1480348740698243266",
-      "type": "Default",
-      "timestamp": "2026-03-08T23:37:23.332+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "",
-      "author": {
-        "id": "633179440754720798",
-        "name": "hayato_0417",
-        "discriminator": "0000",
-        "nickname": "都賀勇人",
-        "color": "#3498DB",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004369071275515974",
-            "name": "会計",
-            "color": "#3498DB",
-            "position": 13
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
-      },
-      "attachments": [
-        {
-          "id": "1480348740106846472",
-          "url": "screenshots_backup/IMG_3390-4f707741403162a3.jpg",
-          "fileName": "IMG_3390.jpg",
-          "fileSizeBytes": 124163
-        },
-        {
-          "id": "1480348740588933150",
-          "url": "screenshots_backup/IMG_3392-dd6f0b7cd994d791.jpg",
-          "fileName": "IMG_3392.jpg",
-          "fileSizeBytes": 131659
-        }
-      ],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
-    {
-      "id": "1480348785833017567",
-      "type": "Default",
-      "timestamp": "2026-03-08T23:37:34.093+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "↑足首",
-      "author": {
-        "id": "633179440754720798",
-        "name": "hayato_0417",
-        "discriminator": "0000",
-        "nickname": "都賀勇人",
-        "color": "#3498DB",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004369071275515974",
-            "name": "会計",
-            "color": "#3498DB",
-            "position": 13
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
-    {
-      "id": "1480349839685451877",
-      "type": "Reply",
-      "timestamp": "2026-03-08T23:41:45.351+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "足首用の踵上げ運動とバランストレ↓",
-      "author": {
-        "id": "633179440754720798",
-        "name": "hayato_0417",
-        "discriminator": "0000",
-        "nickname": "都賀勇人",
-        "color": "#3498DB",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004369071275515974",
-            "name": "会計",
-            "color": "#3498DB",
-            "position": 13
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
-      },
-      "attachments": [
-        {
-          "id": "1480349839223947376",
-          "url": "screenshots_backup/IMG_3393-c19053063f8b880d.jpg",
-          "fileName": "IMG_3393.jpg",
-          "fileSizeBytes": 167893
-        },
-        {
-          "id": "1480349839651770529",
-          "url": "screenshots_backup/IMG_3394-ae74f6534e66f87c.jpg",
-          "fileName": "IMG_3394.jpg",
-          "fileSizeBytes": 146475
-        }
-      ],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "reference": {
-        "type": "Default",
-        "messageId": "1480348740698243266",
-        "channelId": "1351771478999306251",
-        "guildId": "1004340473122529371"
-      },
-      "inlineEmojis": []
-    },
     {
       "id": "1481183120769417389",
       "type": "Default",
@@ -849,8 +129,8 @@
               "id": "842664150584131635",
               "name": "nasuo_eggplant",
               "discriminator": "0000",
-              "nickname": "柴﨑直",
-              "color": "#F1C40F",
+              "nickname": "なすお",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
             },
@@ -919,8 +199,8 @@
               "id": "842664150584131635",
               "name": "nasuo_eggplant",
               "discriminator": "0000",
-              "nickname": "柴﨑直",
-              "color": "#F1C40F",
+              "nickname": "なすお",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
             },
@@ -1004,8 +284,8 @@
               "id": "842664150584131635",
               "name": "nasuo_eggplant",
               "discriminator": "0000",
-              "nickname": "柴﨑直",
-              "color": "#F1C40F",
+              "nickname": "なすお",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
             },
@@ -1759,8 +1039,8 @@
               "id": "633179440754720798",
               "name": "hayato_0417",
               "discriminator": "0000",
-              "nickname": "都賀勇人",
-              "color": "#3498DB",
+              "nickname": "ガハハ",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
             }
@@ -8655,7 +7935,46 @@
       "reactions": [],
       "mentions": [],
       "inlineEmojis": []
+    },
+    {
+      "id": "1513061373192704030",
+      "type": "Default",
+      "timestamp": "2026-06-07T06:05:42.69+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "1221468925305290947",
+        "name": "pandaman924122",
+        "discriminator": "0000",
+        "nickname": "飯田\u3000悠斗",
+        "color": "#CACACA",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351763592675983431",
+            "name": "2年生",
+            "color": "#CACACA",
+            "position": 6
+          }
+        ],
+        "avatarUrl": "screenshots_backup/8569adcbd36c70a7578c017bf5604ea5-1708c43b2557cb43.png"
+      },
+      "attachments": [
+        {
+          "id": "1513061372982984814",
+          "url": "screenshots_backup/IMG_8569-0c770ccd4de7217e.png",
+          "fileName": "IMG_8569.png",
+          "fileSizeBytes": 556264
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
     }
   ],
-  "messageCount": 162
+  "messageCount": 151
 }
