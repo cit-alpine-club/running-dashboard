@@ -13,10 +13,10 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-03-15T00:00:00+00:00",
+    "after": "2026-03-16T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-06-13T18:02:45.5389795+00:00",
+  "exportedAt": "2026-06-14T18:07:09.5687447+00:00",
   "messages": [
     {
       "id": "1488680851012063292",
@@ -938,9 +938,15 @@
         "name": "kk2011",
         "discriminator": "0000",
         "nickname": "髙田凌我",
-        "color": "#CACACA",
+        "color": "#206694",
         "isBot": false,
         "roles": [
+          {
+            "id": "1154078280643780688",
+            "name": "会計補",
+            "color": "#206694",
+            "position": 12
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -998,9 +1004,15 @@
           "name": "kk2011",
           "discriminator": "0000",
           "nickname": "髙田凌我",
-          "color": "#CACACA",
+          "color": "#206694",
           "isBot": false,
           "roles": [
+            {
+              "id": "1154078280643780688",
+              "name": "会計補",
+              "color": "#206694",
+              "position": 12
+            },
             {
               "id": "1351763592675983431",
               "name": "2年生",
@@ -1060,9 +1072,15 @@
           "name": "gakuto_opape_94355",
           "discriminator": "0000",
           "nickname": "村越 岳人",
-          "color": "#CACACA",
+          "color": "#C27C0E",
           "isBot": false,
           "roles": [
+            {
+              "id": "1004369221288992859",
+              "name": "主将補",
+              "color": "#C27C0E",
+              "position": 14
+            },
             {
               "id": "1351763592675983431",
               "name": "2年生",
@@ -1126,9 +1144,15 @@
         "name": "gakuto_opape_94355",
         "discriminator": "0000",
         "nickname": "村越 岳人",
-        "color": "#CACACA",
+        "color": "#C27C0E",
         "isBot": false,
         "roles": [
+          {
+            "id": "1004369221288992859",
+            "name": "主将補",
+            "color": "#C27C0E",
+            "position": 14
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -1406,9 +1430,15 @@
         "name": "torippy103_08468",
         "discriminator": "0000",
         "nickname": "工藤扇梨",
-        "color": "#CACACA",
+        "color": "#C27C0E",
         "isBot": false,
         "roles": [
+          {
+            "id": "1004369221288992859",
+            "name": "主将補",
+            "color": "#C27C0E",
+            "position": 14
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -1476,9 +1506,15 @@
         "name": "kk2011",
         "discriminator": "0000",
         "nickname": "髙田凌我",
-        "color": "#CACACA",
+        "color": "#206694",
         "isBot": false,
         "roles": [
+          {
+            "id": "1154078280643780688",
+            "name": "会計補",
+            "color": "#206694",
+            "position": 12
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -1815,9 +1851,15 @@
         "name": "torippy103_08468",
         "discriminator": "0000",
         "nickname": "工藤扇梨",
-        "color": "#CACACA",
+        "color": "#C27C0E",
         "isBot": false,
         "roles": [
+          {
+            "id": "1004369221288992859",
+            "name": "主将補",
+            "color": "#C27C0E",
+            "position": 14
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -1869,9 +1911,15 @@
         "name": "gakuto_opape_94355",
         "discriminator": "0000",
         "nickname": "村越 岳人",
-        "color": "#CACACA",
+        "color": "#C27C0E",
         "isBot": false,
         "roles": [
+          {
+            "id": "1004369221288992859",
+            "name": "主将補",
+            "color": "#C27C0E",
+            "position": 14
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -2002,7 +2050,7 @@
               "name": "gakuto_opape_94355",
               "discriminator": "0000",
               "nickname": "村越 岳人",
-              "color": "#CACACA",
+              "color": "#C27C0E",
               "isBot": false,
               "avatarUrl": "screenshots_backup/7108009e7d9fa2f094a3160f0061ffd9-9085ee57dfc6579f.png"
             }
@@ -2292,7 +2340,7 @@
               "name": "torippy103_08468",
               "discriminator": "0000",
               "nickname": "工藤扇梨",
-              "color": "#CACACA",
+              "color": "#C27C0E",
               "isBot": false,
               "avatarUrl": "screenshots_backup/6c04680268fed3d6be3ce024d1e4280b-e383e4ac5d9d4ef2.png"
             }
@@ -2399,7 +2447,7 @@
               "name": "gakuto_opape_94355",
               "discriminator": "0000",
               "nickname": "村越 岳人",
-              "color": "#CACACA",
+              "color": "#C27C0E",
               "isBot": false,
               "avatarUrl": "screenshots_backup/7108009e7d9fa2f094a3160f0061ffd9-9085ee57dfc6579f.png"
             }
@@ -2474,7 +2522,7 @@
               "name": "gakuto_opape_94355",
               "discriminator": "0000",
               "nickname": "村越 岳人",
-              "color": "#CACACA",
+              "color": "#C27C0E",
               "isBot": false,
               "avatarUrl": "screenshots_backup/7108009e7d9fa2f094a3160f0061ffd9-9085ee57dfc6579f.png"
             },
@@ -2506,9 +2554,15 @@
         "name": "saka_cit",
         "discriminator": "0000",
         "nickname": "坂本拓海",
-        "color": "#CACACA",
+        "color": "#1F8B4C",
         "isBot": false,
         "roles": [
+          {
+            "id": "1154078850842640394",
+            "name": "主務補",
+            "color": "#1F8B4C",
+            "position": 10
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -2551,9 +2605,15 @@
         "name": "saka_cit",
         "discriminator": "0000",
         "nickname": "坂本拓海",
-        "color": "#CACACA",
+        "color": "#1F8B4C",
         "isBot": false,
         "roles": [
+          {
+            "id": "1154078850842640394",
+            "name": "主務補",
+            "color": "#1F8B4C",
+            "position": 10
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -2738,7 +2798,7 @@
               "name": "gakuto_opape_94355",
               "discriminator": "0000",
               "nickname": "村越 岳人",
-              "color": "#CACACA",
+              "color": "#C27C0E",
               "isBot": false,
               "avatarUrl": "screenshots_backup/7108009e7d9fa2f094a3160f0061ffd9-9085ee57dfc6579f.png"
             }
@@ -2769,9 +2829,15 @@
         "name": "kk2011",
         "discriminator": "0000",
         "nickname": "髙田凌我",
-        "color": "#CACACA",
+        "color": "#206694",
         "isBot": false,
         "roles": [
+          {
+            "id": "1154078280643780688",
+            "name": "会計補",
+            "color": "#206694",
+            "position": 12
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -2807,9 +2873,15 @@
         "name": "kk2011",
         "discriminator": "0000",
         "nickname": "髙田凌我",
-        "color": "#CACACA",
+        "color": "#206694",
         "isBot": false,
         "roles": [
+          {
+            "id": "1154078280643780688",
+            "name": "会計補",
+            "color": "#206694",
+            "position": 12
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -2851,7 +2923,7 @@
               "name": "gakuto_opape_94355",
               "discriminator": "0000",
               "nickname": "村越 岳人",
-              "color": "#CACACA",
+              "color": "#C27C0E",
               "isBot": false,
               "avatarUrl": "screenshots_backup/7108009e7d9fa2f094a3160f0061ffd9-9085ee57dfc6579f.png"
             }
@@ -2874,9 +2946,15 @@
         "name": "gakuto_opape_94355",
         "discriminator": "0000",
         "nickname": "村越 岳人",
-        "color": "#CACACA",
+        "color": "#C27C0E",
         "isBot": false,
         "roles": [
+          {
+            "id": "1004369221288992859",
+            "name": "主将補",
+            "color": "#C27C0E",
+            "position": 14
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -2896,9 +2974,15 @@
           "name": "kk2011",
           "discriminator": "0000",
           "nickname": "髙田凌我",
-          "color": "#CACACA",
+          "color": "#206694",
           "isBot": false,
           "roles": [
+            {
+              "id": "1154078280643780688",
+              "name": "会計補",
+              "color": "#206694",
+              "position": 12
+            },
             {
               "id": "1351763592675983431",
               "name": "2年生",
@@ -2924,9 +3008,15 @@
         "name": "kk2011",
         "discriminator": "0000",
         "nickname": "髙田凌我",
-        "color": "#CACACA",
+        "color": "#206694",
         "isBot": false,
         "roles": [
+          {
+            "id": "1154078280643780688",
+            "name": "会計補",
+            "color": "#206694",
+            "position": 12
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -2955,7 +3045,7 @@
               "name": "gakuto_opape_94355",
               "discriminator": "0000",
               "nickname": "村越 岳人",
-              "color": "#CACACA",
+              "color": "#C27C0E",
               "isBot": false,
               "avatarUrl": "screenshots_backup/7108009e7d9fa2f094a3160f0061ffd9-9085ee57dfc6579f.png"
             }
@@ -2976,7 +3066,7 @@
               "name": "gakuto_opape_94355",
               "discriminator": "0000",
               "nickname": "村越 岳人",
-              "color": "#CACACA",
+              "color": "#C27C0E",
               "isBot": false,
               "avatarUrl": "screenshots_backup/7108009e7d9fa2f094a3160f0061ffd9-9085ee57dfc6579f.png"
             }
@@ -2997,7 +3087,7 @@
               "name": "gakuto_opape_94355",
               "discriminator": "0000",
               "nickname": "村越 岳人",
-              "color": "#CACACA",
+              "color": "#C27C0E",
               "isBot": false,
               "avatarUrl": "screenshots_backup/7108009e7d9fa2f094a3160f0061ffd9-9085ee57dfc6579f.png"
             }
@@ -3018,7 +3108,7 @@
               "name": "gakuto_opape_94355",
               "discriminator": "0000",
               "nickname": "村越 岳人",
-              "color": "#CACACA",
+              "color": "#C27C0E",
               "isBot": false,
               "avatarUrl": "screenshots_backup/7108009e7d9fa2f094a3160f0061ffd9-9085ee57dfc6579f.png"
             }
@@ -3048,7 +3138,7 @@
               "name": "saka_cit",
               "discriminator": "0000",
               "nickname": "坂本拓海",
-              "color": "#CACACA",
+              "color": "#1F8B4C",
               "isBot": false,
               "avatarUrl": "screenshots_backup/2ebe60a56563c52873f4386da28c58e2-67dc985a6168394e.png"
             }
@@ -3061,9 +3151,15 @@
           "name": "gakuto_opape_94355",
           "discriminator": "0000",
           "nickname": "村越 岳人",
-          "color": "#CACACA",
+          "color": "#C27C0E",
           "isBot": false,
           "roles": [
+            {
+              "id": "1004369221288992859",
+              "name": "主将補",
+              "color": "#C27C0E",
+              "position": 14
+            },
             {
               "id": "1351763592675983431",
               "name": "2年生",
@@ -3162,9 +3258,15 @@
         "name": "torippy103_08468",
         "discriminator": "0000",
         "nickname": "工藤扇梨",
-        "color": "#CACACA",
+        "color": "#C27C0E",
         "isBot": false,
         "roles": [
+          {
+            "id": "1004369221288992859",
+            "name": "主将補",
+            "color": "#C27C0E",
+            "position": 14
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -3779,9 +3881,15 @@
         "name": "kk2011",
         "discriminator": "0000",
         "nickname": "髙田凌我",
-        "color": "#CACACA",
+        "color": "#206694",
         "isBot": false,
         "roles": [
+          {
+            "id": "1154078280643780688",
+            "name": "会計補",
+            "color": "#206694",
+            "position": 12
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -3908,9 +4016,15 @@
         "name": "torippy103_08468",
         "discriminator": "0000",
         "nickname": "工藤扇梨",
-        "color": "#CACACA",
+        "color": "#C27C0E",
         "isBot": false,
         "roles": [
+          {
+            "id": "1004369221288992859",
+            "name": "主将補",
+            "color": "#C27C0E",
+            "position": 14
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -5641,9 +5755,15 @@
           "name": "gakuto_opape_94355",
           "discriminator": "0000",
           "nickname": "村越 岳人",
-          "color": "#CACACA",
+          "color": "#C27C0E",
           "isBot": false,
           "roles": [
+            {
+              "id": "1004369221288992859",
+              "name": "主将補",
+              "color": "#C27C0E",
+              "position": 14
+            },
             {
               "id": "1351763592675983431",
               "name": "2年生",
@@ -5669,9 +5789,15 @@
         "name": "gakuto_opape_94355",
         "discriminator": "0000",
         "nickname": "村越 岳人",
-        "color": "#CACACA",
+        "color": "#C27C0E",
         "isBot": false,
         "roles": [
+          {
+            "id": "1004369221288992859",
+            "name": "主将補",
+            "color": "#C27C0E",
+            "position": 14
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -5852,9 +5978,15 @@
         "name": "torippy103_08468",
         "discriminator": "0000",
         "nickname": "工藤扇梨",
-        "color": "#CACACA",
+        "color": "#C27C0E",
         "isBot": false,
         "roles": [
+          {
+            "id": "1004369221288992859",
+            "name": "主将補",
+            "color": "#C27C0E",
+            "position": 14
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -6066,7 +6198,7 @@
               "name": "torippy103_08468",
               "discriminator": "0000",
               "nickname": "工藤扇梨",
-              "color": "#CACACA",
+              "color": "#C27C0E",
               "isBot": false,
               "avatarUrl": "screenshots_backup/6c04680268fed3d6be3ce024d1e4280b-e383e4ac5d9d4ef2.png"
             }
@@ -6194,9 +6326,15 @@
         "name": "kk2011",
         "discriminator": "0000",
         "nickname": "髙田凌我",
-        "color": "#CACACA",
+        "color": "#206694",
         "isBot": false,
         "roles": [
+          {
+            "id": "1154078280643780688",
+            "name": "会計補",
+            "color": "#206694",
+            "position": 12
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -6356,9 +6494,15 @@
         "name": "kk2011",
         "discriminator": "0000",
         "nickname": "髙田凌我",
-        "color": "#CACACA",
+        "color": "#206694",
         "isBot": false,
         "roles": [
+          {
+            "id": "1154078280643780688",
+            "name": "会計補",
+            "color": "#206694",
+            "position": 12
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -6556,9 +6700,15 @@
         "name": "torippy103_08468",
         "discriminator": "0000",
         "nickname": "工藤扇梨",
-        "color": "#CACACA",
+        "color": "#C27C0E",
         "isBot": false,
         "roles": [
+          {
+            "id": "1004369221288992859",
+            "name": "主将補",
+            "color": "#C27C0E",
+            "position": 14
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -6588,9 +6738,15 @@
         "name": "kk2011",
         "discriminator": "0000",
         "nickname": "髙田凌我",
-        "color": "#CACACA",
+        "color": "#206694",
         "isBot": false,
         "roles": [
+          {
+            "id": "1154078280643780688",
+            "name": "会計補",
+            "color": "#206694",
+            "position": 12
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -6889,9 +7045,15 @@
         "name": "kk2011",
         "discriminator": "0000",
         "nickname": "髙田凌我",
-        "color": "#CACACA",
+        "color": "#206694",
         "isBot": false,
         "roles": [
+          {
+            "id": "1154078280643780688",
+            "name": "会計補",
+            "color": "#206694",
+            "position": 12
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -7026,9 +7188,15 @@
         "name": "torippy103_08468",
         "discriminator": "0000",
         "nickname": "工藤扇梨",
-        "color": "#CACACA",
+        "color": "#C27C0E",
         "isBot": false,
         "roles": [
+          {
+            "id": "1004369221288992859",
+            "name": "主将補",
+            "color": "#C27C0E",
+            "position": 14
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -7262,9 +7430,15 @@
         "name": "gakuto_opape_94355",
         "discriminator": "0000",
         "nickname": "村越 岳人",
-        "color": "#CACACA",
+        "color": "#C27C0E",
         "isBot": false,
         "roles": [
+          {
+            "id": "1004369221288992859",
+            "name": "主将補",
+            "color": "#C27C0E",
+            "position": 14
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -7301,9 +7475,15 @@
         "name": "kk2011",
         "discriminator": "0000",
         "nickname": "髙田凌我",
-        "color": "#CACACA",
+        "color": "#206694",
         "isBot": false,
         "roles": [
+          {
+            "id": "1154078280643780688",
+            "name": "会計補",
+            "color": "#206694",
+            "position": 12
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -7393,9 +7573,15 @@
         "name": "torippy103_08468",
         "discriminator": "0000",
         "nickname": "工藤扇梨",
-        "color": "#CACACA",
+        "color": "#C27C0E",
         "isBot": false,
         "roles": [
+          {
+            "id": "1004369221288992859",
+            "name": "主将補",
+            "color": "#C27C0E",
+            "position": 14
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -7973,9 +8159,15 @@
         "name": "torippy103_08468",
         "discriminator": "0000",
         "nickname": "工藤扇梨",
-        "color": "#CACACA",
+        "color": "#C27C0E",
         "isBot": false,
         "roles": [
+          {
+            "id": "1004369221288992859",
+            "name": "主将補",
+            "color": "#C27C0E",
+            "position": 14
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -8197,9 +8389,15 @@
         "name": "gakuto_opape_94355",
         "discriminator": "0000",
         "nickname": "村越 岳人",
-        "color": "#CACACA",
+        "color": "#C27C0E",
         "isBot": false,
         "roles": [
+          {
+            "id": "1004369221288992859",
+            "name": "主将補",
+            "color": "#C27C0E",
+            "position": 14
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
@@ -8314,9 +8512,15 @@
         "name": "torippy103_08468",
         "discriminator": "0000",
         "nickname": "工藤扇梨",
-        "color": "#CACACA",
+        "color": "#C27C0E",
         "isBot": false,
         "roles": [
+          {
+            "id": "1004369221288992859",
+            "name": "主将補",
+            "color": "#C27C0E",
+            "position": 14
+          },
           {
             "id": "1351763592675983431",
             "name": "2年生",
