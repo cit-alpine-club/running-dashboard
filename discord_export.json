@@ -13,10 +13,10 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-03-17T00:00:00+00:00",
+    "after": "2026-03-18T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-06-15T20:21:18.9293799+00:00",
+  "exportedAt": "2026-06-16T20:02:23.534071+00:00",
   "messages": [
     {
       "id": "1488680851012063292",
@@ -8884,7 +8884,190 @@
           "imageUrl": "screenshots_backup/1028275729051435090-a54f4e08e41e3d0d.png"
         }
       ]
+    },
+    {
+      "id": "1516389855280627772",
+      "type": "Default",
+      "timestamp": "2026-06-16T10:31:54.66+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "歩荷 30kg 5往復",
+      "author": {
+        "id": "1395336421362892882",
+        "name": "torippy103_08468",
+        "discriminator": "0000",
+        "nickname": "工藤扇梨",
+        "color": "#C27C0E",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1004369221288992859",
+            "name": "主将補",
+            "color": "#C27C0E",
+            "position": 14
+          },
+          {
+            "id": "1351763592675983431",
+            "name": "2年生",
+            "color": "#CACACA",
+            "position": 6
+          }
+        ],
+        "avatarUrl": "screenshots_backup/6c04680268fed3d6be3ce024d1e4280b-e383e4ac5d9d4ef2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "1027907385072820245",
+            "name": "emoji_7",
+            "code": "emoji_7",
+            "isAnimated": false,
+            "imageUrl": "screenshots_backup/1027907385072820245-889150b1ee7c2e04.png"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "842664150584131635",
+              "name": "nasuo_eggplant",
+              "discriminator": "0000",
+              "nickname": "柴﨑直",
+              "color": "#F1C40F",
+              "isBot": false,
+              "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1516395042351087626",
+      "type": "Default",
+      "timestamp": "2026-06-16T10:52:31.354+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "1366366819991949312",
+        "name": "keta1221_33543",
+        "discriminator": "0000",
+        "nickname": "豊口渓太",
+        "color": "#E74C3C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351762586462322803",
+            "name": "1年生",
+            "color": "#E74C3C",
+            "position": 5
+          }
+        ],
+        "avatarUrl": "screenshots_backup/f11304c37a7af1605e0477874ac201af-591809b235c3348b.png"
+      },
+      "attachments": [
+        {
+          "id": "1516395042015678505",
+          "url": "screenshots_backup/IMG_2366-9c9ae3d9388dbed5.png",
+          "fileName": "IMG_2366.png",
+          "fileSizeBytes": 850365
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1516428282331926609",
+      "type": "Default",
+      "timestamp": "2026-06-16T13:04:36.383+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "829702151768244254",
+        "name": "kk2011",
+        "discriminator": "0000",
+        "nickname": "髙田凌我",
+        "color": "#206694",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1154078280643780688",
+            "name": "会計補",
+            "color": "#206694",
+            "position": 12
+          },
+          {
+            "id": "1351763592675983431",
+            "name": "2年生",
+            "color": "#CACACA",
+            "position": 6
+          }
+        ],
+        "avatarUrl": "screenshots_backup/7f3737c3ed5e07952b8a88c94cac4fa9-886b33b498dffc81.png"
+      },
+      "attachments": [
+        {
+          "id": "1516428281988251800",
+          "url": "screenshots_backup/IMG_9221-9dc9514e7b9dd1a5.png",
+          "fileName": "IMG_9221.png",
+          "fileSizeBytes": 586229
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1516446268014985287",
+      "type": "Default",
+      "timestamp": "2026-06-16T14:16:04.504+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "1221468925305290947",
+        "name": "pandaman924122",
+        "discriminator": "0000",
+        "nickname": "飯田\u3000悠斗",
+        "color": "#CACACA",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351763592675983431",
+            "name": "2年生",
+            "color": "#CACACA",
+            "position": 6
+          }
+        ],
+        "avatarUrl": "screenshots_backup/8569adcbd36c70a7578c017bf5604ea5-1708c43b2557cb43.png"
+      },
+      "attachments": [
+        {
+          "id": "1516446267746685068",
+          "url": "screenshots_backup/IMG_8637-ba11bc0bb0e3103c.png",
+          "fileName": "IMG_8637.png",
+          "fileSizeBytes": 1034781
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
     }
   ],
-  "messageCount": 169
+  "messageCount": 173
 }
