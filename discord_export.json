@@ -13,10 +13,10 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-03-20T00:00:00+00:00",
+    "after": "2026-03-21T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-06-18T19:18:36.3805201+00:00",
+  "exportedAt": "2026-06-19T18:27:37.6312617+00:00",
   "messages": [
     {
       "id": "1488680851012063292",
@@ -9169,7 +9169,77 @@
       ],
       "mentions": [],
       "inlineEmojis": []
+    },
+    {
+      "id": "1517348018079400057",
+      "type": "Default",
+      "timestamp": "2026-06-19T01:59:18.473+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "歩荷25kg58分5往復",
+      "author": {
+        "id": "1372106263114027008",
+        "name": "ryoma05581",
+        "discriminator": "0000",
+        "nickname": "渡辺\u3000亮真",
+        "color": "#607D8B",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1004376070222524427",
+            "name": "体育会",
+            "color": "#607D8B",
+            "position": 9
+          },
+          {
+            "id": "1351763592675983431",
+            "name": "2年生",
+            "color": "#CACACA",
+            "position": 6
+          }
+        ],
+        "avatarUrl": "screenshots_backup/76c4ec745ce16eb4ae7d2a8b0cf17425-4f01aa8c56080fad.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1517453231553249301",
+      "type": "Default",
+      "timestamp": "2026-06-19T08:57:23.32+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "歩荷21kg40分",
+      "author": {
+        "id": "914783354841346098",
+        "name": "notami_025",
+        "discriminator": "0000",
+        "nickname": "蛭田尊輝",
+        "color": "#E74C3C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351762586462322803",
+            "name": "1年生",
+            "color": "#E74C3C",
+            "position": 5
+          }
+        ],
+        "avatarUrl": "screenshots_backup/6b01e648505c4d705e2867d56fd96f39-f69ac2d7e6f0239f.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
     }
   ],
-  "messageCount": 175
+  "messageCount": 177
 }
