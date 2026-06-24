@@ -13,10 +13,10 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-03-25T00:00:00+00:00",
+    "after": "2026-03-26T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-06-23T19:02:22.367341+00:00",
+  "exportedAt": "2026-06-24T18:27:08.7003344+00:00",
   "messages": [
     {
       "id": "1488680851012063292",
@@ -9505,7 +9505,83 @@
       ],
       "mentions": [],
       "inlineEmojis": []
+    },
+    {
+      "id": "1519304122111889590",
+      "type": "Default",
+      "timestamp": "2026-06-24T11:32:10.017+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://discord.com/channels/1004340473122529371/1351771478999306251/1400613958137806979",
+      "author": {
+        "id": "633179440754720798",
+        "name": "hayato_0417",
+        "discriminator": "0000",
+        "nickname": "都賀勇人",
+        "color": "#3498DB",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1004369071275515974",
+            "name": "会計",
+            "color": "#3498DB",
+            "position": 13
+          },
+          {
+            "id": "1351764272119549962",
+            "name": "3年生",
+            "color": "#FF00B5",
+            "position": 7
+          }
+        ],
+        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1519304388563177513",
+      "type": "Default",
+      "timestamp": "2026-06-24T11:33:13.544+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "@everyone ↑学生部のメモのエネルギーのとこも少し詳しく書いてる",
+      "author": {
+        "id": "633179440754720798",
+        "name": "hayato_0417",
+        "discriminator": "0000",
+        "nickname": "都賀勇人",
+        "color": "#3498DB",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1004369071275515974",
+            "name": "会計",
+            "color": "#3498DB",
+            "position": 13
+          },
+          {
+            "id": "1351764272119549962",
+            "name": "3年生",
+            "color": "#FF00B5",
+            "position": 7
+          }
+        ],
+        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
     }
   ],
-  "messageCount": 181
+  "messageCount": 183
 }
