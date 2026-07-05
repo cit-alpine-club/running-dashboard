@@ -13,72 +13,11 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-04-05T00:00:00+00:00",
+    "after": "2026-04-06T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-07-04T17:55:33.6826086+00:00",
+  "exportedAt": "2026-07-05T17:55:18.5707353+00:00",
   "messages": [
-    {
-      "id": "1490497073169039462",
-      "type": "Default",
-      "timestamp": "2026-04-05T23:43:14.34+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "",
-      "author": {
-        "id": "1221468925305290947",
-        "name": "pandaman924122",
-        "discriminator": "0000",
-        "nickname": "飯田\u3000悠斗",
-        "color": "#CACACA",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1351763592675983431",
-            "name": "2年生",
-            "color": "#CACACA",
-            "position": 6
-          }
-        ],
-        "avatarUrl": "screenshots_backup/8569adcbd36c70a7578c017bf5604ea5-1708c43b2557cb43.png"
-      },
-      "attachments": [
-        {
-          "id": "1490497072854728744",
-          "url": "screenshots_backup/IMG_7862-623a98ee98d00949.png",
-          "fileName": "IMG_7862.png",
-          "fileSizeBytes": 598847
-        }
-      ],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [
-        {
-          "emoji": {
-            "id": "",
-            "name": "\uD83D\uDC4D",
-            "code": "thumbsup",
-            "isAnimated": false,
-            "imageUrl": "screenshots_backup/1f44d-27259a90ef10d877.svg"
-          },
-          "count": 1,
-          "users": [
-            {
-              "id": "937626636680052747",
-              "name": "yoshida_keijo",
-              "discriminator": "0000",
-              "nickname": "吉田遥翔",
-              "color": null,
-              "isBot": false,
-              "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
-            }
-          ]
-        }
-      ],
-      "mentions": [],
-      "inlineEmojis": []
-    },
     {
       "id": "1490862140687515700",
       "type": "Default",
@@ -9583,5 +9522,5 @@
       "inlineEmojis": []
     }
   ],
-  "messageCount": 186
+  "messageCount": 185
 }
