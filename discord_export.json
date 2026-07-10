@@ -13,10 +13,10 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-04-10T00:00:00+00:00",
+    "after": "2026-04-11T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-07-09T18:45:36.0437339+00:00",
+  "exportedAt": "2026-07-10T18:16:44.1581609+00:00",
   "messages": [
     {
       "id": "1492452253745938512",
@@ -4311,7 +4311,7 @@
       "timestampEdited": null,
       "callEndedTimestamp": null,
       "isPinned": false,
-      "content": "@佐藤\u3000大輝 @村越 岳人 \nトレーニング今日休み？",
+      "content": "@taki0614 @村越 岳人 \nトレーニング今日休み？",
       "author": {
         "id": "937626636680052747",
         "name": "yoshida_keijo",
@@ -4338,17 +4338,10 @@
           "id": "1341049305997381645",
           "name": "taiki_0614",
           "discriminator": "0000",
-          "nickname": "佐藤\u3000大輝",
-          "color": "#CACACA",
+          "nickname": "taki0614",
+          "color": null,
           "isBot": false,
-          "roles": [
-            {
-              "id": "1351763592675983431",
-              "name": "2年生",
-              "color": "#CACACA",
-              "position": 6
-            }
-          ],
+          "roles": [],
           "avatarUrl": "screenshots_backup/e409926a3e4c0bef94d4bbabbfcb336a-d17ed671e6441dc1.png"
         },
         {
@@ -4457,17 +4450,10 @@
         "id": "1341049305997381645",
         "name": "taiki_0614",
         "discriminator": "0000",
-        "nickname": "佐藤\u3000大輝",
-        "color": "#CACACA",
+        "nickname": "taki0614",
+        "color": null,
         "isBot": false,
-        "roles": [
-          {
-            "id": "1351763592675983431",
-            "name": "2年生",
-            "color": "#CACACA",
-            "position": 6
-          }
-        ],
+        "roles": [],
         "avatarUrl": "screenshots_backup/e409926a3e4c0bef94d4bbabbfcb336a-d17ed671e6441dc1.png"
       },
       "attachments": [],
