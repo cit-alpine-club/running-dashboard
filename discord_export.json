@@ -13,49 +13,11 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-04-12T00:00:00+00:00",
+    "after": "2026-04-13T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-07-11T17:45:18.5246448+00:00",
+  "exportedAt": "2026-07-12T17:51:26.2038938+00:00",
   "messages": [
-    {
-      "id": "1492724387747729469",
-      "type": "Default",
-      "timestamp": "2026-04-12T03:13:47.517+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "歯医者の予定失念してたので今週だけトレーニングは部会前にやります",
-      "author": {
-        "id": "829702151768244254",
-        "name": "kk2011",
-        "discriminator": "0000",
-        "nickname": "髙田凌我",
-        "color": "#206694",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1154078280643780688",
-            "name": "会計補",
-            "color": "#206694",
-            "position": 12
-          },
-          {
-            "id": "1351763592675983431",
-            "name": "2年生",
-            "color": "#CACACA",
-            "position": 6
-          }
-        ],
-        "avatarUrl": "screenshots_backup/7f3737c3ed5e07952b8a88c94cac4fa9-886b33b498dffc81.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
     {
       "id": "1493404167866417294",
       "type": "Default",
@@ -8606,5 +8568,5 @@
       "inlineEmojis": []
     }
   ],
-  "messageCount": 171
+  "messageCount": 170
 }
