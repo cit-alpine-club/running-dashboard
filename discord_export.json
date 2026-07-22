@@ -13,101 +13,11 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-04-22T00:00:00+00:00",
+    "after": "2026-04-23T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-07-21T18:08:44.448778+00:00",
+  "exportedAt": "2026-07-22T18:01:13.1083331+00:00",
   "messages": [
-    {
-      "id": "1496420931197866034",
-      "type": "Default",
-      "timestamp": "2026-04-22T08:02:32.154+00:00",
-      "timestampEdited": "2026-04-22T08:03:26.391+00:00",
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "新習志野→津田沼",
-      "author": {
-        "id": "1395336421362892882",
-        "name": "torippy103_08468",
-        "discriminator": "0000",
-        "nickname": "工藤扇梨",
-        "color": "#C27C0E",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004369221288992859",
-            "name": "主将補",
-            "color": "#C27C0E",
-            "position": 14
-          },
-          {
-            "id": "1351763592675983431",
-            "name": "2年生",
-            "color": "#CACACA",
-            "position": 6
-          }
-        ],
-        "avatarUrl": "screenshots_backup/6c04680268fed3d6be3ce024d1e4280b-e383e4ac5d9d4ef2.png"
-      },
-      "attachments": [
-        {
-          "id": "1496420930979631125",
-          "url": "screenshots_backup/IMG_2890-74dd83cfb4095509.png",
-          "fileName": "IMG_2890.png",
-          "fileSizeBytes": 500289
-        }
-      ],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
-    {
-      "id": "1496421199507361833",
-      "type": "Default",
-      "timestamp": "2026-04-22T08:03:36.124+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "",
-      "author": {
-        "id": "1372106263114027008",
-        "name": "ryoma05581",
-        "discriminator": "0000",
-        "nickname": "渡辺\u3000亮真",
-        "color": "#607D8B",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004376070222524427",
-            "name": "体育会",
-            "color": "#607D8B",
-            "position": 9
-          },
-          {
-            "id": "1351763592675983431",
-            "name": "2年生",
-            "color": "#CACACA",
-            "position": 6
-          }
-        ],
-        "avatarUrl": "screenshots_backup/76c4ec745ce16eb4ae7d2a8b0cf17425-4f01aa8c56080fad.png"
-      },
-      "attachments": [
-        {
-          "id": "1496421199205498890",
-          "url": "screenshots_backup/FB1DDE2B-BA56-41CA-9AC6-88D784B21164-471b064f5609a5fc.png",
-          "fileName": "FB1DDE2B-BA56-41CA-9AC6-88D784B21164.png",
-          "fileSizeBytes": 1104138
-        }
-      ],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
     {
       "id": "1498195633067135027",
       "type": "Default",
@@ -1663,8 +1573,8 @@
               "id": "1372106263114027008",
               "name": "ryoma05581",
               "discriminator": "0000",
-              "nickname": "渡辺\u3000亮真",
-              "color": "#607D8B",
+              "nickname": "ryoma",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/76c4ec745ce16eb4ae7d2a8b0cf17425-4f01aa8c56080fad.png"
             }
@@ -6216,5 +6126,5 @@
       "inlineEmojis": []
     }
   ],
-  "messageCount": 132
+  "messageCount": 130
 }
