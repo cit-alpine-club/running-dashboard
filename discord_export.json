@@ -13,10 +13,10 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-05-01T00:00:00+00:00",
+    "after": "2026-05-02T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-07-30T18:09:34.6011343+00:00",
+  "exportedAt": "2026-07-31T18:14:54.1015349+00:00",
   "messages": [
     {
       "id": "1500929124045160580",
@@ -4837,7 +4837,68 @@
       ],
       "mentions": [],
       "inlineEmojis": []
+    },
+    {
+      "id": "1532748256864637002",
+      "type": "Default",
+      "timestamp": "2026-07-31T13:54:21.522+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "1221468925305290947",
+        "name": "pandaman924122",
+        "discriminator": "0000",
+        "nickname": "飯田\u3000悠斗",
+        "color": "#CACACA",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351763592675983431",
+            "name": "2年生",
+            "color": "#CACACA",
+            "position": 6
+          }
+        ],
+        "avatarUrl": "screenshots_backup/8569adcbd36c70a7578c017bf5604ea5-1708c43b2557cb43.png"
+      },
+      "attachments": [
+        {
+          "id": "1532748256721895786",
+          "url": "screenshots_backup/IMG_8874-7f36f2616440a6ec.png",
+          "fileName": "IMG_8874.png",
+          "fileSizeBytes": 86582
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "⁉️",
+            "code": "interrobang",
+            "isAnimated": false,
+            "imageUrl": "screenshots_backup/2049-c69c51e4e66275eb.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "633179440754720798",
+              "name": "hayato_0417",
+              "discriminator": "0000",
+              "nickname": "都賀勇人",
+              "color": "#3498DB",
+              "isBot": false,
+              "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
     }
   ],
-  "messageCount": 99
+  "messageCount": 100
 }
