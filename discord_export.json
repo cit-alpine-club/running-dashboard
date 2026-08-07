@@ -13,118 +13,11 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-05-07T00:00:00+00:00",
+    "after": "2026-05-09T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-08-05T18:14:44.2877586+00:00",
+  "exportedAt": "2026-08-07T17:39:54.9605432+00:00",
   "messages": [
-    {
-      "id": "1501795350946779186",
-      "type": "Default",
-      "timestamp": "2026-05-07T03:58:33.674+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "ラインでも画像読み込めますが、2,3年生はこっちで投稿して",
-      "author": {
-        "id": "937626636680052747",
-        "name": "yoshida_keijo",
-        "discriminator": "0000",
-        "nickname": "吉田遥翔",
-        "color": "#945FFF",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1351768693159231589",
-            "name": "4年生",
-            "color": "#945FFF",
-            "position": 8
-          }
-        ],
-        "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [
-        {
-          "emoji": {
-            "id": "",
-            "name": "\uD83E\uDEE1",
-            "code": "\uD83E\uDEE1",
-            "isAnimated": false,
-            "imageUrl": "screenshots_backup/1fae1-b19de625d6f4fb3e.svg"
-          },
-          "count": 2,
-          "users": [
-            {
-              "id": "842664150584131635",
-              "name": "nasuo_eggplant",
-              "discriminator": "0000",
-              "nickname": "なすお",
-              "color": null,
-              "isBot": false,
-              "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
-            },
-            {
-              "id": "1372106263114027008",
-              "name": "ryoma05581",
-              "discriminator": "0000",
-              "nickname": "ryoma",
-              "color": null,
-              "isBot": false,
-              "avatarUrl": "screenshots_backup/76c4ec745ce16eb4ae7d2a8b0cf17425-4f01aa8c56080fad.png"
-            }
-          ]
-        }
-      ],
-      "mentions": [],
-      "inlineEmojis": []
-    },
-    {
-      "id": "1501795456018157709",
-      "type": "ChannelPinnedMessage",
-      "timestamp": "2026-05-07T03:58:58.725+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "Pinned a message.",
-      "author": {
-        "id": "858701634120318976",
-        "name": "nemusaba",
-        "discriminator": "0000",
-        "nickname": "谷口由真",
-        "color": "#F1C40F",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1209073844539760670",
-            "name": "副主将",
-            "color": "#F1C40F",
-            "position": 15
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/fb117ef79046ade180497be5efae54a2-f1c4c6b513b3de99.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "reference": {
-        "type": "Default",
-        "messageId": "1500929124045160580",
-        "channelId": "1351771478999306251",
-        "guildId": null
-      },
-      "inlineEmojis": []
-    },
     {
       "id": "1503343640624238694",
       "type": "Default",
@@ -4790,5 +4683,5 @@
       "inlineEmojis": []
     }
   ],
-  "messageCount": 97
+  "messageCount": 95
 }
