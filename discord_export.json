@@ -13,10 +13,10 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-05-09T00:00:00+00:00",
+    "after": "2026-05-10T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-08-07T17:39:54.9605432+00:00",
+  "exportedAt": "2026-08-08T17:20:29.1479931+00:00",
   "messages": [
     {
       "id": "1503343640624238694",
@@ -4681,7 +4681,90 @@
       ],
       "mentions": [],
       "inlineEmojis": []
+    },
+    {
+      "id": "1535479605195051049",
+      "type": "Default",
+      "timestamp": "2026-08-08T02:47:45.71+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "633179440754720798",
+        "name": "hayato_0417",
+        "discriminator": "0000",
+        "nickname": "都賀勇人",
+        "color": "#3498DB",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1004369071275515974",
+            "name": "会計",
+            "color": "#3498DB",
+            "position": 13
+          },
+          {
+            "id": "1351764272119549962",
+            "name": "3年生",
+            "color": "#FF00B5",
+            "position": 7
+          }
+        ],
+        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
+      },
+      "attachments": [
+        {
+          "id": "1535479605119426610",
+          "url": "screenshots_backup/IMG_0254-301f6fb47b5869ed.jpg",
+          "fileName": "IMG_0254.jpg",
+          "fileSizeBytes": 269079
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1535479619808006186",
+      "type": "Default",
+      "timestamp": "2026-08-08T02:47:49.194+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ヨシキに2冊あります",
+      "author": {
+        "id": "633179440754720798",
+        "name": "hayato_0417",
+        "discriminator": "0000",
+        "nickname": "都賀勇人",
+        "color": "#3498DB",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1004369071275515974",
+            "name": "会計",
+            "color": "#3498DB",
+            "position": 13
+          },
+          {
+            "id": "1351764272119549962",
+            "name": "3年生",
+            "color": "#FF00B5",
+            "position": 7
+          }
+        ],
+        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
     }
   ],
-  "messageCount": 95
+  "messageCount": 97
 }
