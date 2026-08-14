@@ -13,101 +13,11 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-05-15T00:00:00+00:00",
+    "after": "2026-05-16T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-08-13T17:49:05.652237+00:00",
+  "exportedAt": "2026-08-14T17:43:37.2026148+00:00",
   "messages": [
-    {
-      "id": "1504772178984435722",
-      "type": "Default",
-      "timestamp": "2026-05-15T09:07:24.785+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "",
-      "author": {
-        "id": "829702151768244254",
-        "name": "kk2011",
-        "discriminator": "0000",
-        "nickname": "髙田凌我",
-        "color": "#206694",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1154078280643780688",
-            "name": "会計補",
-            "color": "#206694",
-            "position": 12
-          },
-          {
-            "id": "1351763592675983431",
-            "name": "2年生",
-            "color": "#CACACA",
-            "position": 6
-          }
-        ],
-        "avatarUrl": "screenshots_backup/8b43a801d53633b1bd63c9ca176723a9-8477d31fd50837a8.png"
-      },
-      "attachments": [
-        {
-          "id": "1504772179139760159",
-          "url": "screenshots_backup/IMG_9125-079e7be363ac767b.png",
-          "fileName": "IMG_9125.png",
-          "fileSizeBytes": 647225
-        }
-      ],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
-    {
-      "id": "1504816874498822294",
-      "type": "Default",
-      "timestamp": "2026-05-15T12:05:01.026+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "",
-      "author": {
-        "id": "1262958915180826636",
-        "name": "riyou041824",
-        "discriminator": "0000",
-        "nickname": "長谷川\u3000稜",
-        "color": "#2ECC71",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1011546002274136114",
-            "name": "主務",
-            "color": "#2ECC71",
-            "position": 11
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/f957f01b1544554b28cacc9e8262dfaa-cb2f14181c9a3fe8.png"
-      },
-      "attachments": [
-        {
-          "id": "1504816874716794962",
-          "url": "screenshots_backup/Screenshot_20260515_210337_Nike_Run_Club-984d3b410191fcb2.jpg",
-          "fileName": "Screenshot_20260515_210337_Nike_Run_Club.jpg",
-          "fileSizeBytes": 95090
-        }
-      ],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
     {
       "id": "1506097588653264968",
       "type": "Default",
@@ -4002,5 +3912,5 @@
       "inlineEmojis": []
     }
   ],
-  "messageCount": 84
+  "messageCount": 82
 }
