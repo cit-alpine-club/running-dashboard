@@ -13,80 +13,11 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-05-21T00:00:00+00:00",
+    "after": "2026-05-22T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-08-19T17:17:26.225693+00:00",
+  "exportedAt": "2026-08-20T17:19:59.1193781+00:00",
   "messages": [
-    {
-      "id": "1506894377518239795",
-      "type": "Default",
-      "timestamp": "2026-05-21T05:40:16.344+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "歩荷30kg5往復",
-      "author": {
-        "id": "633179440754720798",
-        "name": "hayato_0417",
-        "discriminator": "0000",
-        "nickname": "都賀勇人",
-        "color": "#3498DB",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004369071275515974",
-            "name": "会計",
-            "color": "#3498DB",
-            "position": 13
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [
-        {
-          "emoji": {
-            "id": "",
-            "name": "\uD83D\uDC4D",
-            "code": "thumbsup",
-            "isAnimated": false,
-            "imageUrl": "screenshots_backup/1f44d-27259a90ef10d877.svg"
-          },
-          "count": 2,
-          "users": [
-            {
-              "id": "842664150584131635",
-              "name": "nasuo_eggplant",
-              "discriminator": "0000",
-              "nickname": "なすお",
-              "color": null,
-              "isBot": false,
-              "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
-            },
-            {
-              "id": "937626636680052747",
-              "name": "yoshida_keijo",
-              "discriminator": "0000",
-              "nickname": "吉田遥翔",
-              "color": null,
-              "isBot": false,
-              "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
-            }
-          ]
-        }
-      ],
-      "mentions": [],
-      "inlineEmojis": []
-    },
     {
       "id": "1507711252787494912",
       "type": "Default",
@@ -3767,5 +3698,5 @@
       "inlineEmojis": []
     }
   ],
-  "messageCount": 78
+  "messageCount": 77
 }
