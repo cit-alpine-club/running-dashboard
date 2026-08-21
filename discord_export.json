@@ -13,10 +13,10 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-05-22T00:00:00+00:00",
+    "after": "2026-05-23T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-08-20T17:19:59.1193781+00:00",
+  "exportedAt": "2026-08-21T17:18:58.046018+00:00",
   "messages": [
     {
       "id": "1507711252787494912",
@@ -3554,7 +3554,7 @@
             "isAnimated": false,
             "imageUrl": "screenshots_backup/1f38c-6bdccdf116bd9949.svg"
           },
-          "count": 3,
+          "count": 4,
           "users": [
             {
               "id": "633179440754720798",
@@ -3573,6 +3573,15 @@
               "color": "#F1C40F",
               "isBot": false,
               "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
+            },
+            {
+              "id": "937626636680052747",
+              "name": "yoshida_keijo",
+              "discriminator": "0000",
+              "nickname": "吉田遥翔",
+              "color": "#945FFF",
+              "isBot": false,
+              "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
             },
             {
               "id": "1459872563411947707",
@@ -3696,7 +3705,121 @@
       ],
       "mentions": [],
       "inlineEmojis": []
+    },
+    {
+      "id": "1540174249208193105",
+      "type": "Default",
+      "timestamp": "2026-08-21T01:42:36.065+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "@坂本拓海 お前もちゃんとトレーニングしとけよな\uD83E\uDEF5",
+      "author": {
+        "id": "842664150584131635",
+        "name": "nasuo_eggplant",
+        "discriminator": "0000",
+        "nickname": "柴﨑直",
+        "color": "#F1C40F",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1004362548562382920",
+            "name": "主将",
+            "color": "#F1C40F",
+            "position": 16
+          },
+          {
+            "id": "1351764272119549962",
+            "name": "3年生",
+            "color": "#FF00B5",
+            "position": 7
+          }
+        ],
+        "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "1110075967730372649",
+            "name": "emoji_16",
+            "code": "emoji_16",
+            "isAnimated": false,
+            "imageUrl": "screenshots_backup/1110075967730372649-2178363a71c7845c.png"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "937626636680052747",
+              "name": "yoshida_keijo",
+              "discriminator": "0000",
+              "nickname": "吉田遥翔",
+              "color": "#945FFF",
+              "isBot": false,
+              "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
+            },
+            {
+              "id": "1221468925305290947",
+              "name": "pandaman924122",
+              "discriminator": "0000",
+              "nickname": "飯田\u3000悠斗",
+              "color": "#CACACA",
+              "isBot": false,
+              "avatarUrl": "screenshots_backup/8569adcbd36c70a7578c017bf5604ea5-1708c43b2557cb43.png"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDE31",
+            "code": "scream",
+            "isAnimated": false,
+            "imageUrl": "screenshots_backup/1f631-75e8dcfaff67e81d.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1459872563411947707",
+              "name": "saka_cit",
+              "discriminator": "0000",
+              "nickname": "坂本拓海",
+              "color": "#1F8B4C",
+              "isBot": false,
+              "avatarUrl": "screenshots_backup/2ebe60a56563c52873f4386da28c58e2-67dc985a6168394e.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [
+        {
+          "id": "1459872563411947707",
+          "name": "saka_cit",
+          "discriminator": "0000",
+          "nickname": "坂本拓海",
+          "color": "#1F8B4C",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1154078850842640394",
+              "name": "主務補",
+              "color": "#1F8B4C",
+              "position": 10
+            },
+            {
+              "id": "1351763592675983431",
+              "name": "2年生",
+              "color": "#CACACA",
+              "position": 6
+            }
+          ],
+          "avatarUrl": "screenshots_backup/2ebe60a56563c52873f4386da28c58e2-67dc985a6168394e.png"
+        }
+      ],
+      "inlineEmojis": []
     }
   ],
-  "messageCount": 77
+  "messageCount": 78
 }
