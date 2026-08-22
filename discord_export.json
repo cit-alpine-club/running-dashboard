@@ -13,78 +13,11 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-05-23T00:00:00+00:00",
+    "after": "2026-05-24T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-08-21T17:18:58.046018+00:00",
+  "exportedAt": "2026-08-22T17:11:24.2191171+00:00",
   "messages": [
-    {
-      "id": "1507711252787494912",
-      "type": "Default",
-      "timestamp": "2026-05-23T11:46:14.585+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "",
-      "author": {
-        "id": "1262958915180826636",
-        "name": "riyou041824",
-        "discriminator": "0000",
-        "nickname": "長谷川\u3000稜",
-        "color": "#2ECC71",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1011546002274136114",
-            "name": "主務",
-            "color": "#2ECC71",
-            "position": 11
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/f957f01b1544554b28cacc9e8262dfaa-cb2f14181c9a3fe8.png"
-      },
-      "attachments": [
-        {
-          "id": "1507711253169045584",
-          "url": "screenshots_backup/Screenshot_20260523_204500_Nike_Run_Club-1fe3a3b482e88531.jpg",
-          "fileName": "Screenshot_20260523_204500_Nike_Run_Club.jpg",
-          "fileSizeBytes": 140910
-        }
-      ],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [
-        {
-          "emoji": {
-            "id": "",
-            "name": "\uD83D\uDC4D",
-            "code": "thumbsup",
-            "isAnimated": false,
-            "imageUrl": "screenshots_backup/1f44d-27259a90ef10d877.svg"
-          },
-          "count": 1,
-          "users": [
-            {
-              "id": "842664150584131635",
-              "name": "nasuo_eggplant",
-              "discriminator": "0000",
-              "nickname": "なすお",
-              "color": null,
-              "isBot": false,
-              "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
-            }
-          ]
-        }
-      ],
-      "mentions": [],
-      "inlineEmojis": []
-    },
     {
       "id": "1508752743521849384",
       "type": "Default",
@@ -3819,7 +3752,93 @@
         }
       ],
       "inlineEmojis": []
+    },
+    {
+      "id": "1540422664135381084",
+      "type": "Default",
+      "timestamp": "2026-08-21T18:09:42.799+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "8",
+      "author": {
+        "id": "1187593423566413968",
+        "name": "mameneko0808_09344",
+        "discriminator": "0000",
+        "nickname": "石井\u3000隆生",
+        "color": "#E74C3C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351762586462322803",
+            "name": "1年生",
+            "color": "#E74C3C",
+            "position": 5
+          }
+        ],
+        "avatarUrl": "screenshots_backup/caf36a1429941c61e78b298431fea472-194572a15990f873.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDC4D",
+            "code": "thumbsup",
+            "isAnimated": false,
+            "imageUrl": "screenshots_backup/1f44d-27259a90ef10d877.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "937626636680052747",
+              "name": "yoshida_keijo",
+              "discriminator": "0000",
+              "nickname": "吉田遥翔",
+              "color": "#945FFF",
+              "isBot": false,
+              "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1540709676390416486",
+      "type": "Default",
+      "timestamp": "2026-08-22T13:10:11.853+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "3",
+      "author": {
+        "id": "1187593423566413968",
+        "name": "mameneko0808_09344",
+        "discriminator": "0000",
+        "nickname": "石井\u3000隆生",
+        "color": "#E74C3C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351762586462322803",
+            "name": "1年生",
+            "color": "#E74C3C",
+            "position": 5
+          }
+        ],
+        "avatarUrl": "screenshots_backup/caf36a1429941c61e78b298431fea472-194572a15990f873.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
     }
   ],
-  "messageCount": 78
+  "messageCount": 79
 }
