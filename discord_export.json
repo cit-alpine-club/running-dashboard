@@ -13,10 +13,10 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-05-24T00:00:00+00:00",
+    "after": "2026-05-25T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-08-22T17:11:24.2191171+00:00",
+  "exportedAt": "2026-08-23T17:11:59.6926359+00:00",
   "messages": [
     {
       "id": "1508752743521849384",
@@ -3835,7 +3835,29 @@
       "attachments": [],
       "embeds": [],
       "stickers": [],
-      "reactions": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDC4D",
+            "code": "thumbsup",
+            "isAnimated": false,
+            "imageUrl": "screenshots_backup/1f44d-27259a90ef10d877.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "937626636680052747",
+              "name": "yoshida_keijo",
+              "discriminator": "0000",
+              "nickname": "吉田遥翔",
+              "color": "#945FFF",
+              "isBot": false,
+              "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
+            }
+          ]
+        }
+      ],
       "mentions": [],
       "inlineEmojis": []
     }
