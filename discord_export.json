@@ -13,10 +13,10 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-05-25T00:00:00+00:00",
+    "after": "2026-05-26T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-08-23T17:11:59.6926359+00:00",
+  "exportedAt": "2026-08-24T17:22:11.6851885+00:00",
   "messages": [
     {
       "id": "1508752743521849384",
@@ -3800,6 +3800,27 @@
               "color": "#945FFF",
               "isBot": false,
               "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDE01",
+            "code": "grin",
+            "isAnimated": false,
+            "imageUrl": "screenshots_backup/1f601-4e9bd27e7b4b180e.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "842664150584131635",
+              "name": "nasuo_eggplant",
+              "discriminator": "0000",
+              "nickname": "柴﨑直",
+              "color": "#F1C40F",
+              "isBot": false,
+              "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
             }
           ]
         }
