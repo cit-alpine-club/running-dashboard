@@ -16,7 +16,7 @@
     "after": "2026-05-31T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-08-29T00:48:02.4951071+00:00",
+  "exportedAt": "2026-08-29T19:34:04.1040628+00:00",
   "messages": [
     {
       "id": "1510993131871535345",
@@ -3863,7 +3863,39 @@
       ],
       "mentions": [],
       "inlineEmojis": []
+    },
+    {
+      "id": "1543296807637880902",
+      "type": "Default",
+      "timestamp": "2026-08-29T16:30:32.009+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "6",
+      "author": {
+        "id": "1187593423566413968",
+        "name": "mameneko0808_09344",
+        "discriminator": "0000",
+        "nickname": "石井\u3000隆生",
+        "color": "#E74C3C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351762586462322803",
+            "name": "1年生",
+            "color": "#E74C3C",
+            "position": 5
+          }
+        ],
+        "avatarUrl": "screenshots_backup/caf36a1429941c61e78b298431fea472-194572a15990f873.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
     }
   ],
-  "messageCount": 78
+  "messageCount": 79
 }
