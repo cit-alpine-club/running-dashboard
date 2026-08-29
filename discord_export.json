@@ -13,95 +13,11 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-05-30T00:00:00+00:00",
+    "after": "2026-05-31T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-08-28T01:13:03.6785452+00:00",
+  "exportedAt": "2026-08-29T00:48:02.4951071+00:00",
   "messages": [
-    {
-      "id": "1510261415955665078",
-      "type": "Default",
-      "timestamp": "2026-05-30T12:39:40.864+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "",
-      "author": {
-        "id": "1221468925305290947",
-        "name": "pandaman924122",
-        "discriminator": "0000",
-        "nickname": "飯田\u3000悠斗",
-        "color": "#CACACA",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1351763592675983431",
-            "name": "2年生",
-            "color": "#CACACA",
-            "position": 6
-          }
-        ],
-        "avatarUrl": "screenshots_backup/8569adcbd36c70a7578c017bf5604ea5-1708c43b2557cb43.png"
-      },
-      "attachments": [
-        {
-          "id": "1510261415716323489",
-          "url": "screenshots_backup/IMG_8498-ba4d6a585cc58667.png",
-          "fileName": "IMG_8498.png",
-          "fileSizeBytes": 657682
-        }
-      ],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
-    {
-      "id": "1510290216173437132",
-      "type": "Default",
-      "timestamp": "2026-05-30T14:34:07.371+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "",
-      "author": {
-        "id": "1323665303321706646",
-        "name": "gakuto_opape_94355",
-        "discriminator": "0000",
-        "nickname": "村越 岳人",
-        "color": "#C27C0E",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004369221288992859",
-            "name": "主将補",
-            "color": "#C27C0E",
-            "position": 14
-          },
-          {
-            "id": "1351763592675983431",
-            "name": "2年生",
-            "color": "#CACACA",
-            "position": 6
-          }
-        ],
-        "avatarUrl": "screenshots_backup/7108009e7d9fa2f094a3160f0061ffd9-9085ee57dfc6579f.png"
-      },
-      "attachments": [
-        {
-          "id": "1510290215829245952",
-          "url": "screenshots_backup/IMG_1861-49f3d5d23da8be94.png",
-          "fileName": "IMG_1861.png",
-          "fileSizeBytes": 666910
-        }
-      ],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
     {
       "id": "1510993131871535345",
       "type": "Default",
@@ -3697,7 +3613,257 @@
       ],
       "mentions": [],
       "inlineEmojis": []
+    },
+    {
+      "id": "1542715221032828930",
+      "type": "Reply",
+      "timestamp": "2026-08-28T01:59:30.957+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ランニングアプリ何使ってるの？何分走ったとかも一つの指標だからスクショの方がわかりやすいかも",
+      "author": {
+        "id": "1265520776384086099",
+        "name": "ajiujin0675_20962",
+        "discriminator": "0000",
+        "nickname": "阿久津輝将",
+        "color": "#FF00B5",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351764272119549962",
+            "name": "3年生",
+            "color": "#FF00B5",
+            "position": 7
+          }
+        ],
+        "avatarUrl": "screenshots_backup/cdd78d4746cdc6bcbe8ad316f351405a-e858f5a5c986f03a.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "1187593423566413968",
+          "name": "mameneko0808_09344",
+          "discriminator": "0000",
+          "nickname": "石井\u3000隆生",
+          "color": "#E74C3C",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1351762586462322803",
+              "name": "1年生",
+              "color": "#E74C3C",
+              "position": 5
+            }
+          ],
+          "avatarUrl": "screenshots_backup/caf36a1429941c61e78b298431fea472-194572a15990f873.png"
+        }
+      ],
+      "reference": {
+        "type": "Default",
+        "messageId": "1542587847385817110",
+        "channelId": "1351771478999306251",
+        "guildId": "1004340473122529371"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1542727286707585146",
+      "type": "Reply",
+      "timestamp": "2026-08-28T02:47:27.638+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "スマホ壊れてる",
+      "author": {
+        "id": "937626636680052747",
+        "name": "yoshida_keijo",
+        "discriminator": "0000",
+        "nickname": "吉田遥翔",
+        "color": "#945FFF",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351768693159231589",
+            "name": "4年生",
+            "color": "#945FFF",
+            "position": 8
+          }
+        ],
+        "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "1265520776384086099",
+          "name": "ajiujin0675_20962",
+          "discriminator": "0000",
+          "nickname": "阿久津輝将",
+          "color": "#FF00B5",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1351764272119549962",
+              "name": "3年生",
+              "color": "#FF00B5",
+              "position": 7
+            }
+          ],
+          "avatarUrl": "screenshots_backup/cdd78d4746cdc6bcbe8ad316f351405a-e858f5a5c986f03a.png"
+        }
+      ],
+      "reference": {
+        "type": "Default",
+        "messageId": "1542715221032828930",
+        "channelId": "1351771478999306251",
+        "guildId": "1004340473122529371"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1542835713769476177",
+      "type": "Default",
+      "timestamp": "2026-08-28T09:58:18.664+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "石井もあと11kmなのでラストスパートやね",
+      "author": {
+        "id": "937626636680052747",
+        "name": "yoshida_keijo",
+        "discriminator": "0000",
+        "nickname": "吉田遥翔",
+        "color": "#945FFF",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351768693159231589",
+            "name": "4年生",
+            "color": "#945FFF",
+            "position": 8
+          }
+        ],
+        "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83C\uDF89",
+            "code": "tada",
+            "isAnimated": false,
+            "imageUrl": "screenshots_backup/1f389-5c7383b4dc541d96.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "842664150584131635",
+              "name": "nasuo_eggplant",
+              "discriminator": "0000",
+              "nickname": "柴﨑直",
+              "color": "#F1C40F",
+              "isBot": false,
+              "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
+            },
+            {
+              "id": "937626636680052747",
+              "name": "yoshida_keijo",
+              "discriminator": "0000",
+              "nickname": "吉田遥翔",
+              "color": "#945FFF",
+              "isBot": false,
+              "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1542840446978629632",
+      "type": "Default",
+      "timestamp": "2026-08-28T10:17:07.149+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "山降りてからの方が足を追い込んでる",
+      "author": {
+        "id": "1187593423566413968",
+        "name": "mameneko0808_09344",
+        "discriminator": "0000",
+        "nickname": "石井\u3000隆生",
+        "color": "#E74C3C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351762586462322803",
+            "name": "1年生",
+            "color": "#E74C3C",
+            "position": 5
+          }
+        ],
+        "avatarUrl": "screenshots_backup/caf36a1429941c61e78b298431fea472-194572a15990f873.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "1027907385072820245",
+            "name": "emoji_7",
+            "code": "emoji_7",
+            "isAnimated": false,
+            "imageUrl": "screenshots_backup/1027907385072820245-889150b1ee7c2e04.png"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "937626636680052747",
+              "name": "yoshida_keijo",
+              "discriminator": "0000",
+              "nickname": "吉田遥翔",
+              "color": "#945FFF",
+              "isBot": false,
+              "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "☺️",
+            "code": "relaxed",
+            "isAnimated": false,
+            "imageUrl": "screenshots_backup/263a-990127068ef259ec.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "937626636680052747",
+              "name": "yoshida_keijo",
+              "discriminator": "0000",
+              "nickname": "吉田遥翔",
+              "color": "#945FFF",
+              "isBot": false,
+              "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
     }
   ],
-  "messageCount": 76
+  "messageCount": 78
 }
