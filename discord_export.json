@@ -13,158 +13,11 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-06-03T00:00:00+00:00",
+    "after": "2026-06-04T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-09-01T19:40:59.1331997+00:00",
+  "exportedAt": "2026-09-02T19:33:16.034047+00:00",
   "messages": [
-    {
-      "id": "1511706150024773844",
-      "type": "Default",
-      "timestamp": "2026-06-03T12:20:32.308+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": true,
-      "content": "https://running-dashboard-osn4.onrender.com/",
-      "author": {
-        "id": "937626636680052747",
-        "name": "yoshida_keijo",
-        "discriminator": "0000",
-        "nickname": "吉田遥翔",
-        "color": "#945FFF",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1351768693159231589",
-            "name": "4年生",
-            "color": "#945FFF",
-            "position": 8
-          }
-        ],
-        "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
-    {
-      "id": "1511706314588295390",
-      "type": "Default",
-      "timestamp": "2026-06-03T12:21:11.543+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "ランニング管理システムはNewサーバーに変えたのでURLも変わりました。",
-      "author": {
-        "id": "937626636680052747",
-        "name": "yoshida_keijo",
-        "discriminator": "0000",
-        "nickname": "吉田遥翔",
-        "color": "#945FFF",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1351768693159231589",
-            "name": "4年生",
-            "color": "#945FFF",
-            "position": 8
-          }
-        ],
-        "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
-    {
-      "id": "1511706520717361393",
-      "type": "ChannelPinnedMessage",
-      "timestamp": "2026-06-03T12:22:00.688+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "Pinned a message.",
-      "author": {
-        "id": "842664150584131635",
-        "name": "nasuo_eggplant",
-        "discriminator": "0000",
-        "nickname": "柴﨑直",
-        "color": "#F1C40F",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004362548562382920",
-            "name": "主将",
-            "color": "#F1C40F",
-            "position": 16
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "reference": {
-        "type": "Default",
-        "messageId": "1511706150024773844",
-        "channelId": "1351771478999306251",
-        "guildId": null
-      },
-      "inlineEmojis": []
-    },
-    {
-      "id": "1511711353088380958",
-      "type": "Default",
-      "timestamp": "2026-06-03T12:41:12.815+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "",
-      "author": {
-        "id": "1221468925305290947",
-        "name": "pandaman924122",
-        "discriminator": "0000",
-        "nickname": "飯田\u3000悠斗",
-        "color": "#CACACA",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1351763592675983431",
-            "name": "2年生",
-            "color": "#CACACA",
-            "position": 6
-          }
-        ],
-        "avatarUrl": "screenshots_backup/8569adcbd36c70a7578c017bf5604ea5-1708c43b2557cb43.png"
-      },
-      "attachments": [
-        {
-          "id": "1511711352849170542",
-          "url": "screenshots_backup/IMG_8534-67eecf52924ff00f.png",
-          "fileName": "IMG_8534.png",
-          "fileSizeBytes": 677172
-        }
-      ],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
     {
       "id": "1511907562885484664",
       "type": "Default",
@@ -590,7 +443,7 @@
               "name": "yoshida_keijo",
               "discriminator": "0000",
               "nickname": "吉田遥翔",
-              "color": "#945FFF",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
             }
@@ -611,7 +464,7 @@
               "name": "yoshida_keijo",
               "discriminator": "0000",
               "nickname": "吉田遥翔",
-              "color": "#945FFF",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
             }
@@ -1218,8 +1071,8 @@
               "id": "842664150584131635",
               "name": "nasuo_eggplant",
               "discriminator": "0000",
-              "nickname": "柴﨑直",
-              "color": "#F1C40F",
+              "nickname": "なすお",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
             }
@@ -1434,8 +1287,8 @@
               "id": "842664150584131635",
               "name": "nasuo_eggplant",
               "discriminator": "0000",
-              "nickname": "柴﨑直",
-              "color": "#F1C40F",
+              "nickname": "なすお",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
             },
@@ -1444,7 +1297,7 @@
               "name": "yoshida_keijo",
               "discriminator": "0000",
               "nickname": "吉田遥翔",
-              "color": "#945FFF",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
             }
@@ -1580,8 +1433,8 @@
               "id": "842664150584131635",
               "name": "nasuo_eggplant",
               "discriminator": "0000",
-              "nickname": "柴﨑直",
-              "color": "#F1C40F",
+              "nickname": "なすお",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
             }
@@ -1647,8 +1500,8 @@
               "id": "842664150584131635",
               "name": "nasuo_eggplant",
               "discriminator": "0000",
-              "nickname": "柴﨑直",
-              "color": "#F1C40F",
+              "nickname": "なすお",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
             }
@@ -1701,8 +1554,8 @@
               "id": "842664150584131635",
               "name": "nasuo_eggplant",
               "discriminator": "0000",
-              "nickname": "柴﨑直",
-              "color": "#F1C40F",
+              "nickname": "なすお",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
             },
@@ -1711,7 +1564,7 @@
               "name": "yoshida_keijo",
               "discriminator": "0000",
               "nickname": "吉田遥翔",
-              "color": "#945FFF",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
             }
@@ -1770,8 +1623,8 @@
               "id": "842664150584131635",
               "name": "nasuo_eggplant",
               "discriminator": "0000",
-              "nickname": "柴﨑直",
-              "color": "#F1C40F",
+              "nickname": "なすお",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
             },
@@ -1780,7 +1633,7 @@
               "name": "yoshida_keijo",
               "discriminator": "0000",
               "nickname": "吉田遥翔",
-              "color": "#945FFF",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
             }
@@ -2045,7 +1898,7 @@
               "name": "yoshida_keijo",
               "discriminator": "0000",
               "nickname": "吉田遥翔",
-              "color": "#945FFF",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
             }
@@ -2106,7 +1959,7 @@
               "name": "yoshida_keijo",
               "discriminator": "0000",
               "nickname": "吉田遥翔",
-              "color": "#945FFF",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
             }
@@ -2160,7 +2013,7 @@
               "name": "yoshida_keijo",
               "discriminator": "0000",
               "nickname": "吉田遥翔",
-              "color": "#945FFF",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
             },
@@ -2428,7 +2281,7 @@
               "name": "yoshida_keijo",
               "discriminator": "0000",
               "nickname": "吉田遥翔",
-              "color": "#945FFF",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
             }
@@ -2488,7 +2341,7 @@
               "name": "yoshida_keijo",
               "discriminator": "0000",
               "nickname": "吉田遥翔",
-              "color": "#945FFF",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
             }
@@ -2570,7 +2423,7 @@
               "name": "yoshida_keijo",
               "discriminator": "0000",
               "nickname": "吉田遥翔",
-              "color": "#945FFF",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
             }
@@ -2645,8 +2498,8 @@
               "id": "842664150584131635",
               "name": "nasuo_eggplant",
               "discriminator": "0000",
-              "nickname": "柴﨑直",
-              "color": "#F1C40F",
+              "nickname": "なすお",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
             },
@@ -2655,7 +2508,7 @@
               "name": "yoshida_keijo",
               "discriminator": "0000",
               "nickname": "吉田遥翔",
-              "color": "#945FFF",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
             }
@@ -2800,8 +2653,8 @@
               "id": "842664150584131635",
               "name": "nasuo_eggplant",
               "discriminator": "0000",
-              "nickname": "柴﨑直",
-              "color": "#F1C40F",
+              "nickname": "なすお",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
             },
@@ -4000,7 +3853,52 @@
       ],
       "mentions": [],
       "inlineEmojis": []
+    },
+    {
+      "id": "1544629710246514780",
+      "type": "Default",
+      "timestamp": "2026-09-02T08:47:00.755+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "1395336421362892882",
+        "name": "torippy103_08468",
+        "discriminator": "0000",
+        "nickname": "工藤扇梨",
+        "color": "#C27C0E",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1004369221288992859",
+            "name": "主将補",
+            "color": "#C27C0E",
+            "position": 14
+          },
+          {
+            "id": "1351763592675983431",
+            "name": "2年生",
+            "color": "#CACACA",
+            "position": 6
+          }
+        ],
+        "avatarUrl": "screenshots_backup/6c04680268fed3d6be3ce024d1e4280b-e383e4ac5d9d4ef2.png"
+      },
+      "attachments": [
+        {
+          "id": "1544629709759979600",
+          "url": "screenshots_backup/IMG_4607-9d7b6f8909793453.jpg",
+          "fileName": "IMG_4607.jpg",
+          "fileSizeBytes": 327874
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
     }
   ],
-  "messageCount": 78
+  "messageCount": 75
 }
