@@ -13,50 +13,11 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-06-05T00:00:00+00:00",
+    "after": "2026-06-06T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-09-03T19:29:36.6051745+00:00",
+  "exportedAt": "2026-09-04T19:12:42.0391509+00:00",
   "messages": [
-    {
-      "id": "1512427407875899423",
-      "type": "Default",
-      "timestamp": "2026-06-05T12:06:33.58+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "",
-      "author": {
-        "id": "1221468925305290947",
-        "name": "pandaman924122",
-        "discriminator": "0000",
-        "nickname": "飯田\u3000悠斗",
-        "color": "#CACACA",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1351763592675983431",
-            "name": "2年生",
-            "color": "#CACACA",
-            "position": 6
-          }
-        ],
-        "avatarUrl": "screenshots_backup/8569adcbd36c70a7578c017bf5604ea5-1708c43b2557cb43.png"
-      },
-      "attachments": [
-        {
-          "id": "1512427407397752842",
-          "url": "screenshots_backup/IMG_8558-de1c99ffea5857d0.png",
-          "fileName": "IMG_8558.png",
-          "fileSizeBytes": 658179
-        }
-      ],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
     {
       "id": "1513061373192704030",
       "type": "Default",
@@ -3902,5 +3863,5 @@
       "inlineEmojis": []
     }
   ],
-  "messageCount": 74
+  "messageCount": 73
 }
