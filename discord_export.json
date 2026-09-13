@@ -13,10 +13,10 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-06-14T00:00:00+00:00",
+    "after": "2026-06-15T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-09-12T18:51:11.2857284+00:00",
+  "exportedAt": "2026-09-13T19:04:53.2632975+00:00",
   "messages": [
     {
       "id": "1516042088628879450",
@@ -3224,7 +3224,206 @@
       "reactions": [],
       "mentions": [],
       "inlineEmojis": []
+    },
+    {
+      "id": "1548677762645229638",
+      "type": "Default",
+      "timestamp": "2026-09-13T12:52:31.656+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://youtu.be/xIr9vER4D-4?si=WcGUwPewsPVbrlsl",
+      "author": {
+        "id": "633179440754720798",
+        "name": "hayato_0417",
+        "discriminator": "0000",
+        "nickname": "都賀勇人",
+        "color": "#3498DB",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1004369071275515974",
+            "name": "会計",
+            "color": "#3498DB",
+            "position": 13
+          },
+          {
+            "id": "1351764272119549962",
+            "name": "3年生",
+            "color": "#FF00B5",
+            "position": 7
+          }
+        ],
+        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "【タバタ式トレーニング】バーピーのみ！自宅で...",
+          "url": "https://www.youtube.com/watch?v=xIr9vER4D-4",
+          "timestamp": null,
+          "description": "◆筋肉飯チャンネル(普段僕が食べてる筋肉飯を投稿してます)\n\nhttps://www.youtube.com/channel/UCL6dMIpsAeCLL86UcLUmzoQ\n\n\n\n\n◆インスタグラム(簡単にできる筋トレ動画を投稿しています)\n\nhttps://www.instagram.com/hiro_fitness_mate\n\n\n\n◆食事管理や栄養学について(ブログ)\n\nhttps://fitnessma...",
+          "color": "#FF0000",
+          "author": {
+            "name": "【地球がジム】fitness mate",
+            "url": "https://www.youtube.com/channel/UC_x_e-SGSU-basLUFOQ6FJA"
+          },
+          "thumbnail": {
+            "url": "screenshots_backup/maxresdefault-37ccd7b202cd01c4.jpg",
+            "canonicalUrl": "https://i.ytimg.com/vi/xIr9vER4D-4/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "video": {
+            "url": "screenshots_backup/xIr9vER4D-4-adfff57899d14c94",
+            "canonicalUrl": "https://www.youtube.com/embed/xIr9vER4D-4",
+            "width": 1280,
+            "height": 720
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1548677915804434484",
+      "type": "Default",
+      "timestamp": "2026-09-13T12:53:08.172+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ランニングする時間ないけどトレーニングはしたい日におすすめの心肺機能トレーニング",
+      "author": {
+        "id": "633179440754720798",
+        "name": "hayato_0417",
+        "discriminator": "0000",
+        "nickname": "都賀勇人",
+        "color": "#3498DB",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1004369071275515974",
+            "name": "会計",
+            "color": "#3498DB",
+            "position": 13
+          },
+          {
+            "id": "1351764272119549962",
+            "name": "3年生",
+            "color": "#FF00B5",
+            "position": 7
+          }
+        ],
+        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1548707208710332589",
+      "type": "Default",
+      "timestamp": "2026-09-13T14:49:32.145+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "1221468925305290947",
+        "name": "pandaman924122",
+        "discriminator": "0000",
+        "nickname": "飯田\u3000悠斗",
+        "color": "#CACACA",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351763592675983431",
+            "name": "2年生",
+            "color": "#CACACA",
+            "position": 6
+          }
+        ],
+        "avatarUrl": "screenshots_backup/8569adcbd36c70a7578c017bf5604ea5-1708c43b2557cb43.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1548707411777429605",
+      "type": "Default",
+      "timestamp": "2026-09-13T14:50:20.56+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "@everyone \nトレーニング参加する曜日決めたいので、参加できる曜日押してください",
+      "author": {
+        "id": "1221468925305290947",
+        "name": "pandaman924122",
+        "discriminator": "0000",
+        "nickname": "飯田\u3000悠斗",
+        "color": "#CACACA",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351763592675983431",
+            "name": "2年生",
+            "color": "#CACACA",
+            "position": 6
+          }
+        ],
+        "avatarUrl": "screenshots_backup/8569adcbd36c70a7578c017bf5604ea5-1708c43b2557cb43.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1548707436825936055",
+      "type": "Default",
+      "timestamp": "2026-09-13T14:50:26.532+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "週一絶対",
+      "author": {
+        "id": "1221468925305290947",
+        "name": "pandaman924122",
+        "discriminator": "0000",
+        "nickname": "飯田\u3000悠斗",
+        "color": "#CACACA",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351763592675983431",
+            "name": "2年生",
+            "color": "#CACACA",
+            "position": 6
+          }
+        ],
+        "avatarUrl": "screenshots_backup/8569adcbd36c70a7578c017bf5604ea5-1708c43b2557cb43.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
     }
   ],
-  "messageCount": 58
+  "messageCount": 63
 }
