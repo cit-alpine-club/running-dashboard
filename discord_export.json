@@ -13,74 +13,11 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-06-18T00:00:00+00:00",
+    "after": "2026-06-19T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-09-16T19:47:56.8499483+00:00",
+  "exportedAt": "2026-09-17T19:56:33.3307249+00:00",
   "messages": [
-    {
-      "id": "1517117440629407826",
-      "type": "Default",
-      "timestamp": "2026-06-18T10:43:04.525+00:00",
-      "timestampEdited": "2026-06-18T10:45:03.346+00:00",
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "歩荷33キロ30分",
-      "author": {
-        "id": "1187593423566413968",
-        "name": "mameneko0808_09344",
-        "discriminator": "0000",
-        "nickname": "石井\u3000隆生",
-        "color": "#E74C3C",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1351762586462322803",
-            "name": "1年生",
-            "color": "#E74C3C",
-            "position": 5
-          }
-        ],
-        "avatarUrl": "screenshots_backup/caf36a1429941c61e78b298431fea472-194572a15990f873.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [
-        {
-          "emoji": {
-            "id": "",
-            "name": "\uD83D\uDC4D",
-            "code": "thumbsup",
-            "isAnimated": false,
-            "imageUrl": "screenshots_backup/1f44d-27259a90ef10d877.svg"
-          },
-          "count": 2,
-          "users": [
-            {
-              "id": "842664150584131635",
-              "name": "nasuo_eggplant",
-              "discriminator": "0000",
-              "nickname": "なすお",
-              "color": null,
-              "isBot": false,
-              "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
-            },
-            {
-              "id": "937626636680052747",
-              "name": "yoshida_keijo",
-              "discriminator": "0000",
-              "nickname": "吉田遥翔",
-              "color": null,
-              "isBot": false,
-              "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
-            }
-          ]
-        }
-      ],
-      "mentions": [],
-      "inlineEmojis": []
-    },
     {
       "id": "1517348018079400057",
       "type": "Default",
@@ -3399,7 +3336,153 @@
         "guildId": null
       },
       "inlineEmojis": []
+    },
+    {
+      "id": "1549921321649963180",
+      "type": "PollResult",
+      "timestamp": "2026-09-16T23:13:59.227+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "パンダマン's poll トレーニングの時間 has closed.",
+      "author": {
+        "id": "1221468925305290947",
+        "name": "pandaman924122",
+        "discriminator": "0000",
+        "nickname": "飯田\u3000悠斗",
+        "color": "#CACACA",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351763592675983431",
+            "name": "2年生",
+            "color": "#CACACA",
+            "position": 6
+          }
+        ],
+        "avatarUrl": "screenshots_backup/8569adcbd36c70a7578c017bf5604ea5-1708c43b2557cb43.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "",
+          "url": null,
+          "timestamp": null,
+          "description": "",
+          "images": [],
+          "fields": [
+            {
+              "name": "poll_question_text",
+              "value": "トレーニングの時間",
+              "isInline": false
+            },
+            {
+              "name": "victor_answer_votes",
+              "value": "3",
+              "isInline": false
+            },
+            {
+              "name": "total_votes",
+              "value": "13",
+              "isInline": false
+            },
+            {
+              "name": "victor_answer_id",
+              "value": "7",
+              "isInline": false
+            },
+            {
+              "name": "victor_answer_text",
+              "value": "18:30-",
+              "isInline": false
+            }
+          ],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "1221468925305290947",
+          "name": "pandaman924122",
+          "discriminator": "0000",
+          "nickname": "飯田\u3000悠斗",
+          "color": "#CACACA",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1351763592675983431",
+              "name": "2年生",
+              "color": "#CACACA",
+              "position": 6
+            }
+          ],
+          "avatarUrl": "screenshots_backup/8569adcbd36c70a7578c017bf5604ea5-1708c43b2557cb43.png"
+        }
+      ],
+      "reference": {
+        "type": "Default",
+        "messageId": "1548834140152008746",
+        "channelId": "1351771478999306251",
+        "guildId": null
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1549970231974428672",
+      "type": "Default",
+      "timestamp": "2026-09-17T02:28:20.357+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "@everyone \nhttps://docs.google.com/spreadsheets/d/1U-dUYS4d_sVoY0N5pmtGjQLw8X-1vOZQ0-vqhZWGCf8/edit?usp=sharing\n時間と曜日間違っていたら、修正してください。\n長谷川先輩は曜日、柴﨑先輩は時間が分からなかったです。",
+      "author": {
+        "id": "1221468925305290947",
+        "name": "pandaman924122",
+        "discriminator": "0000",
+        "nickname": "飯田\u3000悠斗",
+        "color": "#CACACA",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351763592675983431",
+            "name": "2年生",
+            "color": "#CACACA",
+            "position": 6
+          }
+        ],
+        "avatarUrl": "screenshots_backup/8569adcbd36c70a7578c017bf5604ea5-1708c43b2557cb43.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83E\uDEE1",
+            "code": "\uD83E\uDEE1",
+            "isAnimated": false,
+            "imageUrl": "screenshots_backup/1fae1-b19de625d6f4fb3e.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "842664150584131635",
+              "name": "nasuo_eggplant",
+              "discriminator": "0000",
+              "nickname": "柴﨑直",
+              "color": "#F1C40F",
+              "isBot": false,
+              "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
     }
   ],
-  "messageCount": 57
+  "messageCount": 58
 }
