@@ -13,10 +13,10 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-06-21T00:00:00+00:00",
+    "after": "2026-06-22T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-09-19T19:03:23.2233793+00:00",
+  "exportedAt": "2026-09-20T19:10:36.6142202+00:00",
   "messages": [
     {
       "id": "1518900580641148988",
@@ -3412,7 +3412,132 @@
       ],
       "mentions": [],
       "inlineEmojis": []
+    },
+    {
+      "id": "1551100754436165752",
+      "type": "Default",
+      "timestamp": "2026-09-20T05:20:37.916+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "金曜日の代わりです\n雨が降っているのでトレーニングバイクにしました\n\n30分 時速35キロ維持\n消費カロリー683キロカロリー",
+      "author": {
+        "id": "914783354841346098",
+        "name": "notami_025",
+        "discriminator": "0000",
+        "nickname": "蛭田尊輝",
+        "color": "#E74C3C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351762586462322803",
+            "name": "1年生",
+            "color": "#E74C3C",
+            "position": 5
+          }
+        ],
+        "avatarUrl": "screenshots_backup/6b01e648505c4d705e2867d56fd96f39-f69ac2d7e6f0239f.png"
+      },
+      "attachments": [
+        {
+          "id": "1551100753018494996",
+          "url": "screenshots_backup/IMG_4880-1ed7b58f409701fa.jpg",
+          "fileName": "IMG_4880.jpg",
+          "fileSizeBytes": 282552
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1551144596866863135",
+      "type": "Default",
+      "timestamp": "2026-09-20T08:14:50.766+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "指摘されたとおり、35キロはで出ないと思います。",
+      "author": {
+        "id": "914783354841346098",
+        "name": "notami_025",
+        "discriminator": "0000",
+        "nickname": "蛭田尊輝",
+        "color": "#E74C3C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351762586462322803",
+            "name": "1年生",
+            "color": "#E74C3C",
+            "position": 5
+          }
+        ],
+        "avatarUrl": "screenshots_backup/6b01e648505c4d705e2867d56fd96f39-f69ac2d7e6f0239f.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1551144937175785553",
+      "type": "Default",
+      "timestamp": "2026-09-20T08:16:11.902+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "おそらく時速を表しているパラメーターみたいなのが勝手に言ってるだけなので",
+      "author": {
+        "id": "914783354841346098",
+        "name": "notami_025",
+        "discriminator": "0000",
+        "nickname": "蛭田尊輝",
+        "color": "#E74C3C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351762586462322803",
+            "name": "1年生",
+            "color": "#E74C3C",
+            "position": 5
+          }
+        ],
+        "avatarUrl": "screenshots_backup/6b01e648505c4d705e2867d56fd96f39-f69ac2d7e6f0239f.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDE29",
+            "code": "weary",
+            "isAnimated": false,
+            "imageUrl": "screenshots_backup/1f629-b734a9fca3fbfbb4.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1221468925305290947",
+              "name": "pandaman924122",
+              "discriminator": "0000",
+              "nickname": "飯田\u3000悠斗",
+              "color": "#CACACA",
+              "isBot": false,
+              "avatarUrl": "screenshots_backup/8569adcbd36c70a7578c017bf5604ea5-1708c43b2557cb43.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
     }
   ],
-  "messageCount": 56
+  "messageCount": 59
 }
