@@ -13,10 +13,10 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-06-25T00:00:00+00:00",
+    "after": "2026-06-26T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-09-23T19:54:43.2622343+00:00",
+  "exportedAt": "2026-09-24T20:13:01.268955+00:00",
   "messages": [
     {
       "id": "1521390101295534171",
@@ -3195,7 +3195,332 @@
       ],
       "mentions": [],
       "inlineEmojis": []
+    },
+    {
+      "id": "1552536791775576124",
+      "type": "Default",
+      "timestamp": "2026-09-24T04:26:55.898+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "829702151768244254",
+        "name": "kk2011",
+        "discriminator": "0000",
+        "nickname": "髙田凌我",
+        "color": "#206694",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1154078280643780688",
+            "name": "会計補",
+            "color": "#206694",
+            "position": 12
+          },
+          {
+            "id": "1351763592675983431",
+            "name": "2年生",
+            "color": "#CACACA",
+            "position": 6
+          }
+        ],
+        "avatarUrl": "screenshots_backup/8b43a801d53633b1bd63c9ca176723a9-8477d31fd50837a8.png"
+      },
+      "attachments": [
+        {
+          "id": "1552536790227751064",
+          "url": "screenshots_backup/IMG_0720-dc4bca648de52294.png",
+          "fileName": "IMG_0720.png",
+          "fileSizeBytes": 868593
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1552538163367383142",
+      "type": "Default",
+      "timestamp": "2026-09-24T04:32:22.911+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "40kg3往復タイムトライアル18:20",
+      "author": {
+        "id": "633179440754720798",
+        "name": "hayato_0417",
+        "discriminator": "0000",
+        "nickname": "都賀勇人",
+        "color": "#3498DB",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1004369071275515974",
+            "name": "会計",
+            "color": "#3498DB",
+            "position": 13
+          },
+          {
+            "id": "1351764272119549962",
+            "name": "3年生",
+            "color": "#FF00B5",
+            "position": 7
+          }
+        ],
+        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1552538724083175455",
+      "type": "Default",
+      "timestamp": "2026-09-24T04:34:36.596+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "@石井\u3000隆生 @工藤扇梨 @渡辺\u3000亮真 火曜日トレーニングやった？",
+      "author": {
+        "id": "633179440754720798",
+        "name": "hayato_0417",
+        "discriminator": "0000",
+        "nickname": "都賀勇人",
+        "color": "#3498DB",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1004369071275515974",
+            "name": "会計",
+            "color": "#3498DB",
+            "position": 13
+          },
+          {
+            "id": "1351764272119549962",
+            "name": "3年生",
+            "color": "#FF00B5",
+            "position": 7
+          }
+        ],
+        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "1187593423566413968",
+          "name": "mameneko0808_09344",
+          "discriminator": "0000",
+          "nickname": "石井\u3000隆生",
+          "color": "#E74C3C",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1351762586462322803",
+              "name": "1年生",
+              "color": "#E74C3C",
+              "position": 5
+            }
+          ],
+          "avatarUrl": "screenshots_backup/caf36a1429941c61e78b298431fea472-194572a15990f873.png"
+        },
+        {
+          "id": "1372106263114027008",
+          "name": "ryoma05581",
+          "discriminator": "0000",
+          "nickname": "渡辺\u3000亮真",
+          "color": "#607D8B",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1004376070222524427",
+              "name": "体育会",
+              "color": "#607D8B",
+              "position": 9
+            },
+            {
+              "id": "1351763592675983431",
+              "name": "2年生",
+              "color": "#CACACA",
+              "position": 6
+            }
+          ],
+          "avatarUrl": "screenshots_backup/76c4ec745ce16eb4ae7d2a8b0cf17425-4f01aa8c56080fad.png"
+        },
+        {
+          "id": "1395336421362892882",
+          "name": "torippy103_08468",
+          "discriminator": "0000",
+          "nickname": "工藤扇梨",
+          "color": "#C27C0E",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1004369221288992859",
+              "name": "主将補",
+              "color": "#C27C0E",
+              "position": 14
+            },
+            {
+              "id": "1351763592675983431",
+              "name": "2年生",
+              "color": "#CACACA",
+              "position": 6
+            }
+          ],
+          "avatarUrl": "screenshots_backup/6c04680268fed3d6be3ce024d1e4280b-e383e4ac5d9d4ef2.png"
+        }
+      ],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1552538755745976441",
+      "type": "Default",
+      "timestamp": "2026-09-24T04:34:44.145+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "もしくはどこかに振り替え？",
+      "author": {
+        "id": "633179440754720798",
+        "name": "hayato_0417",
+        "discriminator": "0000",
+        "nickname": "都賀勇人",
+        "color": "#3498DB",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1004369071275515974",
+            "name": "会計",
+            "color": "#3498DB",
+            "position": 13
+          },
+          {
+            "id": "1351764272119549962",
+            "name": "3年生",
+            "color": "#FF00B5",
+            "position": 7
+          }
+        ],
+        "avatarUrl": "screenshots_backup/5c47bcf9943ab4babcbef5b4de2f8f5f-b303a0a90eae8805.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1552539010445086811",
+      "type": "Default",
+      "timestamp": "2026-09-24T04:35:44.87+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "火曜日学校にこれなかったので今日やらせていただきます",
+      "author": {
+        "id": "1187593423566413968",
+        "name": "mameneko0808_09344",
+        "discriminator": "0000",
+        "nickname": "石井\u3000隆生",
+        "color": "#E74C3C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351762586462322803",
+            "name": "1年生",
+            "color": "#E74C3C",
+            "position": 5
+          }
+        ],
+        "avatarUrl": "screenshots_backup/caf36a1429941c61e78b298431fea472-194572a15990f873.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1552581082099097611",
+      "type": "Default",
+      "timestamp": "2026-09-24T07:22:55.534+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "歩荷35kg30分",
+      "author": {
+        "id": "1187593423566413968",
+        "name": "mameneko0808_09344",
+        "discriminator": "0000",
+        "nickname": "石井\u3000隆生",
+        "color": "#E74C3C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351762586462322803",
+            "name": "1年生",
+            "color": "#E74C3C",
+            "position": 5
+          }
+        ],
+        "avatarUrl": "screenshots_backup/caf36a1429941c61e78b298431fea472-194572a15990f873.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1552605781323550743",
+      "type": "Default",
+      "timestamp": "2026-09-24T09:01:04.288+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "火曜\u3000歩荷 25kg 5往復",
+      "author": {
+        "id": "1395336421362892882",
+        "name": "torippy103_08468",
+        "discriminator": "0000",
+        "nickname": "工藤扇梨",
+        "color": "#C27C0E",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1004369221288992859",
+            "name": "主将補",
+            "color": "#C27C0E",
+            "position": 14
+          },
+          {
+            "id": "1351763592675983431",
+            "name": "2年生",
+            "color": "#CACACA",
+            "position": 6
+          }
+        ],
+        "avatarUrl": "screenshots_backup/6c04680268fed3d6be3ce024d1e4280b-e383e4ac5d9d4ef2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
     }
   ],
-  "messageCount": 53
+  "messageCount": 60
 }
