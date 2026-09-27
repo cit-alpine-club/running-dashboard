@@ -13,10 +13,10 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-06-28T00:00:00+00:00",
+    "after": "2026-06-29T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-09-26T19:29:50.5310588+00:00",
+  "exportedAt": "2026-09-27T19:55:17.7602358+00:00",
   "messages": [
     {
       "id": "1521390101295534171",
@@ -3660,7 +3660,58 @@
       ],
       "mentions": [],
       "inlineEmojis": []
+    },
+    {
+      "id": "1553816053891473531",
+      "type": "Default",
+      "timestamp": "2026-09-27T17:10:15.754+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "1262958915180826636",
+        "name": "riyou041824",
+        "discriminator": "0000",
+        "nickname": "長谷川\u3000稜",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1011546002274136114",
+            "name": "主務",
+            "color": "#2ECC71",
+            "position": 11
+          },
+          {
+            "id": "1351764272119549962",
+            "name": "3年生",
+            "color": "#FF00B5",
+            "position": 7
+          }
+        ],
+        "avatarUrl": "screenshots_backup/f957f01b1544554b28cacc9e8262dfaa-cb2f14181c9a3fe8.png"
+      },
+      "attachments": [
+        {
+          "id": "1553816052910002317",
+          "url": "screenshots_backup/Screenshot_20260927_232430_Nike_Run_Club-3e9a735b04adf097.jpg",
+          "fileName": "Screenshot_20260927_232430_Nike_Run_Club.jpg",
+          "fileSizeBytes": 69709
+        },
+        {
+          "id": "1553816053593935973",
+          "url": "screenshots_backup/Screenshot_20260927_232355_Nike_Run_Club-0482f99d775f5187.jpg",
+          "fileName": "Screenshot_20260927_232355_Nike_Run_Club.jpg",
+          "fileSizeBytes": 99230
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
     }
   ],
-  "messageCount": 61
+  "messageCount": 62
 }
