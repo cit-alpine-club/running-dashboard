@@ -13,56 +13,11 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-07-04T00:00:00+00:00",
+    "after": "2026-07-05T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-10-02T21:05:29.6271226+00:00",
+  "exportedAt": "2026-10-03T19:35:30.4164197+00:00",
   "messages": [
-    {
-      "id": "1522942010091376670",
-      "type": "Default",
-      "timestamp": "2026-07-04T12:27:50.1+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "",
-      "author": {
-        "id": "633179440754720798",
-        "name": "hayato_0417",
-        "discriminator": "0000",
-        "nickname": "都賀勇人",
-        "color": "#3498DB",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004369071275515974",
-            "name": "会計",
-            "color": "#3498DB",
-            "position": 13
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/4a53b8f7a8742d85bb0790c6ebd25d55-6ac88fa0074f599f.png"
-      },
-      "attachments": [
-        {
-          "id": "1522942009667620914",
-          "url": "screenshots_backup/IMG_0051-d1231944e4c0f7b7.png",
-          "fileName": "IMG_0051.png",
-          "fileSizeBytes": 751711
-        }
-      ],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
     {
       "id": "1523537812887179294",
       "type": "Default",
@@ -3801,5 +3756,5 @@
       "inlineEmojis": []
     }
   ],
-  "messageCount": 66
+  "messageCount": 65
 }
