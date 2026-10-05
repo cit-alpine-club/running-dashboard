@@ -13,56 +13,11 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-07-06T00:00:00+00:00",
+    "after": "2026-07-07T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-10-04T19:50:51.2432198+00:00",
+  "exportedAt": "2026-10-05T22:59:11.0397326+00:00",
   "messages": [
-    {
-      "id": "1523537812887179294",
-      "type": "Default",
-      "timestamp": "2026-07-06T03:55:20.556+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "",
-      "author": {
-        "id": "1372106263114027008",
-        "name": "ryoma05581",
-        "discriminator": "0000",
-        "nickname": "渡辺\u3000亮真",
-        "color": "#607D8B",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004376070222524427",
-            "name": "体育会",
-            "color": "#607D8B",
-            "position": 9
-          },
-          {
-            "id": "1351763592675983431",
-            "name": "2年生",
-            "color": "#CACACA",
-            "position": 6
-          }
-        ],
-        "avatarUrl": "screenshots_backup/76c4ec745ce16eb4ae7d2a8b0cf17425-4f01aa8c56080fad.png"
-      },
-      "attachments": [
-        {
-          "id": "1523537812622675988",
-          "url": "screenshots_backup/6147077C-A693-4EA8-A9B6-D7946E2E209D-3f6cb4d06f1293e6.png",
-          "fileName": "6147077C-A693-4EA8-A9B6-D7946E2E209D.png",
-          "fileSizeBytes": 881451
-        }
-      ],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
     {
       "id": "1523976026361823262",
       "type": "Default",
@@ -3754,7 +3709,122 @@
       "reactions": [],
       "mentions": [],
       "inlineEmojis": []
+    },
+    {
+      "id": "1556458187937423471",
+      "type": "Default",
+      "timestamp": "2026-10-05T00:09:09.599+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "体調不良のため今日のトレーニング休みます\n回復したらその分やります",
+      "author": {
+        "id": "1262958915180826636",
+        "name": "riyou041824",
+        "discriminator": "0000",
+        "nickname": "長谷川\u3000稜",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1011546002274136114",
+            "name": "主務",
+            "color": "#2ECC71",
+            "position": 11
+          },
+          {
+            "id": "1351764272119549962",
+            "name": "3年生",
+            "color": "#FF00B5",
+            "position": 7
+          }
+        ],
+        "avatarUrl": "screenshots_backup/f957f01b1544554b28cacc9e8262dfaa-cb2f14181c9a3fe8.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1556674086665584711",
+      "type": "Default",
+      "timestamp": "2026-10-05T14:27:03.867+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "1366366819991949312",
+        "name": "keta1221_33543",
+        "discriminator": "0000",
+        "nickname": "豊口渓太",
+        "color": "#E74C3C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351762586462322803",
+            "name": "1年生",
+            "color": "#E74C3C",
+            "position": 5
+          }
+        ],
+        "avatarUrl": "screenshots_backup/f11304c37a7af1605e0477874ac201af-591809b235c3348b.png"
+      },
+      "attachments": [
+        {
+          "id": "1556674085520674847",
+          "url": "screenshots_backup/Screenshot_2026-10-05-23-26-52-26_b41b76f6-77b98700c66f0750.jpg",
+          "fileName": "Screenshot_2026-10-05-23-26-52-26_b41b76f68239b499f046c4c1a70ac1ea.jpg",
+          "fileSizeBytes": 136024
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1556676234388308010",
+      "type": "Default",
+      "timestamp": "2026-10-05T14:35:35.924+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "10/4 ランニング3.5km  20分\u3000スマホが手元になかったためRUNは無し",
+      "author": {
+        "id": "1372106263114027008",
+        "name": "ryoma05581",
+        "discriminator": "0000",
+        "nickname": "渡辺\u3000亮真",
+        "color": "#607D8B",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1004376070222524427",
+            "name": "体育会",
+            "color": "#607D8B",
+            "position": 9
+          },
+          {
+            "id": "1351763592675983431",
+            "name": "2年生",
+            "color": "#CACACA",
+            "position": 6
+          }
+        ],
+        "avatarUrl": "screenshots_backup/76c4ec745ce16eb4ae7d2a8b0cf17425-4f01aa8c56080fad.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
     }
   ],
-  "messageCount": 65
+  "messageCount": 67
 }
