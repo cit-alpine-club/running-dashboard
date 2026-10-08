@@ -13,81 +13,11 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-07-09T00:00:00+00:00",
+    "after": "2026-07-10T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-10-07T21:42:43.1228739+00:00",
+  "exportedAt": "2026-10-08T21:38:09.1697954+00:00",
   "messages": [
-    {
-      "id": "1524631209513062552",
-      "type": "Default",
-      "timestamp": "2026-07-09T04:20:06.626+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "今日のトレーニングはいつも通り参加する予定でしたが急用ができたため休ませてもらいます",
-      "author": {
-        "id": "1187593423566413968",
-        "name": "mameneko0808_09344",
-        "discriminator": "0000",
-        "nickname": "石井\u3000隆生",
-        "color": "#E74C3C",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1351762586462322803",
-            "name": "1年生",
-            "color": "#E74C3C",
-            "position": 5
-          }
-        ],
-        "avatarUrl": "screenshots_backup/caf36a1429941c61e78b298431fea472-194572a15990f873.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
-    {
-      "id": "1524670535445909564",
-      "type": "Default",
-      "timestamp": "2026-07-09T06:56:22.659+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "歩荷40kg4往復",
-      "author": {
-        "id": "633179440754720798",
-        "name": "hayato_0417",
-        "discriminator": "0000",
-        "nickname": "都賀勇人",
-        "color": "#3498DB",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1004369071275515974",
-            "name": "会計",
-            "color": "#3498DB",
-            "position": 13
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/4a53b8f7a8742d85bb0790c6ebd25d55-6ac88fa0074f599f.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [],
-      "mentions": [],
-      "inlineEmojis": []
-    },
     {
       "id": "1526489038242971669",
       "type": "Default",
@@ -258,8 +188,8 @@
               "id": "633179440754720798",
               "name": "hayato_0417",
               "discriminator": "0000",
-              "nickname": "都賀勇人",
-              "color": "#3498DB",
+              "nickname": "ガハハ",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/4a53b8f7a8742d85bb0790c6ebd25d55-6ac88fa0074f599f.png"
             }
@@ -346,8 +276,8 @@
               "id": "633179440754720798",
               "name": "hayato_0417",
               "discriminator": "0000",
-              "nickname": "都賀勇人",
-              "color": "#3498DB",
+              "nickname": "ガハハ",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/4a53b8f7a8742d85bb0790c6ebd25d55-6ac88fa0074f599f.png"
             },
@@ -3989,6 +3919,105 @@
           "avatarUrl": "screenshots_backup/6c04680268fed3d6be3ce024d1e4280b-e383e4ac5d9d4ef2.png"
         }
       ],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1557615802696466524",
+      "type": "Default",
+      "timestamp": "2026-10-08T04:49:06.465+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "28kg4往復40分",
+      "author": {
+        "id": "829702151768244254",
+        "name": "kk2011",
+        "discriminator": "0000",
+        "nickname": "髙田凌我",
+        "color": "#206694",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1154078280643780688",
+            "name": "会計補",
+            "color": "#206694",
+            "position": 12
+          },
+          {
+            "id": "1351763592675983431",
+            "name": "2年生",
+            "color": "#CACACA",
+            "position": 6
+          }
+        ],
+        "avatarUrl": "screenshots_backup/8b43a801d53633b1bd63c9ca176723a9-8477d31fd50837a8.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1557631134307721288",
+      "type": "Default",
+      "timestamp": "2026-10-08T05:50:01.806+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "1366366819991949312",
+        "name": "keta1221_33543",
+        "discriminator": "0000",
+        "nickname": "豊口渓太",
+        "color": "#E74C3C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1351762586462322803",
+            "name": "1年生",
+            "color": "#E74C3C",
+            "position": 5
+          }
+        ],
+        "avatarUrl": "screenshots_backup/f11304c37a7af1605e0477874ac201af-591809b235c3348b.png"
+      },
+      "attachments": [
+        {
+          "id": "1557631133905063957",
+          "url": "screenshots_backup/Screenshot_2026-10-08-14-49-28-73_b41b76f6-0938435a35147514.jpg",
+          "fileName": "Screenshot_2026-10-08-14-49-28-73_b41b76f68239b499f046c4c1a70ac1ea.jpg",
+          "fileSizeBytes": 123649
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "⁉️",
+            "code": "interrobang",
+            "isAnimated": false,
+            "imageUrl": "screenshots_backup/2049-c69c51e4e66275eb.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "633179440754720798",
+              "name": "hayato_0417",
+              "discriminator": "0000",
+              "nickname": "都賀勇人",
+              "color": "#3498DB",
+              "isBot": false,
+              "avatarUrl": "screenshots_backup/4a53b8f7a8742d85bb0790c6ebd25d55-6ac88fa0074f599f.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
       "inlineEmojis": []
     }
   ],
