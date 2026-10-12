@@ -13,10 +13,10 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-07-13T00:00:00+00:00",
+    "after": "2026-07-14T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-10-11T20:41:22.0377133+00:00",
+  "exportedAt": "2026-10-12T23:20:30.7660717+00:00",
   "messages": [
     {
       "id": "1526489038242971669",
@@ -4019,7 +4019,67 @@
       ],
       "mentions": [],
       "inlineEmojis": []
+    },
+    {
+      "id": "1559118890137690204",
+      "type": "Default",
+      "timestamp": "2026-10-12T08:21:50.437+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "まだ咳でるのでトレーニングは週の後半にやります",
+      "author": {
+        "id": "1262958915180826636",
+        "name": "riyou041824",
+        "discriminator": "0000",
+        "nickname": "長谷川\u3000稜",
+        "color": "#2ECC71",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1011546002274136114",
+            "name": "主務",
+            "color": "#2ECC71",
+            "position": 11
+          },
+          {
+            "id": "1351764272119549962",
+            "name": "3年生",
+            "color": "#FF00B5",
+            "position": 7
+          }
+        ],
+        "avatarUrl": "screenshots_backup/f957f01b1544554b28cacc9e8262dfaa-cb2f14181c9a3fe8.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDC4D",
+            "code": "thumbsup",
+            "isAnimated": false,
+            "imageUrl": "screenshots_backup/1f44d-27259a90ef10d877.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "633179440754720798",
+              "name": "hayato_0417",
+              "discriminator": "0000",
+              "nickname": "都賀勇人",
+              "color": "#3498DB",
+              "isBot": false,
+              "avatarUrl": "screenshots_backup/4a53b8f7a8742d85bb0790c6ebd25d55-6ac88fa0074f599f.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
     }
   ],
-  "messageCount": 70
+  "messageCount": 71
 }
