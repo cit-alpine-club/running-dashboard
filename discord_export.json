@@ -13,10 +13,10 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-07-15T00:00:00+00:00",
+    "after": "2026-07-16T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-10-13T21:38:29.7298824+00:00",
+  "exportedAt": "2026-10-14T20:22:26.1707997+00:00",
   "messages": [
     {
       "id": "1532748256864637002",
@@ -3959,7 +3959,74 @@
       ],
       "mentions": [],
       "inlineEmojis": []
+    },
+    {
+      "id": "1559729987349774387",
+      "type": "Default",
+      "timestamp": "2026-10-14T00:50:07.366+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "1372106263114027008",
+        "name": "ryoma05581",
+        "discriminator": "0000",
+        "nickname": "渡辺\u3000亮真",
+        "color": "#607D8B",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1004376070222524427",
+            "name": "体育会",
+            "color": "#607D8B",
+            "position": 9
+          },
+          {
+            "id": "1351763592675983431",
+            "name": "2年生",
+            "color": "#CACACA",
+            "position": 6
+          }
+        ],
+        "avatarUrl": "screenshots_backup/76c4ec745ce16eb4ae7d2a8b0cf17425-4f01aa8c56080fad.png"
+      },
+      "attachments": [
+        {
+          "id": "1559729986976485459",
+          "url": "screenshots_backup/2278441C-944A-4904-BCE5-B22C2FC213F0-1cd1da6f4b4076b5.png",
+          "fileName": "2278441C-944A-4904-BCE5-B22C2FC213F0.png",
+          "fileSizeBytes": 1057020
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "1027907385072820245",
+            "name": "emoji_7",
+            "code": "emoji_7",
+            "isAnimated": false,
+            "imageUrl": "screenshots_backup/1027907385072820245-889150b1ee7c2e04.png"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "937626636680052747",
+              "name": "yoshida_keijo",
+              "discriminator": "0000",
+              "nickname": "吉田遥翔",
+              "color": "#945FFF",
+              "isBot": false,
+              "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
     }
   ],
-  "messageCount": 69
+  "messageCount": 70
 }
