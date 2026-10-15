@@ -13,10 +13,10 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-07-16T00:00:00+00:00",
+    "after": "2026-07-17T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-10-14T20:22:26.1707997+00:00",
+  "exportedAt": "2026-10-15T20:07:12.720951+00:00",
   "messages": [
     {
       "id": "1532748256864637002",
@@ -4026,7 +4026,52 @@
       ],
       "mentions": [],
       "inlineEmojis": []
+    },
+    {
+      "id": "1560149832629227551",
+      "type": "Default",
+      "timestamp": "2026-10-15T04:38:26.281+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "829702151768244254",
+        "name": "kk2011",
+        "discriminator": "0000",
+        "nickname": "髙田凌我",
+        "color": "#206694",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1154078280643780688",
+            "name": "会計補",
+            "color": "#206694",
+            "position": 12
+          },
+          {
+            "id": "1351763592675983431",
+            "name": "2年生",
+            "color": "#CACACA",
+            "position": 6
+          }
+        ],
+        "avatarUrl": "screenshots_backup/8b43a801d53633b1bd63c9ca176723a9-8477d31fd50837a8.png"
+      },
+      "attachments": [
+        {
+          "id": "1560149832344150127",
+          "url": "screenshots_backup/IMG_0852-277da970c44da633.png",
+          "fileName": "IMG_0852.png",
+          "fileSizeBytes": 823972
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
     }
   ],
-  "messageCount": 70
+  "messageCount": 71
 }
