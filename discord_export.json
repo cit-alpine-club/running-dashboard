@@ -13,96 +13,11 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-08-01T00:00:00+00:00",
+    "after": "2026-08-02T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-10-30T21:13:40.6729652+00:00",
+  "exportedAt": "2026-10-31T20:20:58.865697+00:00",
   "messages": [
-    {
-      "id": "1533069841483698279",
-      "type": "Default",
-      "timestamp": "2026-08-01T11:12:13.27+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "リハビリジョグ",
-      "author": {
-        "id": "1262958915180826636",
-        "name": "riyou041824",
-        "discriminator": "0000",
-        "nickname": "長谷川\u3000稜",
-        "color": "#2ECC71",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1011546002274136114",
-            "name": "主務",
-            "color": "#2ECC71",
-            "position": 11
-          },
-          {
-            "id": "1351764272119549962",
-            "name": "3年生",
-            "color": "#FF00B5",
-            "position": 7
-          }
-        ],
-        "avatarUrl": "screenshots_backup/f957f01b1544554b28cacc9e8262dfaa-cb2f14181c9a3fe8.png"
-      },
-      "attachments": [
-        {
-          "id": "1533069841446211594",
-          "url": "screenshots_backup/Screenshot_20260801_200715_Nike_Run_Club-8b54903db4bc2ba9.jpg",
-          "fileName": "Screenshot_20260801_200715_Nike_Run_Club.jpg",
-          "fileSizeBytes": 96199
-        }
-      ],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [
-        {
-          "emoji": {
-            "id": "",
-            "name": "\uD83D\uDC4D",
-            "code": "thumbsup",
-            "isAnimated": false,
-            "imageUrl": "screenshots_backup/1f44d-27259a90ef10d877.svg"
-          },
-          "count": 3,
-          "users": [
-            {
-              "id": "633179440754720798",
-              "name": "hayato_0417",
-              "discriminator": "0000",
-              "nickname": "ガハハ",
-              "color": null,
-              "isBot": false,
-              "avatarUrl": "screenshots_backup/4a53b8f7a8742d85bb0790c6ebd25d55-6ac88fa0074f599f.png"
-            },
-            {
-              "id": "842664150584131635",
-              "name": "nasuo_eggplant",
-              "discriminator": "0000",
-              "nickname": "なすお",
-              "color": null,
-              "isBot": false,
-              "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
-            },
-            {
-              "id": "937626636680052747",
-              "name": "yoshida_keijo",
-              "discriminator": "0000",
-              "nickname": "吉田遥翔",
-              "color": null,
-              "isBot": false,
-              "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
-            }
-          ]
-        }
-      ],
-      "mentions": [],
-      "inlineEmojis": []
-    },
     {
       "id": "1535479605195051049",
       "type": "Default",
@@ -4507,5 +4422,5 @@
       "inlineEmojis": []
     }
   ],
-  "messageCount": 82
+  "messageCount": 81
 }
