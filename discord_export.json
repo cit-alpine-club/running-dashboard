@@ -13,10 +13,10 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-08-05T00:00:00+00:00",
+    "after": "2026-08-06T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-11-03T22:08:12.5839656+00:00",
+  "exportedAt": "2026-11-04T22:16:37.014295+00:00",
   "messages": [
     {
       "id": "1535479605195051049",
@@ -4462,7 +4462,29 @@
       ],
       "embeds": [],
       "stickers": [],
-      "reactions": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "screenshots_backup/2764-a3d2500d7e491034.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1366366819991949312",
+              "name": "keta1221_33543",
+              "discriminator": "0000",
+              "nickname": "豊口渓太",
+              "color": "#E74C3C",
+              "isBot": false,
+              "avatarUrl": "screenshots_backup/f11304c37a7af1605e0477874ac201af-591809b235c3348b.png"
+            }
+          ]
+        }
+      ],
       "mentions": [],
       "inlineEmojis": []
     },
@@ -4567,7 +4589,29 @@
       ],
       "embeds": [],
       "stickers": [],
-      "reactions": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDC4D",
+            "code": "thumbsup",
+            "isAnimated": false,
+            "imageUrl": "screenshots_backup/1f44d-27259a90ef10d877.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "633179440754720798",
+              "name": "hayato_0417",
+              "discriminator": "0000",
+              "nickname": "都賀勇人",
+              "color": "#3498DB",
+              "isBot": false,
+              "avatarUrl": "screenshots_backup/4a53b8f7a8742d85bb0790c6ebd25d55-6ac88fa0074f599f.png"
+            }
+          ]
+        }
+      ],
       "mentions": [],
       "inlineEmojis": []
     }
