@@ -13,146 +13,11 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-08-17T00:00:00+00:00",
+    "after": "2026-08-19T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-11-15T21:24:33.2842732+00:00",
+  "exportedAt": "2026-11-17T00:33:55.9739783+00:00",
   "messages": [
-    {
-      "id": "1539022680722767952",
-      "type": "Default",
-      "timestamp": "2026-08-17T21:26:40.743+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "石井は30日までに合計61kmランニングするそうです\n(雷鳥平から上高地までの距離)",
-      "author": {
-        "id": "937626636680052747",
-        "name": "yoshida_keijo",
-        "discriminator": "0000",
-        "nickname": "吉田遥翔",
-        "color": "#945FFF",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1351768693159231589",
-            "name": "4年生",
-            "color": "#945FFF",
-            "position": 8
-          }
-        ],
-        "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [
-        {
-          "emoji": {
-            "id": "",
-            "name": "\uD83C\uDF8C",
-            "code": "crossed_flags",
-            "isAnimated": false,
-            "imageUrl": "screenshots_backup/1f38c-6bdccdf116bd9949.svg"
-          },
-          "count": 4,
-          "users": [
-            {
-              "id": "633179440754720798",
-              "name": "hayato_0417",
-              "discriminator": "0000",
-              "nickname": "ガハハ",
-              "color": null,
-              "isBot": false,
-              "avatarUrl": "screenshots_backup/4a53b8f7a8742d85bb0790c6ebd25d55-6ac88fa0074f599f.png"
-            },
-            {
-              "id": "842664150584131635",
-              "name": "nasuo_eggplant",
-              "discriminator": "0000",
-              "nickname": "なすお",
-              "color": null,
-              "isBot": false,
-              "avatarUrl": "screenshots_backup/2afe0b27a0af9f5fabe17c2142e2bfda-30abdd6bcdfc2159.png"
-            },
-            {
-              "id": "937626636680052747",
-              "name": "yoshida_keijo",
-              "discriminator": "0000",
-              "nickname": "吉田遥翔",
-              "color": "#945FFF",
-              "isBot": false,
-              "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
-            },
-            {
-              "id": "1459872563411947707",
-              "name": "saka_cit",
-              "discriminator": "0000",
-              "nickname": "saka_cit",
-              "color": null,
-              "isBot": false,
-              "avatarUrl": "screenshots_backup/2ebe60a56563c52873f4386da28c58e2-67dc985a6168394e.png"
-            }
-          ]
-        }
-      ],
-      "mentions": [],
-      "inlineEmojis": []
-    },
-    {
-      "id": "1539243668546785320",
-      "type": "Default",
-      "timestamp": "2026-08-18T12:04:48.346+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "成田富里間約8キロランニング",
-      "author": {
-        "id": "1187593423566413968",
-        "name": "mameneko0808_09344",
-        "discriminator": "0000",
-        "nickname": "石井\u3000隆生",
-        "color": "#E74C3C",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1351762586462322803",
-            "name": "1年生",
-            "color": "#E74C3C",
-            "position": 5
-          }
-        ],
-        "avatarUrl": "screenshots_backup/caf36a1429941c61e78b298431fea472-194572a15990f873.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [
-        {
-          "emoji": {
-            "id": "",
-            "name": "\uD83D\uDC4D",
-            "code": "thumbsup",
-            "isAnimated": false,
-            "imageUrl": "screenshots_backup/1f44d-27259a90ef10d877.svg"
-          },
-          "count": 1,
-          "users": [
-            {
-              "id": "937626636680052747",
-              "name": "yoshida_keijo",
-              "discriminator": "0000",
-              "nickname": "吉田遥翔",
-              "color": "#945FFF",
-              "isBot": false,
-              "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
-            }
-          ]
-        }
-      ],
-      "mentions": [],
-      "inlineEmojis": []
-    },
     {
       "id": "1539576304687644712",
       "type": "Default",
@@ -197,7 +62,7 @@
               "name": "yoshida_keijo",
               "discriminator": "0000",
               "nickname": "吉田遥翔",
-              "color": "#945FFF",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
             }
@@ -257,7 +122,7 @@
               "name": "yoshida_keijo",
               "discriminator": "0000",
               "nickname": "吉田遥翔",
-              "color": "#945FFF",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
             },
@@ -365,7 +230,7 @@
               "name": "yoshida_keijo",
               "discriminator": "0000",
               "nickname": "吉田遥翔",
-              "color": "#945FFF",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
             }
@@ -440,7 +305,7 @@
               "name": "yoshida_keijo",
               "discriminator": "0000",
               "nickname": "吉田遥翔",
-              "color": "#945FFF",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
             }
@@ -494,7 +359,7 @@
               "name": "yoshida_keijo",
               "discriminator": "0000",
               "nickname": "吉田遥翔",
-              "color": "#945FFF",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
             }
@@ -548,7 +413,7 @@
               "name": "yoshida_keijo",
               "discriminator": "0000",
               "nickname": "吉田遥翔",
-              "color": "#945FFF",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
             }
@@ -602,7 +467,7 @@
               "name": "yoshida_keijo",
               "discriminator": "0000",
               "nickname": "吉田遥翔",
-              "color": "#945FFF",
+              "color": null,
               "isBot": false,
               "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
             }
@@ -4717,5 +4582,5 @@
       "inlineEmojis": []
     }
   ],
-  "messageCount": 87
+  "messageCount": 85
 }
