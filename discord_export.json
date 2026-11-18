@@ -13,65 +13,11 @@
     "topic": null
   },
   "dateRange": {
-    "after": "2026-08-19T00:00:00+00:00",
+    "after": "2026-08-20T00:00:00+00:00",
     "before": null
   },
-  "exportedAt": "2026-11-17T23:41:28.0823454+00:00",
+  "exportedAt": "2026-11-18T23:12:57.1328452+00:00",
   "messages": [
-    {
-      "id": "1539576304687644712",
-      "type": "Default",
-      "timestamp": "2026-08-19T10:06:34.982+00:00",
-      "timestampEdited": null,
-      "callEndedTimestamp": null,
-      "isPinned": false,
-      "content": "富里3＋4キロランニング",
-      "author": {
-        "id": "1187593423566413968",
-        "name": "mameneko0808_09344",
-        "discriminator": "0000",
-        "nickname": "石井\u3000隆生",
-        "color": "#E74C3C",
-        "isBot": false,
-        "roles": [
-          {
-            "id": "1351762586462322803",
-            "name": "1年生",
-            "color": "#E74C3C",
-            "position": 5
-          }
-        ],
-        "avatarUrl": "screenshots_backup/caf36a1429941c61e78b298431fea472-194572a15990f873.png"
-      },
-      "attachments": [],
-      "embeds": [],
-      "stickers": [],
-      "reactions": [
-        {
-          "emoji": {
-            "id": "",
-            "name": "\uD83D\uDC4D",
-            "code": "thumbsup",
-            "isAnimated": false,
-            "imageUrl": "screenshots_backup/1f44d-27259a90ef10d877.svg"
-          },
-          "count": 1,
-          "users": [
-            {
-              "id": "937626636680052747",
-              "name": "yoshida_keijo",
-              "discriminator": "0000",
-              "nickname": "吉田遥翔",
-              "color": null,
-              "isBot": false,
-              "avatarUrl": "screenshots_backup/5a87365a0180181b1fef967559011fe8-9dbe3874fef7c37b.png"
-            }
-          ]
-        }
-      ],
-      "mentions": [],
-      "inlineEmojis": []
-    },
     {
       "id": "1540174249208193105",
       "type": "Default",
@@ -4551,6 +4497,44 @@
       "callEndedTimestamp": null,
       "isPinned": false,
       "content": "プランク5分",
+      "author": {
+        "id": "1372106263114027008",
+        "name": "ryoma05581",
+        "discriminator": "0000",
+        "nickname": "渡辺\u3000亮真",
+        "color": "#607D8B",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1004376070222524427",
+            "name": "体育会",
+            "color": "#607D8B",
+            "position": 9
+          },
+          {
+            "id": "1351763592675983431",
+            "name": "2年生",
+            "color": "#CACACA",
+            "position": 6
+          }
+        ],
+        "avatarUrl": "screenshots_backup/76c4ec745ce16eb4ae7d2a8b0cf17425-4f01aa8c56080fad.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1572406510695223307",
+      "type": "Default",
+      "timestamp": "2026-11-18T00:22:06.05+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "歩荷 30kg 1時間 5往復",
       "author": {
         "id": "1372106263114027008",
         "name": "ryoma05581",
